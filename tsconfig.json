@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"], // Include necessary libraries for the target environment
+    "allowJs": true, // Allow JavaScript files to be compiled
+    "skipLibCheck": true, // Skip type checking of declaration files to speed up compilation
+    "strict": true, // Enable strict mode to catch common errors and provide better type checking
+    "noEmit": true, // Do not emit output files, useful for type-checking only projects
+    "esModuleInterop": true, // Enable compatibility with CommonJS modules and ES modules
+    "module": "esnext", // Use ES modules for better interoperability with modern JavaScript ecosystem
+    "moduleResolution": "bundler", // Specify module resolution strategy
+    "resolveJsonModule": true, // Enable importing JSON files as modules
+    "isolatedModules": true, // Ensure each file is treated as a separate module
+    "jsx": "preserve", // Preserve JSX syntax for further processing by other tools
+    "incremental": true, // Enable incremental compilation for faster builds
+    "paths": { // Configure path mapping for module resolution
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"], // Specify files to include in compilation
+  "exclude": ["node_modules"] // Specify files to exclude from compilation
+}
