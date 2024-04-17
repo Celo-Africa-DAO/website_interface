@@ -19,9 +19,8 @@ export default function Home() {
           content="Celo, Africa, DAO, cUSD, Ecosystem"
         />
       </Head>
-      <UpcomingEvent/>
-      <h1>Celo Africa DAO</h1>
       <Explore/>
+      <UpcomingEvent/>
     </div>
   );
 }
