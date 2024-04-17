@@ -1,4 +1,5 @@
 
+import Incubation from "@/components/Incubation";
 import Head from "next/head";
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         />
       </Head>
       <h1>Celo Africa DAO</h1>
+      <Incubation/>
     </div>
   );
 }
