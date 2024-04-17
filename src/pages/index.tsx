@@ -13,6 +13,7 @@ export default function Home() {
         <meta property="twitter:title" content="Celo Africa DAO" />
         <meta property="og:type" content="website" />
         <meta property="og:description" content="Celo Africa DAO" />
+        <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/gt-alpina-trial" />
         <meta
           name="keywords"
           content="Celo, Africa, DAO, cUSD, Ecosystem"

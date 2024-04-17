@@ -19,7 +19,8 @@ const config = {
     },
     extend: {
       fontFamily: {
-        "space-grotesk": "space-grotesk"
+        "space-grotesk": "space-grotesk",
+        "gt-alpina-trial": ['GT Alpina Trial', 'sans-serif']
       },
       colors: {
         "Celo-AD-primary": "#FCF6F1",
