@@ -1,5 +1,6 @@
 
 import Explore from "@/components/ui/Cad/Explore";
+import UpcomingEvent from "@/components/ui/Cad/UpCommingEvent";
 import Head from "next/head";
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
           content="Celo, Africa, DAO, cUSD, Ecosystem"
         />
       </Head>
+      <UpcomingEvent/>
       <h1>Celo Africa DAO</h1>
       <Explore/>
     </div>
