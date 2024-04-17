@@ -32,12 +32,11 @@ const Explore = () => {
     }
     return (
         <div className='bg-[#DEE2D8]'>
-            <h1 className='md:mb-[60px] mb-[45px] pl-[12px] pr-[92px] font-extralight md:pl-48 pt-16 font-gt-alpina italic text-[36px] md:text-[64px] leading-[45px] md:leading-[80px]'>Explore our recent Event</h1>
+            <h1 className='md:mb-[60px] mb-[45px] pl-[12px] pr-[92px] font-extralight md:pl-48 pt-16 font-gt-alpina italic text-[36px] lg:text-[64px] leading-[45px] md:leading-[80px]'>Explore our recent Event</h1>
             <hr />
             {events.map((event, index) => (
                 <div key={index} className='border-b-[1.5px] md:border-b-2 border-t-[1.5px] md:border-t-2 flex flex-col md:flex-row border-[#000000] md:border-[#f4f2f2a7] justify-around p-10 md:p-[60px, 0px, 60px, 0px] '>
                     <div>
-                        {/* {event.img} */}
                         <Image src={'img/explore.svg'} className='w-full' width={400} height={200} alt='Celo campus connect' />
                     </div>
                     <div>
