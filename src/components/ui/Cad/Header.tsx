@@ -104,7 +104,7 @@ const Header = () => {
               width={17}
               height={17}
             />
-            <p className="text-sm md:text-lg">Let's Innovate together!</p>
+            <p className="text-sm md:text-lg">Let&apos;s Innovate together!</p>
           </div>
 
           <button
