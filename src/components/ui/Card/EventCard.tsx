@@ -21,7 +21,7 @@ const EventCard: React.FC<EventCardProps> = ({ event, onNext }) => {
     <div className="flex flex-col items-center text-4xl ">
       <h1 className=" italic   font-gt-alpina  font-light pl-2 md:pl-0 ">Upcoming Events</h1>
     </div>
-    <div className="w-full  h-1/4 flex md:flex-row flex-col   justify-between items-center border-t-2 p-14 border-b-2   border-gray-500 mt-4">
+    <div className="w-full  h-1/4 flex md:flex-row flex-col   justify-between items-center border-t-2 p-14 border-b-2   border-gray-300 mt-4">
       <Image
         src={event.imageUrl}
         className="w-full lg:w-1/4"
