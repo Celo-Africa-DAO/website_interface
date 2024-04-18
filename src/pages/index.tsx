@@ -1,7 +1,9 @@
 
 import Explore from "@/components/ui/Cad/Explore";
 import UpcomingEvent from "@/components/ui/Cad/UpCommingEvent";
+import Hero from "@/components/sections/Hero";
 import Head from "next/head";
+
 export default function Home() {
   return (
     <div>
@@ -18,10 +20,12 @@ export default function Home() {
           name="keywords"
           content="Celo, Africa, DAO, cUSD, Ecosystem"
         />
-      </Head>
-      <Explore/>
-      <UpcomingEvent/>
-      <h1>Celo Africa DAO</h1>
+      </Head>      
+      <>
+        <Hero/>
+        <Explore/>
+        <UpcomingEvent/>
+      </>
     </div>
   );
 }
