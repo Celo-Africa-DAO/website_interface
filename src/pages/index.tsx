@@ -1,9 +1,10 @@
 
 import Incubation from "@/components/Incubation";
 import Explore from "@/components/ui/Cad/Explore";
-
 import UpcomingEvent from "@/components/ui/Cad/UpCommingEvent";
+import Hero from "@/components/sections/Hero";
 import Head from "next/head";
+
 export default function Home() {
   return (
     <div>
@@ -22,10 +23,12 @@ export default function Home() {
           content="Celo, Africa, DAO, cUSD, Ecosystem"
         />
       </Head>
-      <UpcomingEvent/>
-      <h1>Celo Africa DAO</h1>
-      <Incubation/>
-      <Explore/>
+      <>
+        <Hero/>
+        <Incubation/>
+        <Explore/>
+        <UpcomingEvent/>
+      </>
     </div>
   );
 }

@@ -2,40 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "GT-Alpina";
-  src: url("./fonts/GT-Alpina-Typewriter-Thin-Trial.otf");
-  font-weight: 200;
-}
 
 @font-face {
   font-family: "GT-Alpina";
-  src: url("./fonts/GT-Alpina-Typewriter-Bold-Trial.otf");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "GT-Alpina";
-  src: url("./fonts/GT-Alpina-Typewriter-Medium-Trial.otf");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "GT-Alpina";
-  src: url("./fonts/GT-Alpina-Typewriter-Regular-Trial.otf");
+  src: url("./fonts/GT-Alpina-Standard-Light-Trial.otf");
   font-weight: 100;
 }
-
 @font-face {
-  font-family: "GT-Alpina";
-  src: url("./fonts/GT-Alpina-Typewriter-Light-Trial.otf");
-  font-weight: 600;
+  font-family: "Gilroy-Regular";
+  src: url('./fonts/Gilroy-Regular.woff');
+  font-weight: 400;
 }
 
 @layer base {
   :root {
     --Celo-AD-primary: #FCF6F1;
     --Celo-AD-yellow: #FCFF52;
+
     --Celo-AD-dark-green: #476520;
     --Celo-AD-gray: #DEE2D8;
     --Celo-AD-slate-green: #068012;
@@ -114,3 +97,11 @@
 .clipped {
   clip-path: polygon(51% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
+
+
+.background-image {
+  background-image: url('/HeroImage.png');
+  background-size: cover;
+  background-position: center;
+}
+
