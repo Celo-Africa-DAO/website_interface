@@ -19,6 +19,8 @@ const config = {
     },
     extend: {
       fontFamily: {
+        "space-grotesk": "space-grotesk",
+        "gt-alpina-trial": ['GT Alpina Trial', 'sans-serif']
         'gt-alpina': ['GT-Alpina', 'sans'],
       },
       colors: {
