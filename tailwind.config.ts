@@ -20,14 +20,14 @@ const config = {
     extend: {
       fontFamily: {
         "space-grotesk": "space-grotesk",
-        "gt-alpina-trial": ['GT Alpina Trial', 'sans-serif']
+        "gt-alpina-trial": ['GT Alpina Trial', 'sans-serif'],
         'gt-alpina': ['GT-Alpina', 'sans'],
       },
       colors: {
         "Celo-AD-primary": "#FCF6F1",
         "Celo-AD-yellow": "#FCFF52",
         "Celo-AD-dark-green": "#476520",
-        "Celo-AD-gray": "#DEE2D8)",
+        "Celo-AD-gray": "#DEE2D8",
         "Celo-AD-slate-green": "#068012",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
