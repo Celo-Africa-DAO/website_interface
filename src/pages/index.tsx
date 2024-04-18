@@ -25,9 +25,10 @@ export default function Home() {
       </Head>
       <>
         <Hero/>
-        <Incubation/>
+       
         <Explore/>
         <UpcomingEvent/>
+        <Incubation/>
       </>
     </div>
   );
