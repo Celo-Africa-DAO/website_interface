@@ -7,7 +7,7 @@ type SectionProps = ComponentProps<"section"> & {
 export default function Section({ children, ...props }: SectionProps) {
   return (
     <section {...props}>
-      <div className="max-w-5xl xl:max-w-7xl mx-auto relative">{children}</div>
+      <div className="max-w-4xl mx-auto relative">{children}</div>
     </section>
   );
 }
