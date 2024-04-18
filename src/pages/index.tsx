@@ -20,14 +20,12 @@ export default function Home() {
           name="keywords"
           content="Celo, Africa, DAO, cUSD, Ecosystem"
         />
-      </Head>
-      
+      </Head>      
       <>
         <Hero/>
-        <UpcomingEvent/>
         <Explore/>
+        <UpcomingEvent/>
       </>
-      
     </div>
   );
 }
