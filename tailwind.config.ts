@@ -17,11 +17,16 @@ const config = {
         "2xl": "1400px"
       }
     },
+    fontFamily: {
+      display:  ["Inter", "sans-serif"],
+      body: ["Inter", "sans-serif"],
+    },
     extend: {
       fontFamily: {
-        "space-grotesk": "space-grotesk",
+         display:  ["Inter", "sans-serif"],
         "gt-alpina-trial": ['GT Alpina Trial', 'sans-serif'],
         'gt-alpina': ['GT-Alpina', 'sans'],
+        "GT-Alpina":"GT-Alpina"
       },
       colors: {
         "Celo-AD-primary": "#FCF6F1",
