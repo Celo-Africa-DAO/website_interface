@@ -19,7 +19,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        "GT-Alpina": "GT-Alpina"
+        'gt-alpina': ['GT-Alpina', 'sans'],
       },
       colors: {
         "Celo-AD-primary": "#FCF6F1",

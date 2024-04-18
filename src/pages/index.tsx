@@ -1,6 +1,9 @@
 
+import Explore from "@/components/ui/Cad/Explore";
+import UpcomingEvent from "@/components/ui/Cad/UpCommingEvent";
 import Hero from "@/components/sections/Hero";
 import Head from "next/head";
+
 export default function Home() {
   return (
     <div>
@@ -19,9 +22,12 @@ export default function Home() {
         />
       </Head>
       
-      <div>
+      <>
         <Hero/>
-      </div>
+        <UpcomingEvent/>
+        <Explore/>
+      </>
+      
     </div>
   );
 }
