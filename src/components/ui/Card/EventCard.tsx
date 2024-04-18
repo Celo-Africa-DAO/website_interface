@@ -23,7 +23,7 @@ const EventCard: React.FC<EventCardProps> = ({ event, onNext }) => (
         width={500}
         height={500}
         alt=""
-       
+
       />
       <div className="flex flex-col items-center">
         <span className="text-2xl font-gt-alpina font-light text-black">
