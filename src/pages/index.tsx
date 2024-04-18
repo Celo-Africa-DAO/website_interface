@@ -1,7 +1,10 @@
 
+import Incubation from "@/components/Incubation";
 import Explore from "@/components/ui/Cad/Explore";
 import UpcomingEvent from "@/components/ui/Cad/UpCommingEvent";
+import Hero from "@/components/sections/Hero";
 import Head from "next/head";
+
 export default function Home() {
   return (
     <div>
@@ -14,14 +17,18 @@ export default function Home() {
         <meta property="twitter:title" content="Celo Africa DAO" />
         <meta property="og:type" content="website" />
         <meta property="og:description" content="Celo Africa DAO" />
+        <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/gt-alpina-trial" />
         <meta
           name="keywords"
           content="Celo, Africa, DAO, cUSD, Ecosystem"
         />
       </Head>
-      <Explore/>
-      <UpcomingEvent/>
-      <h1>Celo Africa DAO</h1>
+      <>
+        <Hero/>
+        <Incubation/>
+        <Explore/>
+        <UpcomingEvent/>
+      </>
     </div>
   );
 }
