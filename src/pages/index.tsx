@@ -1,4 +1,5 @@
 
+import Hero from "@/components/sections/Hero";
 import Head from "next/head";
 export default function Home() {
   return (
@@ -17,7 +18,10 @@ export default function Home() {
           content="Celo, Africa, DAO, cUSD, Ecosystem"
         />
       </Head>
-      <h1>Celo Africa DAO</h1>
+      
+      <div>
+        <Hero/>
+      </div>
     </div>
   );
 }

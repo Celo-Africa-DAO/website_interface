@@ -19,7 +19,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        "space-grotesk": "space-grotesk"
+        "GT-Alpina": "GT-Alpina"
       },
       colors: {
         "Celo-AD-primary": "#FCF6F1",
