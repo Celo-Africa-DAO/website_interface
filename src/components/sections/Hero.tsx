@@ -32,7 +32,7 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-                <div className=' sm:absolute text-[#000000] bg-Celo-AD-primary p-4 w-full sm:w-3/5 right-0 mt-28'>
+                <div className='relative sm:absolute text-[#000000] bg-Celo-AD-primary p-4 w-full sm:w-3/5 right-0 mt-28'>
                     <div className=' grid grid-cols-1 gap-2 sm:grid-cols-3'>
                         <div className='relative border rounded-lg border-gray-800 sm:border-none flex flex-row items-center justify-center '>
                             <div className='m-6 flex flex-col items-center justify-center  text-center'>
