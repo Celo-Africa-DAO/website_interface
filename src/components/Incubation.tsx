@@ -1,8 +1,6 @@
 "use client";
-
 import React, { useState } from "react";
 import Image from "next/image";
-import { useRouter } from "next/router";
 
 const Incubation = () => {
   const handleJoin = () => {
@@ -46,7 +44,6 @@ const Incubation = () => {
 
             <button
               className="flex justify-center items-center gap-6  rounded-[100px] "
-              // onClick={handleJoin}
             >
               <p className="font-medium text-[12px] md:text-base text-[#FFFFFF]">Know more</p>
               <Image
@@ -55,9 +52,6 @@ const Incubation = () => {
                 className="w-[16px] md:w-[21px]"
                 width={21}
                 height={21}
-
-
-                
               />
             </button>
           </div>
