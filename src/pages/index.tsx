@@ -34,7 +34,6 @@ export default function Home() {
         <Team />
         <Explore/>
         <UpcomingEvent/>
-        <Incubation/>
       </>
     </div>
   );
