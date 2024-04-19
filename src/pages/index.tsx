@@ -1,5 +1,5 @@
 
-import Incubation from "@/components/Incubation";
+import Incubation from "@/components/sections/Incubation";
 import Explore from "@/components/ui/Cad/Explore";
 import UpcomingEvent from "@/components/ui/Cad/UpCommingEvent";
 import Hero from "@/components/sections/Hero";
