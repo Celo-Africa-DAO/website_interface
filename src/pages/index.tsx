@@ -6,6 +6,8 @@ import Hero from "@/components/sections/Hero";
 import Head from "next/head";
 import Together from "@/components/sections/Together";
 
+import Corousel from "@/components/ui/Cad/Corousel";
+
 export default function Home() {
   return (
     <div>
@@ -26,6 +28,7 @@ export default function Home() {
       </Head>
       <>
         <Hero/>
+        <Corousel/>
         <Together/>
         <Incubation/>
         <Explore/>
