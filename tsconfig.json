@@ -16,6 +16,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"], // Specify files to include in compilation
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Team/MemberCard.tsx"], // Specify files to include in compilation
   "exclude": ["node_modules"] // Specify files to exclude from compilation
 }
