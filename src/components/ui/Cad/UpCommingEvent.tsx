@@ -18,7 +18,7 @@ export default function UpcomingEvent() {
         {
           name: "Celo Campus Connect",
           location: "Kenya",
-          date: "Sat, March 16th, 2024",
+          date: "Sat, March 26th, 2024",
           imageUrl: "/img/celokenya.svg",
         },
         {

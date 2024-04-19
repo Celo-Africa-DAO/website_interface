@@ -4,6 +4,7 @@ import Explore from "@/components/ui/Cad/Explore";
 import UpcomingEvent from "@/components/ui/Cad/UpCommingEvent";
 import Hero from "@/components/sections/Hero";
 import Head from "next/head";
+import Together from "@/components/sections/Together";
 
 import Corousel from "@/components/ui/Cad/Corousel";
 
@@ -28,7 +29,8 @@ export default function Home() {
       <>
         <Hero/>
         <Corousel/>
-       
+        <Together/>
+        <Incubation/>
         <Explore/>
         <UpcomingEvent/>
         <Incubation/>
