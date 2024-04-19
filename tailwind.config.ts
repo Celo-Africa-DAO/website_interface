@@ -14,10 +14,15 @@ const config = {
       center: true,
       padding: "2rem",
       screens: {
+       
         "2xl": "1400px"
       }
     },
     extend: {
+      screens: {
+				"2xsm": "381px",
+				xsm: "425px",
+      },
       fontFamily: {
         "space-grotesk": "space-grotesk",
         "gt-alpina-trial": ['GT Alpina Trial', 'sans-serif'],
