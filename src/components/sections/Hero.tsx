@@ -1,12 +1,13 @@
 
+import Section from '../layouts/Section';
 import { Button } from '../ui/button';
 
 const Hero = () => {
 
 
     return (
-        <div className="bg-cover bg-center bg-no-repeat bg-[url('/HeroImage.png')] h-[820px] object-cover bg-gray-700 text-gray-50">
-            <div className='pt-20 ms:pt-32 pb-24 max-w-6xl mx-auto  text-gray-50'>
+        <div className="bg-cover bg-center bg-no-repeat bg-[url('/HeroImage.png')] h-[820px] object-cover  bg-gray-700 text-gray-50">
+            <Section>
                 <div className='mx-6 xl:mx-0'>
                     <div className='flex flex-col sm:flex-row justify-between  '>
                         <div className='flex flex-col justify-center w-full md:w-3/5  text-left'>
@@ -65,7 +66,7 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Section>
         </div>
     )
 }
