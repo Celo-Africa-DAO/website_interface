@@ -27,7 +27,7 @@ const CorouselCard: React.FC<EventCardProps> = ({ events }) => {
   return (
     <div className="w-full h-full flex flex-col justify-between items-start pt-20 ">
       <div className="flex flex-col items-center text-4xl italic font-gt-alpina font-light pl-2 md:pl-0">
-        <span className="text-2xl md:text-4xl">Together let's Build and prosper </span>
+        <span className="text-2xl md:text-4xl">Together let&apos;s Build and prosper </span>
         <span className="text-2xl md:text-4xl">with Celo Africa DAO </span>
       </div>
       <div className="w-full  flex flex-wrap justify-center mt-4 rflow-scroll">
