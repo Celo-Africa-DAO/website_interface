@@ -29,7 +29,7 @@ export default function Home() {
       <>
         <Hero/>
         <Corousel/>
-        <Together/>
+        {/* <Together/> */}
         <Incubation/>
         <Team />
         <Explore/>
