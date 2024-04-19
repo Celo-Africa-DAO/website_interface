@@ -4,7 +4,7 @@ import Explore from "@/components/ui/Cad/Explore";
 import UpcomingEvent from "@/components/ui/Cad/UpCommingEvent";
 import Hero from "@/components/sections/Hero";
 import Head from "next/head";
-import DevelopmentSection from "@/components/DevelopmentSection";
+import Together from "@/components/sections/Together";
 
 export default function Home() {
   return (
@@ -26,11 +26,11 @@ export default function Home() {
       </Head>
       <>
         <Hero/>
+        <Together/>
         <Incubation/>
         <Explore/>
         <UpcomingEvent/>
-        <DevelopmentSection />
-
+        <Incubation/>
       </>
     </div>
   );
