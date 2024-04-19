@@ -14,6 +14,7 @@ const config = {
       center: true,
       padding: "2rem",
       screens: {
+       
         "2xl": "1400px"
       }
     },
@@ -22,6 +23,10 @@ const config = {
       body: ["Inter", "sans-serif"],
     },
     extend: {
+      screens: {
+				"2xsm": "381px",
+				xsm: "425px",
+      },
       fontFamily: {
          display:  ["Inter", "sans-serif"],
         "gt-alpina-trial": ['GT Alpina Trial', 'sans-serif'],
@@ -32,7 +37,7 @@ const config = {
         "Celo-AD-primary": "#FCF6F1",
         "Celo-AD-yellow": "#FCFF52",
         "Celo-AD-dark-green": "#476520",
-        "Celo-AD-gray": "#DEE2D8)",
+        "Celo-AD-gray": "#DEE2D8",
         "Celo-AD-slate-green": "#068012",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
