@@ -8,6 +8,7 @@ import Team from "@/components/Team/Team";
 import Together from "@/components/sections/Together";
 import Corousel from "@/components/ui/Cad/Corousel";
 
+
 export default function Home() {
   return (
     <div>
@@ -33,6 +34,7 @@ export default function Home() {
         <Incubation/>
         <Team />
         <Explore/>
+       
         <UpcomingEvent/>
       </>
     </div>
