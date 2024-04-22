@@ -14,6 +14,7 @@ const config = {
       center: true,
       padding: "2rem",
       screens: {
+       
         "2xl": "1400px"
       }
     },
@@ -22,6 +23,10 @@ const config = {
       body: ["Inter", "sans-serif"],
     },
     extend: {
+      screens: {
+				"2xsm": "381px",
+				xsm: "425px",
+      },
       fontFamily: {
          display:  ["Inter", "sans-serif"],
         "gt-alpina-trial": ['GT Alpina Trial', 'sans-serif'],
