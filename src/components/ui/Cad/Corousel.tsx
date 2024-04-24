@@ -69,7 +69,7 @@ export default function Carousel() {
   };
 
   return (
-    <div className="bg-Celo-AD-primary pt-20">
+    <div id="about" className="bg-Celo-AD-primary pt-20">
      <div className="flex flex-col justify-start items-start text-4xl italic font-gt-alpina font-light pl-10 md:pl-36 pb-10">
         <span className="text-2xl md:text-4xl">Together let's Build and prosper </span>
         <span className="text-2xl pl-10 md:text-4xl">with Celo Africa DAO </span>

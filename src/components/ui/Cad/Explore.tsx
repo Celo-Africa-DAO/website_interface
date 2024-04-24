@@ -30,7 +30,7 @@ const Explore = () => {
         setIsViewBtnHover(false)
     }
     return (
-        <div className='bg-[#DEE2D8] lg:p-20 px-[12px] '>
+        <div id='event' className='bg-[#DEE2D8] lg:p-20 px-[12px] '>
             <h1 className='md:mb-[60px] mb-[45px] pl-[12px] pr-[92px] font-extralight md:pl-48 pt-16 font-gt-alpina italic text-[36px] md:text-[36px] leading-[45px] md:leading-[80px]'>Explore our recent Event</h1>
             <hr className='border-solid border border-gray-900 mb-7' />
             {events.map((event, index) => (

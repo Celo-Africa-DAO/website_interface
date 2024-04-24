@@ -12,7 +12,7 @@ const Incubation = () => {
   };
 
   return (
-    <div
+    <div id="incubation"
       className=" bg-cover bg-right md:bg-center bg-no-repeat px-3 md:px-32 py-36 h-[260]"
       style={{
         backgroundImage: "url(img/incubation-bg.svg)",
