@@ -5,18 +5,23 @@ import { useRouter } from "next/router";
 
 import NavLinks from "./NavLinks";
 import { Button } from "../button";
+import { url } from "inspector";
 
 const navList = [
-  { title: "About", path: "#about", Image: "img/navlinks-hover-icon.svg" },
+  { 
+    title: "About", 
+    path: "#about", 
+    Image: "img/navlinks-hover-icon.svg" 
+  },
   {
     title: "Incubator Program",
-    path: "#",
+    path: "#incubation",
     Image: "img/navlinks-hover-icon.svg",
   },
   { title: "Events", path: "#event", Image: "img/navlinks-hover-icon.svg" },
   {
     title: "Community",
-    path: "#commubity",
+    path: "https://celoafricadao.slack.com/canvas/C051YRQ3F6Z",
     Image: "img/navlinks-hover-icon.svg",
   },
   {
@@ -29,6 +34,7 @@ const navList = [
 const Header = () => {
   const router = useRouter();
   const [isMenuToggled, setIsMenuToggled] = useState(false);
+ 
 
   const handleHomeLogo = () => {
     router.push("/");
@@ -46,7 +52,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="py-[30px] bg-Celo-AD-primary px-[25px] md:px-[80px] flex justify-between items-center">
+      <header className="py-[30px] bg-Celo-AD-primary px-[25px] md:px-[80px] flex justify-between items-center fixed top-0 w-full left-0 z-50">
         {" "}
         <Image
           src={"CAD_logo.svg"}
@@ -89,11 +95,11 @@ const Header = () => {
       <aside
         className={` ${
           isMenuToggled ? "opacity-100" : "opacity-0 pointer-events-none"
-        } h-screen w-[70%] md:w-[600px] transition-opacity transform flex flex-col justify-between pt-24 pb-6 ease-in-out duration-500 bg-Celo-AD-primary fixed left-0 top-0 z-10`}
+        }  h-screen w-[70%] md:w-[600px] transition-opacity transform flex flex-col justify-between pt-24 pb-6 ease-in-out duration-500 bg-Celo-AD-primary fixed left-0 top-0 z-10`}
       >
         <ul className="flex flex-col px-8 md:px-[65px] font-GT-Alpina">
           {navList.map((item, index) => (
-            <NavLinks key={index} item={item} />
+            <NavLinks key={index} item={item} onClick={handleCloseClick}/>
           ))}
         </ul>
 
@@ -111,7 +117,7 @@ const Header = () => {
           <Button 
           className="rounded-[100px] bg-Celo-AD-yellow hover:bg-Celo-AD-yellow/75
            text-[#090808] hover:bg-Celo-AD-yellow px-28 w-fit my-2  
-           text-base sm:text-lg">
+           text-base sm:text-lg" onClick={handleJoin}>
             Join us
            <img src="./chevron-black.svg" className='ml-6' alt="left-icon" />
            </Button>

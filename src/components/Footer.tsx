@@ -8,15 +8,33 @@ import CeloLogo from "../../public/img/celoLogo.svg";
 
 const Footer = () => {
   const FooterLinK = [
-    { title: "Home", path: "/" },
-    { title: "Incubation program", path: "/" },
-    { title: "Recent events", path: "/" },
+    { 
+      title: "Home", 
+      path: "#home" 
+    },
+    {
+      title: "Incubation program",
+      path: "#incubation" 
+    },
+    { 
+      title: "Recent events", 
+      path: "#event"
+    },
   ];
 
   const FooterLinKs = [
-    { title: "Team", path: "/" },
-    { title: "Upcoming event", path: "/" },
-    { title: "Report", path: "/" },
+    { 
+      title: "Team", 
+      path: "#team" 
+    },
+    { 
+      title: "Upcoming event", 
+      path: "#up-coming-events"
+     },
+    { 
+      title: "Report", 
+      path: "/"
+     },
   ];
 
   const date = new Date();
@@ -78,15 +96,25 @@ const Footer = () => {
 
       <div className="flex flex-col gap-10  md:flex-row md:justify-between">
         <div className="flex justify-center max-md:items-center mt-20">
-          <button className="border-solid border-2 p-6 h-20">
-            <RiTwitterXLine />
-          </button>
-          <button className="border-solid border-2 p-6 h-20">
-            <FaSlack />
-          </button>
-          <button className="border-solid border-2 p-6 h-20">
-            <FaHashnode />
-          </button>
+          <a
+            href="https://twitter.com/CeloAfricaDao"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="border-solid border-2 p-6 h-20">
+              <RiTwitterXLine />
+            </button>
+          </a>
+          <a href="https://join.slack.com/t/celoafricadao/shared_invite/zt-2hns4uonl-VhtnWt3Q1d7sOYh20uCqBg" target="_blank" rel="noopener noreferrer">
+            <button className="border-solid border-2 p-6 h-20">
+              <FaSlack />
+            </button>
+          </a>
+          <a href="https://celoafricadao.hashnode.dev/" target="_blank" rel="noopener noreferrer">
+            <button className="border-solid border-2 p-6 h-20">
+              <FaHashnode />
+            </button>
+          </a>
         </div>
         <div className="flex xl:ml-36 mt-[7.5rem] justify-between w-full">
           <div>

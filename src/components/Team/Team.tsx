@@ -182,7 +182,7 @@ const Team = () => {
   ];
 
   return (
-    <div className="flex flex-col  gap-8 bg-[#FCF6F1] px-5 sm:px-14 md:px-20 lg:px-24 pb-10 sm:pb-16  overflow-hidden ">
+    <div id="team" className="flex flex-col  gap-8 bg-[#FCF6F1] px-5 sm:px-14 md:px-20 lg:px-24 pb-10 sm:pb-16  overflow-hidden ">
       <div>
         <h3 className="text-[40px] md:text-[64px] font-gt-alpina-trial font-thin max-md:mt-8">
           Team and Partners
