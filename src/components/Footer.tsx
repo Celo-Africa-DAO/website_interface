@@ -8,15 +8,33 @@ import CeloLogo from "../../public/img/celoLogo.svg";
 
 const Footer = () => {
   const FooterLinK = [
-    { title: "Home", path: "/" },
-    { title: "Incubation program", path: "/" },
-    { title: "Recent events", path: "/" },
+    { 
+      title: "Home", 
+      path: "#home" 
+    },
+    {
+      title: "Incubation program",
+      path: "#incubation" 
+    },
+    { 
+      title: "Recent events", 
+      path: "#event"
+    },
   ];
 
   const FooterLinKs = [
-    { title: "Team", path: "/" },
-    { title: "Upcoming event", path: "/" },
-    { title: "Report", path: "/" },
+    { 
+      title: "Team", 
+      path: "#team" 
+    },
+    { 
+      title: "Upcoming event", 
+      path: "#up-coming-events"
+     },
+    { 
+      title: "Report", 
+      path: "/"
+     },
   ];
 
   const date = new Date();

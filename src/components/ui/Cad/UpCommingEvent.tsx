@@ -58,7 +58,7 @@ export default function UpcomingEvent() {
   const currentEvent = events[currentEventIndex];
 
   return (
-    <Section className="bg-Celo-AD-primary">
+    <Section id="up-coming-events" className="bg-Celo-AD-primary">
         <EventCard
       event={currentEvent}
       onNext={handleNextEvent}

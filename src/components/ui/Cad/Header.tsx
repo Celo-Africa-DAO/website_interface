@@ -8,7 +8,11 @@ import { Button } from "../button";
 import { url } from "inspector";
 
 const navList = [
-  { title: "About", path: "#about", Image: "img/navlinks-hover-icon.svg" },
+  { 
+    title: "About", 
+    path: "#about", 
+    Image: "img/navlinks-hover-icon.svg" 
+  },
   {
     title: "Incubator Program",
     path: "#incubation",
