@@ -7,6 +7,7 @@ import Head from "next/head";
 import Team from "@/components/Team/Team";
 import Together from "@/components/sections/Together";
 import Corousel from "@/components/ui/Cad/Corousel";
+import DevelopmentSection from "@/components/DevelopmentSection";
 
 
 export default function Home() {
@@ -36,6 +37,7 @@ export default function Home() {
         <Explore/>
        
         <UpcomingEvent/>
+        <DevelopmentSection/>
       </>
     </div>
   );
