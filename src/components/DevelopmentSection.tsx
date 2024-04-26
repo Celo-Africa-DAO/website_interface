@@ -15,17 +15,28 @@ const DevelopmentSection = () => {
 
 
         <div className="flex justify-center max-md:items-center">
+        <a
+            href="https://twitter.com/CeloAfricaDao"
+            target="_blank"
+            rel="noopener noreferrer">
           <button className="border-solid border-2 border-gray-500 p-6 h-20">
             <RiTwitterXLine />
           </button>
+        </a>
 
+        <a href="https://join.slack.com/t/celoafricadao/shared_invite/zt-2hns4uonl-VhtnWt3Q1d7sOYh20uCqBg" target="_blank" rel="noopener noreferrer">
           <button className="border-solid border-gray-500 border-2 p-6 h-20">
             <FaSlack />
           </button>
+        </a>
 
+
+        <a href="https://celoafricadao.hashnode.dev/" target="_blank" rel="noopener noreferrer">
           <button className="border-solid border-gray-500 border-2 p-6 h-20">
             <FaHashnode />
           </button>
+
+        </a>
         </div>
 
         
