@@ -8,7 +8,6 @@ import { IoChevronForwardCircle } from "react-icons/io5";
 interface EventCardProps {
   event: Event;
   onNext: () => void;
-
 }
 
 const EventCard: React.FC<EventCardProps> = ({ event, onNext }) => (
@@ -47,6 +46,7 @@ const EventCard: React.FC<EventCardProps> = ({ event, onNext }) => (
       </div>
     </div>
   </div>
+  
 );
 
 export default EventCard;
