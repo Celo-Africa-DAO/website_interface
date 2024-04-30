@@ -9,7 +9,6 @@ import { CarouselSection } from "@/components/ui/Cad/CarouselSection";
 import { HeroReport } from "@/components/ui/HeroReport";
 
 
-
 export default function Home() {
   return (
     <div>
@@ -36,9 +35,6 @@ export default function Home() {
         <UpComingEvent/>
         <Incubation/>
         <Team />
-        
-       
-       
       </>
     </div>
   );
