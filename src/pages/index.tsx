@@ -9,7 +9,6 @@ import Together from "@/components/sections/Together";
 // import Corousel from "@/components/ui/Cad/Corousel";
 import DevelopmentSection from "@/components/DevelopmentSection";
 import { CarouselSection } from "@/components/ui/Cad/CarouselSection";
-import { HeroReport } from "@/components/ui/HeroReport";
 
 export default function Home() {
   return (
@@ -31,7 +30,6 @@ export default function Home() {
       </Head>
       <>
         <Hero/>
-        <HeroReport/>
         <CarouselSection/>
         <Explore/>
         <UpComingEvent/>
