@@ -102,7 +102,7 @@ const Header = () => {
           isMenuToggled ? "opacity-100 z-50" : "opacity-0 pointer-events-none"
         }  h-screen w-[70%] md:w-[600px] transition-opacity transform flex flex-col justify-between pt-24 pb-6 ease-in-out duration-500 bg-Celo-AD-primary fixed left-0 top-0 z-10`}
       >
-        <ul className="flex flex-col px-8 md:px-[65px] font-GT-Alpina">
+        <ul className="flex flex-col sm:mx-3 px-8 md:px-[65px] font-GT-Alpina">
           {navList.map((item, index) => (
             <NavLinks key={index} item={item} onClick={handleCloseClick} />
           ))}
@@ -120,13 +120,10 @@ const Header = () => {
               Let&apos;s Innovate together!
             </p>
           </div>
-
-          <Button
-            className="rounded-[100px] bg-Celo-AD-yellow hover:bg-Celo-AD-yellow/75
-           text-[#090808] hover:bg-Celo-AD-yellow px-14 md:px-28 w-fit my-2  
-           text-base sm:text-lg"
-            onClick={handleJoin}
-          >
+          <Button 
+          className="rounded-[100px] bg-Celo-AD-yellow hover:bg-Celo-AD-yellow/75
+           text-[#090808] hover:bg-Celo-AD-yellow px-16 sm:px-28 w-fit my-2  
+           text-base sm:text-lg" onClick={handleJoin}>
             Join us
             <img src="./chevron-black.svg" className="ml-6" alt="left-icon" />
           </Button>

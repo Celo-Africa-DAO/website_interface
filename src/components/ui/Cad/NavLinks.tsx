@@ -31,7 +31,7 @@ const NavLinks = ({ item, onClick }: Props) => {
     <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <Link
           href={item.path}
-          className="py-4 border-b flex justify-between items-center cursor-pointer border-b-gray-400 text-xl sm:text-2xl md:text-3xl"
+          className="py-4 border-b flex justify-between items-center cursor-pointer border-b-gray-250 text-xl sm:text-2xl md:text-3xl"
 
           onClick={handleClick}
         >
