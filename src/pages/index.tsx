@@ -5,8 +5,8 @@ import { UpComingEvent } from "@/components/ui/Cad/UpComingEvent";
 import Hero from "@/components/sections/Hero";
 import Head from "next/head";
 import Team from "@/components/Team/Team";
-import Together from "@/components/sections/Together";
 import { CarouselSection } from "@/components/ui/Cad/CarouselSection";
+import { HeroReport } from "@/components/ui/HeroReport";
 
 
 
@@ -30,6 +30,7 @@ export default function Home() {
       </Head>
       <>
         <Hero/>
+        <HeroReport/>
         <CarouselSection/>
         <Explore/>
         <UpComingEvent/>
