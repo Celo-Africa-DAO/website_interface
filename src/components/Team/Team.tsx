@@ -8,7 +8,7 @@ const Team = () => {
       id: 1,
       name: "Daniel Kimotho",
       position: "Ecosystem Lead at CELO ",
-      image: "/img/dan-kimotho.webp",
+      image: "/img/KDaniel.png",
       twitter: "https://twitter.com/0xdanielK",
       linkedIn: "https://www.linkedin.com/in/daniel-kimotho-2a43324a",
     },
@@ -16,23 +16,23 @@ const Team = () => {
       id: 2,
       name: "Umar Sebyala",
       position: "Local Event Lead",
-      image: "/img/umar-sebyala.webp",
+      image: "/img/UmarSe.png",
       twitter: "https://www.x.com/umar_sebyala",
       linkedIn: "https://www.linkedin.com/in/umarsebyalabukenya",
     },
     {
       id: 3,
       name: "Chuta chime",
-      position: "Ecosystem Lead at CELO ",
-      image: "/img/ali.svg",
+      position: "Ecosystem Lead ",
+      image: "/img/celo-logo2.webp",
       twitter: "member3",
       linkedIn: "654321987",
     },
     {
       id: 4,
-      name: "Cyndie",
+      name: "Cynthia Kamau",
       position: "Ecosystem Devrel Lead",
-      image: "/img/ali.svg",
+      image: "/img/CyndieK.png",
       twitter: "member4",
       linkedIn: "321654987",
     },
@@ -43,7 +43,7 @@ const Team = () => {
       id: 1,
       name: "Charles Mabwa",
       position: "Kenya Comm. Manager ",
-      image: "/img/charles-mabwa.webp",
+      image: "/img/CharlesM.png",
       twitter: "https://twitter.com/mabwacharles",
       linkedIn: "https://www.linkedin.com/in/charles-mabwa/",
     },
@@ -51,7 +51,7 @@ const Team = () => {
       id: 2,
       name: "Oluwaseyi Abolaji",
       position: "Nigeria Comm. Manager",
-      image: "/img/oluwaseyi-abolaji.webp",
+      image: "/img/AOluwaseyi.png",
       twitter: "https://twitter.com/Oluwaseyi_7",
       linkedIn: "https://www.linkedin.com/in/oluwaseyi-abolaji/",
     },
@@ -59,7 +59,7 @@ const Team = () => {
       id: 3,
       name: "Hove Blessing",
       position: "S.Africa Comm. Manager",
-      image: "/img/blessing-hove.webp",
+      image: "/img/HoveB.png",
       twitter: "https://www.x.com/blssngx",
       linkedIn: "https://www.linkedin.com/in/blessing-hove",
     },
@@ -67,7 +67,7 @@ const Team = () => {
       id: 5,
       name: "A Brian",
       position: "Uganda University Lead",
-      image: "/img/ali.svg",
+      image: "/img/celo-logo2.webp",
       twitter: "member1",
       linkedIn: "123456789",
     },
@@ -75,7 +75,7 @@ const Team = () => {
       id: 6,
       name: "Adam Saheed",
       position: "Nigeria University Lead",
-      image: "/img/ali.svg",
+      image: "/img/celo-logo2.webp",
       twitter: "member2",
       linkedIn: "987654321",
     },
@@ -83,7 +83,7 @@ const Team = () => {
       id: 7,
       name: "Ronald Nzioki",
       position: "Kenya University Lead",
-      image: "/img/ali.svg",
+      image: "/img/RonaldN.png",
       twitter: "member3",
       linkedIn: "654321987",
     },
@@ -91,7 +91,7 @@ const Team = () => {
       id: 8,
       name: "Jordan Muthemba",
       position: "Kenya Technical Amb.",
-      image: "/img/jordan-muthemba.webp",
+      image: "/img/JordMuthe.png",
       twitter: "https://twitter.com/type_jordan",
       linkedIn: "https://www.linkedin.com/in/jordan-muthemba/",
     },
@@ -99,7 +99,7 @@ const Team = () => {
       id: 9,
       name: "Mukunde Brisa",
       position: "Uganda Technical Amb.",
-      image: "/img/brisa-mukunde.webp",
+      image: "/img/MuBrisa.png",
       twitter: "https://twitter.com/saint_brisa",
       linkedIn: "https://www.linkedin.com/in/mukundebrisa/",
     },
@@ -107,7 +107,7 @@ const Team = () => {
       id: 10,
       name: "Naheem Oloyede",
       position: "Nigeria Intermediate Amb.",
-      image: "/img/oloyede-naheem-aderayo.webp",
+      image: "/img/NaheemO.png",
       twitter: "https://twitter.com/OloyedeNaheem",
       linkedIn: "https://www.linkedin.com/in/naheem-oloyede/",
     },
@@ -115,7 +115,7 @@ const Team = () => {
       id: 11,
       name: "Soliu Ahmad",
       position: "Nigeria Intermediate Amb.",
-      image: "/img/soliu-ahmad.webp",
+      image: "/img/SoliuAh.png",
       twitter: "https://twitter.com/Ahmadsoliu1",
       linkedIn:
         "https://www.linkedin.com/in/soliu-ahmad-31b049240?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
@@ -124,7 +124,7 @@ const Team = () => {
       id: 12,
       name: "Khadija Musa",
       position: "Nigeria Intermediate Amb.",
-      image: "/img/ali.svg",
+      image: "/img/celo-logo2.webp",
       twitter: "member4",
       linkedIn: "321654987",
     },
@@ -132,7 +132,7 @@ const Team = () => {
       id: 13,
       name: "MUhindo Galien",
       position: "Uganda Intermediate Amb.",
-      image: "/img/galien-codes.webp",
+      image: "/img/MUhindo.png",
       twitter: "https://twitter.com/GalienMuhindo",
       linkedIn: "https://www.linkedin.com/in/muhindo-galien/",
     },
@@ -140,49 +140,64 @@ const Team = () => {
       id: 14,
       name: "Ronex Ondimu",
       position: "Kenya Intermediate Amb.",
-      image: "/img/ronex-ondimu.webp",
+      image: "/img/ROndimu.png",
       twitter: "https://twitter.com/ronexondimu",
       linkedIn: "https://www.linkedin.com/in/ronex-ondimu/",
+    },
+    {
+      id: 15,
+      name: "Tajudeen Jimoh",
+      position: "Content Creator",
+      image: "/img/Jimoh-Tajudeen.png",
+      twitter: "https://twitter.com/Jimohtj",
+      linkedIn: "https://ng.linkedin.com/in/jimoh-tajudeen-640060246",
+    },
+    {
+      id: 16,
+      name: "Godwin Bassey",
+      position: "UI/UX Designer",
+      image: "/img/GodwinB.png",
+      twitter: "https://twitter.com/TheTrueGodwin",
+      linkedIn: "https://www.linkedin.com/in/godwin-bassey-278448262/",
     },
   ];
 
   const partners = [
     {
       id: 1,
-      name: "Aliu Musa",
-      position: "Ecosystem Lead at CELO ",
-      image: "/img/ali.svg",
-      twitter: "member1",
-      linkedIn: "123456789",
+      // name: "Aliu Musa",
+      position: "Ecosystem Partner ",
+      image: "/img/mento-labs-logo.svg",
+      url: "https://www.mentolabs.xyz/",
     },
     {
       id: 2,
-      name: "Daniel Kimoto",
-      position: "Ecosystem Lead at CELO ",
-      image: "/img/ali.svg",
-      twitter: "member2",
-      linkedIn: "987654321",
+      // name: "Daniel Kimoto",
+      position: "Ecosystem Partner ",
+      image: "/img/HaloFi.svg",
+      url: "https://www.halofi.me/",
     },
     {
       id: 3,
-      name: "Chuta chime",
-      position: "Ecosystem Lead at CELO ",
-      image: "/img/ali.svg",
-      twitter: "member3",
-      linkedIn: "654321987",
+      // name: "Chuta chime",
+      position: "Ecosystem Partner ",
+      image: "/img/fonbnk.webp",
+      url: "https://fonbnk.com/",
     },
     {
       id: 4,
-      name: "Umar Aliu",
+      // name: "Umar Aliu",
       position: "Ecosystem Lead at CELO ",
-      image: "/img/ali.svg",
-      twitter: "member4",
-      linkedIn: "321654987",
+      image: "/img/minipay-logo.webp",
+      url: "https://www.opera.com/products/minipay",
     },
   ];
 
   return (
-    <div id="team" className="flex flex-col  gap-8 bg-[#FCF6F1] px-5 sm:px-14 md:px-20 lg:px-24 pb-10 sm:pb-16  overflow-hidden ">
+    <div
+      id="team"
+      className="flex flex-col  gap-8 bg-[#FCF6F1] px-5 sm:px-14 md:px-20 lg:px-24 pb-10 sm:pb-16  overflow-hidden "
+    >
       <div>
         <h3 className="text-[40px] md:text-[64px] font-gt-alpina-trial font-thin max-md:mt-8">
           Team and Partners
@@ -213,20 +228,18 @@ const Team = () => {
           </TabsTrigger>
         </TabsList>
         <TabsContent value="multisig">
-    
           <div>
             <TeamCarousel members={multiSig} />
           </div>
         </TabsContent>
         <TabsContent value="contributor">
-          
           <div>
             <TeamCarousel members={coreContributors} />
           </div>
         </TabsContent>
         <TabsContent value="partners">
           <div>
-            <TeamCarousel members={partners} />
+            <TeamCarousel tab={"partners"} members={partners} />
           </div>
         </TabsContent>
       </Tabs>
