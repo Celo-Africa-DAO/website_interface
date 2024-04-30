@@ -97,6 +97,7 @@ const Header = () => {
           className="fixed inset-0 bg-black opacity-60 z-30"
         ></div>
       )}
+
       <aside
         className={` ${
           isMenuToggled ? "opacity-100 z-50" : "opacity-0 pointer-events-none"
