@@ -27,3 +27,6 @@ const CarouselCard: React.FC<CarouselCardProps> = ({ event }) => {
 };
 
 export default CarouselCard;
+
+
+// https://forum.celo.org/t/celo-africa-h1-2024-regional-dao/7382

@@ -27,24 +27,18 @@ export function CarouselSection() {
             name: "Focus Areas",
             location: "The Celo Africa DAO prioritizes three main areas of focus: establishing an incubator program, attracting developer talent, and enhancing brand visibility throughout the continent",
             date: "learn about who we are and our innovative movement",
-            
-           
           },
           {
             id:1,
               name: "Incubator",
               location: "The Celo Africa DAO prioritizes three main areas of focus: establishing an incubator program, attracting developer talent, and enhancing brand visibility throughout the continent",
               date: "learn about who we are and our innovative movement",
-              
-             
             },
             {
               id:1,
                 name: "Pojects",
                 location: "The Celo Africa DAO prioritizes three main areas of focus: establishing an incubator program, attracting developer talent, and enhancing brand visibility throughout the continent",
                 date: "learn about who we are and our innovative movement",
-                
-               
               },
              
           {
