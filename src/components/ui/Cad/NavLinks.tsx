@@ -9,9 +9,11 @@ interface Props {
     path: string;
     Image: string;
   };
+
+  onClick: () => void;
 }
 
-const NavLinks = ({ item }: Props) => {
+const NavLinks = ({ item, onClick }: Props) => {
     const [showIcon, setShowIcon] = useState(false)
 
     const handleMouseEnter = () => {
@@ -21,11 +23,17 @@ const NavLinks = ({ item }: Props) => {
         setShowIcon(false)
     }
 
+    const handleClick = () => {
+        onClick()
+    }
+
   return (
     <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <Link
           href={item.path}
-          className="py-3 border-b flex justify-between items-center cursor-pointer border-b-gray-400 text-xl sm:text-2xl md:text-3xl"
+          className="py-4 border-b flex justify-between items-center cursor-pointer border-b-gray-400 text-xl sm:text-2xl md:text-3xl"
+
+          onClick={handleClick}
         >
           {item.title}
           {item.Image && showIcon && (
