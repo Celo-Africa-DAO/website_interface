@@ -11,7 +11,6 @@ import DevelopmentSection from "@/components/DevelopmentSection";
 import { CarouselSection } from "@/components/ui/Cad/CarouselSection";
 import { HeroReport } from "@/components/ui/HeroReport";
 
-
 export default function Home() {
   return (
     <div>
@@ -32,6 +31,7 @@ export default function Home() {
       </Head>
       <>
         <Hero/>
+        <HeroReport/>
         <CarouselSection/>
         <Explore/>
         <UpComingEvent/>
