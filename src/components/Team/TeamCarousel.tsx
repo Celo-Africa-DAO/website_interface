@@ -12,21 +12,24 @@ import MemberCard from "./MemberCard";
 interface MembersProps {
    members: {
         id: number,
-        name: string,
+        name?: string,
         position: string,
         image: string,
-        twitter: string,
-        linkedIn: string,
-      }[]
+        twitter?: string,
+        linkedIn?: string,
+        url?: string
+      }[],
+      tab?: string
+      
 }
 
-export function TeamCarousel({members}: MembersProps) {
+export function TeamCarousel({members, tab}: MembersProps) {
   return (
     <Carousel className="w-full ">
       <CarouselContent className="-ml-1">
         {members.map((member) => (
           <CarouselItem key={member.id} className="pl-4 lg:pl-8 basis-[45%] md:basis-[30%] lg:basis-[25%]">
-           <MemberCard member={member}/>
+           <MemberCard tab={tab} member={member}/>
           </CarouselItem>
         ))}
       </CarouselContent>
