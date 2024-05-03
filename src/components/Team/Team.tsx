@@ -157,7 +157,7 @@ const Team = () => {
       id: 16,
       name: "Tajudeen Jimoh",
       position: "Content Creator",
-      image: "/img/Jimoh-Tajudeen.png",
+      image: "/img/Jimoh-Tajudeen2.png",
       twitter: "https://twitter.com/Jimohtj",
       linkedIn: "https://ng.linkedin.com/in/jimoh-tajudeen-640060246",
     },
