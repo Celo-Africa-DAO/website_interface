@@ -11,7 +11,6 @@ const MemberCard = ({ member, tab = null }: any) => {
 
   return (
     <div
-      key={member.id}
       onClick={handlePartnersPage}
       className={`shadow-md w-full flex  ${
         tab !== "partners"
