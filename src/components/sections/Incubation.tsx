@@ -17,7 +17,7 @@ const Incubation = () => {
   return (
     <div
       id="incubation"
-      className=" bg-cover bg-right md:bg-center bg-no-repeat px-3 md:px-32 py-36 h-[260]"
+      className=" bg-cover bg-right md:bg-center bg-no-repeat px-3 md:px-7 xl:px-32 py-36 h-[260]"
       style={{
         backgroundImage: "url(img/incubation-bg.svg)",
       }}
@@ -27,7 +27,7 @@ const Incubation = () => {
           <h2 className="text-4xl md:text-5xl text-[#FFFFFF] font-[100] font-gt-alpina-trial">
             <span className="italic">Incubator</span> Program
           </h2>
-          <div className="flex flex-col md:flex-row justify-between  md:items-center gap-4 sm:gap-20">
+          <div className="flex flex-col md:flex-row justify-between  md:items-center gap-4 lg:gap-20">
             <div className=" w-full  h-fit">
               <img
                 src="roadmap-incubator-program-1.svg"
@@ -36,8 +36,8 @@ const Incubation = () => {
               />
             </div>
 
-            <div className="w-[80%] sm:w-2/4]">
-              <p className="mb-[20px] text-lg md:text-2xl text-white font-ligth">
+            <div className="w-[80%] sm:w-1/2">
+              <p className="mb-[20px] text-lg md:text-xl lg:text-2xl text-white font-light">
                 Celo Africa DAO
                 <span className="font-semibold"> Incubator Program</span>, which
                 extends over a comprehensive{" "}

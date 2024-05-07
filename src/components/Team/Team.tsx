@@ -1,6 +1,7 @@
 import React from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TeamCarousel } from "./TeamCarousel";
+import TeamGrid from "./TeamGrid";
 
 const Team = () => {
   const multiSig = [
@@ -82,7 +83,7 @@ const Team = () => {
     {
       id: 7,
       name: "Ronald Nzioki",
-      position: "Kenya University Lead",
+      position: "Incubator Program Manager",
       image: "/img/RonaldN.png",
       twitter: "member3",
       linkedIn: "654321987",
@@ -105,6 +106,14 @@ const Team = () => {
     },
     {
       id: 10,
+      name: "Nick Hill",
+      position: "SAfrica Ambassador",
+      image: "/img/Nick-Hill-avatar.png",
+      twitter: "https://twitter.com/NickHil64885213",
+      linkedIn: "https://www.linkedin.com/in/nick-hill-12ab58b1/",
+    },
+    {
+      id: 11,
       name: "Naheem Oloyede",
       position: "Nigeria Intermediate Amb.",
       image: "/img/NaheemO.png",
@@ -112,7 +121,7 @@ const Team = () => {
       linkedIn: "https://www.linkedin.com/in/naheem-oloyede/",
     },
     {
-      id: 11,
+      id: 12,
       name: "Soliu Ahmad",
       position: "Nigeria Intermediate Amb.",
       image: "/img/SoliuAh.png",
@@ -121,7 +130,7 @@ const Team = () => {
         "https://www.linkedin.com/in/soliu-ahmad-31b049240?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     },
     {
-      id: 12,
+      id: 13,
       name: "Khadija Musa",
       position: "Nigeria Intermediate Amb.",
       image: "/img/celo-logo2.webp",
@@ -129,7 +138,7 @@ const Team = () => {
       linkedIn: "321654987",
     },
     {
-      id: 13,
+      id: 14,
       name: "MUhindo Galien",
       position: "Uganda Intermediate Amb.",
       image: "/img/MUhindo.png",
@@ -137,7 +146,7 @@ const Team = () => {
       linkedIn: "https://www.linkedin.com/in/muhindo-galien/",
     },
     {
-      id: 14,
+      id: 15,
       name: "Ronex Ondimu",
       position: "Kenya Intermediate Amb.",
       image: "/img/ROndimu.png",
@@ -145,15 +154,15 @@ const Team = () => {
       linkedIn: "https://www.linkedin.com/in/ronex-ondimu/",
     },
     {
-      id: 15,
+      id: 16,
       name: "Tajudeen Jimoh",
       position: "Content Creator",
-      image: "/img/Jimoh-Tajudeen.png",
+      image: "/img/Jimoh-Tajudeen2.png",
       twitter: "https://twitter.com/Jimohtj",
       linkedIn: "https://ng.linkedin.com/in/jimoh-tajudeen-640060246",
     },
     {
-      id: 16,
+      id: 17,
       name: "Godwin Bassey",
       position: "UI/UX Designer",
       image: "/img/GodwinB.png",
@@ -234,7 +243,9 @@ const Team = () => {
         </TabsContent>
         <TabsContent value="contributor">
           <div>
-            <TeamCarousel members={coreContributors} />
+            {/* <TeamCarousel members={coreContributors} /> */}
+            <TeamGrid members={coreContributors} />
+            
           </div>
         </TabsContent>
         <TabsContent value="partners">
