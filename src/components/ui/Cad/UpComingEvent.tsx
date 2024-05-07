@@ -32,7 +32,7 @@ const events = [
   },
   {
     id: 2,
-    name: "Celo codeJam",
+    name: "Celo Code Jam",
     location: "Uganda",
     date: "Sat, March 26th, 2024",
     imageUrl: "/img/celokenya.svg",

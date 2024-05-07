@@ -70,6 +70,7 @@ const EventCard: React.FC<EventCardProps> = ({ events }) => {
           <span className="self-start hidden md:block">{currentEvent.date}</span>
         </div>
         <span className="flex  md:justify-normal self-end   md:self-auto">
+          
         <div className='text-[30px] mt-[20px] w-[35.94px] h-[29.69px] hidden md:block'><IoIosArrowRoundForward onClick={handleNextEvent} /></div>
 
 
