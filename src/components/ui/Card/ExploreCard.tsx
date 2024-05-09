@@ -22,7 +22,7 @@ const ExploreCard: React.FC<ExploreCardProps> = ({ explore, onNext }) => (
         className="w-full lg:w-1/4 md:w-60 sm:w-60"
         width={500}
         height={500}
-        alt="Celo campus connect"
+        alt="Celo Campus Connect"
 
       />
       <div className="flex flex-col ">
