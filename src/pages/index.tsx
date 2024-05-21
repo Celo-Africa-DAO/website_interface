@@ -1,7 +1,7 @@
 
 import Incubation from "@/components/sections/Incubation";
-import Explore from "@/components/ui/Cad/Explore";
-import { UpComingEvent } from "@/components/ui/Cad/UpComingEvent";
+
+import { UpComingEvent } from "@/components/events/explore";
 import Hero from "@/components/sections/Hero";
 import Head from "next/head";
 import Team from "@/components/Team/Team";
@@ -33,7 +33,7 @@ export default function Home() {
         <Hero/>
         <HeroReport/>
         <CarouselSection/>
-        <Explore/>
+       
         <UpComingEvent/>
         <DevelopmentSection/>
         <Incubation/>
