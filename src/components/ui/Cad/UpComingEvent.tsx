@@ -1,7 +1,4 @@
 
-
-
-
 import * as React from "react";
 import {
 Carousel,
@@ -70,7 +67,8 @@ return (
               
               className="border border-black border-l-0 border-r-0 pl-4 lg:pl-8 basis-[100%] md:basis-[100%] lg:basis-[100%]"
             >
-              <EventCard events={events} />
+              {/* <EventCard events={events} /> */}
+              <EventCard event={element} onNext={() => {}} events={events} />
             </CarouselItem>
             ))}
         
@@ -91,3 +89,4 @@ return (
   </div>
 );
 }
+
