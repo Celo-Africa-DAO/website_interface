@@ -196,35 +196,32 @@ const Team = () => {
   return (
     <div
       id="team"
-      className="flex flex-col  gap-8 bg-[#FCF6F1] px-5 sm:px-14 md:px-20 lg:px-24 pb-10 sm:pb-16  overflow-hidden "
+      className="flex flex-col  gap-8 bg-Celo-AD-Primary px-5 sm:px-14 md:px-20 lg:px-24 pb-10 sm:pb-16  overflow-hidden "
     >
       <div>
-        <h3 className="text-[40px] md:text-[64px] font-gt-alpina-trial font-thin max-md:mt-8">
-          Team and Partners
-        </h3>
+        <h2 className='font-gt-alpina-trial  text-[1.2rem] sm:text-6xl text-[#000000]'>
+          Our  <span className='font-[250]'><i>team</i></span> & <span className='font-[250]'><i>Partners</i></span>
+        </h2>
       </div>
       <Tabs defaultValue="multisig">
         <TabsList className="bg-transparent mb-8">
           <TabsTrigger
-            className="border-l flex flex-col  border-gray-400 rounded-none px-4 md:px-8"
+            className=" flex flex-col text-base rounded-none px-4 md:px-8"
             value="multisig"
           >
-            <span className="block">Multisig </span>
-            <span className="block">Holders</span>
+            Multisig Holders
           </TabsTrigger>
           <TabsTrigger
-            className="border-l flex flex-col  border-gray-400 rounded-none px-4 md:px-8"
+            className=" flex flex-col text-base  rounded-none px-4 md:px-8"
             value="contributor"
           >
-            <span className="block">Core </span>
-            <span className="block">Contributors</span>
+            Core Contributors
           </TabsTrigger>
           <TabsTrigger
-            className="border-l flex flex-col  border-gray-400 rounded-none px-4 md:px-8"
+            className=" flex flex-col text-base rounded-none px-4 md:px-8"
             value="partners"
           >
-            <span className="block">Ecosystem </span>
-            <span className="block">Partners</span>
+            Ecosystem Partners
           </TabsTrigger>
         </TabsList>
         <TabsContent value="multisig">
