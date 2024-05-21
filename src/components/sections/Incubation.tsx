@@ -32,6 +32,7 @@ const Incubation = () => {
           <div className="flex flex-col md:flex-row justify-between  md:items-center gap-4 sm:gap-20">
             <div className="w-2/5 sm:w-2/4]">
               <p className="mb-[20px] text-lg  text-[#4F4E4E] font-ligth">
+
                 Celo Africa DAO
                 <span className="font-semibold"> Incubator Program</span>, which
                 extends over a comprehensive{" "}
