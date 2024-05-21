@@ -84,12 +84,12 @@ export function CarouselSection() {
     </Carousel>
     </Section>
     <div className="flex  items-end">
-        <div className="h-28 w-24  bg-Celo-AD-gray mr-24">
+        <div className="h-28 w-24  bg-celo-AD-olive-green mr-24">
 
         </div>
-        <div className="h-10 w-full  bg-Celo-AD-gray">
+        <div className="h-10 w-full  bg-celo-AD-olive-green">
        </div>
-       <div className="h-28 w-24    bg-Celo-AD-gray  mr-16">
+       <div className="h-28 w-24    bg-celo-AD-olive-green  mr-16">
 
  </div>
 

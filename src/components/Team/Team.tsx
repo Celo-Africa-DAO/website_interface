@@ -3,6 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TeamCarousel } from "./TeamCarousel";
 import TeamGrid from "./TeamGrid";
 
+
 const Team = () => {
   const multiSig = [
     {
