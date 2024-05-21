@@ -33,7 +33,7 @@ export default function Home() {
         <Hero/>
         <HeroReport/>
         <CarouselSection/>
-        {/* <Explore/> */}
+       
         <UpComingEvent/>
         <DevelopmentSection/>
         <Incubation/>
