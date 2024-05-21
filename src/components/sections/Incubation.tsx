@@ -52,7 +52,6 @@ const Incubation = () => {
                 </Button>
               </div>
             </div>
-            {/* <div></div> */}
           </div>
         </div>
       </Section>
