@@ -52,7 +52,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="py-[30px] bg-Celo-AD-primary px-[25px] md:px-[80px] flex justify-between items-center fixed top-0 w-full left-0 z-50">
+      <header className="py-[30px] bg-Celo-AD-primary px-[20px] md:px-[40px] flex justify-between items-center fixed top-0 w-full left-0 z-50">
         {" "}
         <Image
           src={"CAD_logo.svg"}
@@ -60,8 +60,8 @@ const Header = () => {
           // fill
           className="md:w-[248px] cursor-pointer w-[116px]"
           onClick={handleHomeLogo}
-          width={248}
-          height={38}
+          width={228}
+          height={28}
         />
         {isMenuToggled ? (
           <button
