@@ -6,8 +6,6 @@ import imaged from "../../../../public/celo.jpg"
 import { IoChevronForwardCircle } from "react-icons/io5";
 
 interface EventCardProps {
-  event: Event;
-  onNext: () => void;
   events: Event[];
 }
 
@@ -77,13 +75,7 @@ const EventCard: React.FC<EventCardProps> = ({ events }) => {
       </span>
       </div>
     </div>
-
-  </div>
-  
-);
   );
 };
 
 export default EventCard;
-
-
