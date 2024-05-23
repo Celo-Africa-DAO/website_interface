@@ -1,8 +1,6 @@
 
 import Section from '@/components/layouts/Section'
 import { AllUpcomingEvents } from '@/components/ui/Cad/AllUpcomingEvents'
-import StatsComponent from '@/components/ui/Cad/StatsComponent'
-import { Button } from '@/components/ui/button'
 import React from 'react'
 import { MdChevronRight } from 'react-icons/md'
 
