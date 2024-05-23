@@ -20,7 +20,7 @@ const TeamGrid = ({ members }: MembersProps) => {
         // <CarouselItem key={member.id} className="pl-4 lg:pl-8 basis-[100%]  xsm:basis-[70%] sm:basis-[45%] md:basis-[30%] lg:basis-[25%]">
         <MemberCard key={member.id} member={member} />
         // </CarouselItem>
-      ))}
+      ))} 
     </div>
   );
 };
