@@ -20,6 +20,9 @@ const Footer = () => {
       title: "Recent events", 
       path: "#event"
     },
+  ];
+
+  const FooterLinKs = [
     { 
       title: "Team", 
       path: "#team" 
@@ -48,31 +51,45 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex justify-between  flex-col md:flex-row ">
-        <div className="">
-          <p className="text-lg">Subcribe to our newsletter</p>
-          <div className="border-solid border-2 flex justify-between rounded-full mt-3 ">
+      <div className="flex justify-between flex-col md:flex-row ">
+        <div>
+          <p>Subcribe to our newsletter</p>
+          <div className="border-solid border-2 flex justify-between rounded-3xl mt-3 ">
             <input
               type="text"
               placeholder="Email"
-              className="palceholder:text-white ml-2 border-none bg-transparent focus:outline-none w-48 p-3"
+              className="border-none bg-transparent focus:outline-none w-48 p-2"
             />
-            <IoIosArrowDroprightCircle color="yellow" size={50} />
+            <IoIosArrowDroprightCircle color="yellow" size={40} />
           </div>
         </div>
 
-        <div className="w-[38%]">
+        <div>
           <div className="mb-3 mt-6 md:mt-0">
             <p>Menu</p>
           </div>
-          <div className="flex flex-wrap gap-2 ">
+          <div className="flex justify-between gap-2">
             {FooterLinK.map((linkItem, index) => (
-              <button key={index} className="border-2 p-2 px-5 rounded-full">
+              <button key={index} className="border-2 p-2 px-5 rounded-3xl">
                 <Link href={linkItem.path} className="text-white ">
                   {linkItem.title}
                 </Link>
               </button>
             ))}
+          </div>
+
+          <div>
+            <div className="flex  justify-between gap-2 mt-7">
+              {FooterLinKs.map((linkItem, index) => (
+                <button key={index} className="border-2 p-2  px-5 rounded-3xl">
+                  {/* <Link href={linkItem.path}> */}
+                  <Link href={linkItem.path} className="text-white ">
+                    {linkItem.title}
+                  </Link>
+                  {/* </Link> */}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -82,12 +99,14 @@ const Footer = () => {
             <h1 className="">&copy; {currentYear} CELO AFRICA DAO.</h1>
           </div>
 
-          <div className=" text-center sm:text-left space-x-8 pt-4">
-            <span>Terms of use</span>
-            <span>Privacy Policy</span>
+          <div className="flex gap-10">
+            <h2>Terms of use</h2>
+            <h3>Privacy Policy</h3>
           </div>
         </div>
       </div>
+      <hr className=" hidden md:block border-gray-100 -mt-0" />
+    </div>
   );
 };
 

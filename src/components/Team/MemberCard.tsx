@@ -11,11 +11,10 @@ const MemberCard = ({ member, tab = null }: any) => {
 
   return (
     <div
-      key={member.id}
       onClick={handlePartnersPage}
       className={`shadow-md w-full flex  ${
         tab !== "partners"
-          ? "hover:bg-transparent bg-[#FCFF52]"
+          ? "hover:bg-transparent bg-[#DED7BF]"
           : "bg-transparent cursor-pointer"
       } flex-col items-center `}
     >
@@ -31,13 +30,12 @@ const MemberCard = ({ member, tab = null }: any) => {
       {tab !== "partners" && (
         <div className="w-full  p-4 ">
           <div>
-            <h4 className="max-xsm:text-[10px] xsm:text-[14px] font-bold text-base">
+            <h4 className="max-xsm:text-[10px] xsm:text-[14px] font-gt-alpina-trial italic font-[500]">
               {member.name}
             </h4>
-
           </div>
           <div>
-            <h5 className="max-2xsm:text-[7px] font-medium text-sm text-[#56544E]">
+            <h5 className="max-2xsm:text-[7px] 2xsm:text-[10px] xsm:text-[12px] text-[#56544E]">
               {member.position}
             </h5>
           </div>
