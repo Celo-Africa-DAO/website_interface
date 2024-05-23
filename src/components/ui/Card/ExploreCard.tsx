@@ -22,8 +22,7 @@ const ExploreCard: React.FC<ExploreCardProps> = ({ explore, onNext }) => (
         className="w-full lg:w-1/4 md:w-60 sm:w-60"
         width={500}
         height={500}
-        alt="Celo campus connect"
-
+        alt="Celo Campus Connect"
       />
       <div className="flex flex-col ">
         <span className="text-2xl font-gt-alpina font-light text-black max-md:mt-7 mb-[16px] leading-[24px]">
@@ -53,6 +52,7 @@ const ExploreCard: React.FC<ExploreCardProps> = ({ explore, onNext }) => (
         <span className="text-2xl font-gt-alpina font-light text-black max-md:mt-7 mb-[16px] leading-[24px]">
           {explore.name}
         </span>
+
         <p className="font-bold self-start mb-[5px] hidden md:block text-[20px]">{explore.location}</p>
         <h3 className="self-start hidden md:block ">{explore.date}</h3>
       </div>
@@ -64,6 +64,7 @@ const ExploreCard: React.FC<ExploreCardProps> = ({ explore, onNext }) => (
         />
       </span>
     </div>
+
     <div className="w-full flex justify-center items-center pb-10 pt-5">
       <div className="flex justify-center items-center gap-2 font-bold">
         View all events <IoChevronForwardCircle />
