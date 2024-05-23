@@ -57,15 +57,12 @@ export function CarouselSection() {
               name: "University Outreach",
               location: "The celo Africa DAO is a community of builders and enthusiats uniting to propel the adoption of Celo and blockchain technology across the Africa continent ",
               date: "learn about who we are and our innovative movement",
-          
              
             },
         // Add more event objects as needed
       ];
   return (
-    <div className="bg-Celo-AD-primary    ">
-     
-      
+    <div className="bg-Celo-AD-primary">
 
     <Section >
     <div className="flex flex-col justify-start items-start text-4xl italic font-gt-alpina font-light pl-10 md:pl-36 mb-10 text-black">

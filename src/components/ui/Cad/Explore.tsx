@@ -85,4 +85,3 @@ const Explore: React.FC = () => {
 
 export default Explore;
 
-
