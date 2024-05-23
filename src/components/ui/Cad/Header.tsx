@@ -34,6 +34,7 @@ const navList = [
 const Header = () => {
   const router = useRouter();
   const [isMenuToggled, setIsMenuToggled] = useState(false);
+ 
 
   const handleHomeLogo = () => {
     router.push("/");
@@ -51,7 +52,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="py-[30px] bg-Celo-AD-primary px-[20px] md:px-[40px] flex justify-between items-center fixed top-0 w-full left-0 z-50">
+      <header className="py-[30px] bg-Celo-AD-primary px-[25px] md:px-[80px] flex justify-between items-center fixed top-0 w-full left-0 z-50">
         {" "}
         <Image
           src={"CAD_logo.svg"}
@@ -59,8 +60,8 @@ const Header = () => {
           // fill
           className="md:w-[248px] cursor-pointer w-[116px]"
           onClick={handleHomeLogo}
-          width={228}
-          height={28}
+          width={248}
+          height={38}
         />
         {isMenuToggled ? (
           <button
@@ -91,20 +92,14 @@ const Header = () => {
         )}
       </header>
 
-      {isMenuToggled && (
-        <div
-          onClick={handleCloseClick}
-          className="fixed inset-0 bg-black opacity-60 z-30"
-        ></div>
-      )}
       <aside
         className={` ${
-          isMenuToggled ? "opacity-100 z-50" : "opacity-0 pointer-events-none"
+          isMenuToggled ? "opacity-100" : "opacity-0 pointer-events-none"
         }  h-screen w-[70%] md:w-[600px] transition-opacity transform flex flex-col justify-between pt-24 pb-6 ease-in-out duration-500 bg-Celo-AD-primary fixed left-0 top-0 z-10`}
       >
-        <ul className="flex flex-col px-8 md:px-[65px] font-GT-Alpina">
+        <ul className="flex flex-col sm:mx-3 px-8 md:px-[65px] font-GT-Alpina">
           {navList.map((item, index) => (
-            <NavLinks key={index} item={item} onClick={handleCloseClick} />
+            <NavLinks key={index} item={item} onClick={handleCloseClick}/>
           ))}
         </ul>
 
@@ -116,20 +111,16 @@ const Header = () => {
               width={17}
               height={17}
             />
-            <p className="text-base font-medium md:text-lg text-[#342828]">
-              Let&apos;s Innovate together!
-            </p>
+            <p className="text-base font-medium md:text-lg text-[#342828]">Let&apos;s Innovate together!</p>
           </div>
 
-          <Button
-            className="rounded-[100px] bg-Celo-AD-yellow hover:bg-Celo-AD-yellow/75
-           text-[#090808] hover:bg-Celo-AD-yellow px-14 md:px-28 w-fit my-2  
-           text-base sm:text-lg"
-            onClick={handleJoin}
-          >
+          <Button 
+          className="rounded-[100px] bg-Celo-AD-yellow hover:bg-Celo-AD-yellow/75
+           text-[#090808] hover:bg-Celo-AD-yellow px-16 sm:px-28 w-fit my-2  
+           text-base sm:text-lg" onClick={handleJoin}>
             Join us
-            <img src="./chevron-black.svg" className="ml-6" alt="left-icon" />
-          </Button>
+           <img src="./chevron-black.svg" className='ml-6' alt="left-icon" />
+           </Button>
         </div>
 
         {/* </nav> */}

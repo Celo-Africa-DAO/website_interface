@@ -79,7 +79,7 @@ const Footer = () => {
 
         <div className=" flex flex-col items-center sm:flex-row mt-[2.5rem] justify-center sm:justify-between">
           <div className="text-center sm:text-left">
-            <h1 className="">&copy; {currentYear} CELOAFRICADAO.</h1>
+            <h1 className="">&copy; {currentYear} CELO AFRICA DAO.</h1>
           </div>
 
           <div className=" text-center sm:text-left space-x-8 pt-4">

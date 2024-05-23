@@ -5,12 +5,33 @@
 
 body{
   font-family: "Inter", "sans-serif" !important;
+  background-color: #FCF6F1;
 }
 @font-face {
+  font-family: "GT-Alpina-Thin-Italic";
+  src: url("./fonts/GT-Alpina-Standard-Thin-Italic-Trial.otf");
+  font-style: italic !important;
+}
+
+@font-face {
   font-family: "GT-Alpina";
+  src: url("./fonts/GT-Alpina-Standard-Thin-Trial.otf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "GT-Alpina-Light-Italic";
+  src: url("./fonts/GT-Alpina-Standard-Light-Italic-Trial.otf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "GT-Alpina-Light";
   src: url("./fonts/GT-Alpina-Standard-Light-Trial.otf");
   font-weight: 100;
 }
+
+
 @font-face {
   font-family: "Gilroy-Regular";
   src: url('./fonts/Gilroy-Regular.woff');
@@ -21,10 +42,11 @@ body{
   :root {
     --Celo-AD-primary: #FCF6F1;
     --Celo-AD-yellow: #FCFF52;
-    --Celo-AD-black:#0C0C0C;
+
     --Celo-AD-dark-green: #476520;
     --Celo-AD-gray: #DEE2D8;
     --Celo-AD-slate-green: #068012;
+    --celo-AD-choclate:#50473A;
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
 
@@ -107,4 +129,3 @@ body{
   background-size: cover;
   background-position: center;
 }
-
