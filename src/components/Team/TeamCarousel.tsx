@@ -8,6 +8,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import MemberCard from "./MemberCard";
+import { ChevronLeft, ChevronRight } from "lucide-react"
 
 interface MembersProps {
    members: {
@@ -34,8 +35,8 @@ export function TeamCarousel({members, tab}: MembersProps) {
         ))}
       </CarouselContent>
       <div className="flex gap-2 mt-10 justify-end">
-        <CarouselPrevious className="static h-10 w-10 bg-transparent border-gray-300 hover:bg-Celo-AD-yellow" />
-        <CarouselNext className="static h-10 w-10 bg-transparent border-gray-300 hover:bg-Celo-AD-yellow" />
+        <CarouselPrevious className="static h-10 w-10 bg-transparent border-gray-300 hover:bg-Celo-AD-yellow" ><ChevronLeft className="h-4 w-4" /></CarouselPrevious>
+        <CarouselNext className="static h-10 w-10 bg-transparent border-gray-300 hover:bg-Celo-AD-yellow" ><ChevronRight className="h-4 w-4" /></CarouselNext>
       </div>
     </Carousel>
   );
