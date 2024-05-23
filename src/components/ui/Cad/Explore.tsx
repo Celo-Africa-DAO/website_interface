@@ -1,17 +1,26 @@
-import React, { useState } from "react";
-import ExploreCard from "../Card/ExploreCard";
-import Section from "@/components/layouts/Section";
+"use client"
+import React, { useState } from 'react';
+import CeloFirst from '../../../../public/img/explore.svg';
+import Image from "next/image";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
-export interface Explore {
-    name: string;
-    location: string;
-    date: string;
-    imageUrl: string;
-  }
+const events = [
+    {
+        title: "Celo campus connect",
+        location: "Kenya",
+        date: "Sat, March 16th 2024",
+        img: <CeloFirst />,
+        icon: <IoIosArrowRoundForward />
+    },
+    {
+        title: "Celo campus connect",
+        location: "Kenya",
+        date: "Sat, March 16th 2024",
+        img: <CeloFirst />,
+        icon: <IoIosArrowRoundForward />
+    },
+];
 
-interface ExploreProps {
-  events: Event[];
-}
 const Explore = () => {
     const [isViewBtnHover, setIsViewBtnHover] = useState(false)
     const handleViewBtn = () => {
@@ -40,58 +49,21 @@ const Explore = () => {
             ))}
             <div className='flex items-center justify-center'>
 
-export default function Explore() {
-    const events = [
-        {
-          name: "Celo Campus Connect",
-          location: "Kenya",
-          date: "Sat, March 26th, 2024",
-          imageUrl: "/img/celokenya.svg",
-        },
-        {
-            name: "Celo codeJam",
-            location: "Uganda",
-            date: "Sat, March 26th, 2024",
-            imageUrl: "/img/celokenya.svg",
-        },
-        {
-            name: "University OutReach",
-            location: "Kenya",
-            date: "Sat, March 1st, 2024",
-            imageUrl: "/img/celokenya.svg",
-        },
-        {
-            name: "Celo Campus Connect",
-            location: "Kenya",
-            date: "Sat, March 30th, 2024",
-            imageUrl: "/img/celokenya.svg",
-        },
-       
-      ];
-  const [currentEventIndex, setCurrentEventIndex] = useState(0);
+            <button
+                onMouseEnter={handleViewBtn} onMouseLeave={handleViewBtnDefault} className="flex items-center justify-center gap-2 py-[14px] md:py-[28px] px-[40px] sm:px-[70px] md:px-[122px] rounded-[100px] bg-inherit"
+            >
+                <p className="font-medium  text-xl">View all event</p>
 
-  const handleNextEvent = () => {
-    setCurrentEventIndex((prevIndex) =>
-      prevIndex === events.length - 1 ? 0 : prevIndex + 1
+                {isViewBtnHover ?
+                    (
+                        <Image src={'img/yellow-arrow-icon.svg'} width={21} height={21} alt='yellow arrow icon' />
+                    ) : (
+                        <Image src={'img/black-arrow-icon.svg'} width={21} height={21} alt='black arrow icon' />
+                    )}
+            </button>
+            </div>
+        </div>
     );
-  };
+};
 
-  const handlePreviousEvent = () => {
-    setCurrentEventIndex((prevIndex) =>
-      prevIndex === 0 ? events.length - 1 : prevIndex - 1
-    );
-  };
-
-  const currentEvent = events[currentEventIndex];
-
-  return (
-    <Section className="bg-[#DEE2D8]">
-        <ExploreCard
-      explore={currentEvent}
-      onNext={handleNextEvent}
-      
-    />
-    </Section>
-    
-  );
-}
+export default Explore;
