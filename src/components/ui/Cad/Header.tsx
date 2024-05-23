@@ -6,12 +6,13 @@ import { useRouter } from "next/router";
 import NavLinks from "./NavLinks";
 import { Button } from "../button";
 import { url } from "inspector";
+import { MdChevronRight } from "react-icons/md";
 
 const navList = [
-  { 
-    title: "About", 
-    path: "#about", 
-    Image: "img/navlinks-hover-icon.svg" 
+  {
+    title: "About",
+    path: "#about",
+    Image: "img/navlinks-hover-icon.svg"
   },
   {
     title: "Incubator Program",
@@ -34,7 +35,7 @@ const navList = [
 const Header = () => {
   const router = useRouter();
   const [isMenuToggled, setIsMenuToggled] = useState(false);
- 
+
 
   const handleHomeLogo = () => {
     router.push("/");
@@ -93,13 +94,12 @@ const Header = () => {
       </header>
 
       <aside
-        className={` ${
-          isMenuToggled ? "opacity-100" : "opacity-0 pointer-events-none"
-        }  h-screen w-[70%] md:w-[600px] transition-opacity transform flex flex-col justify-between pt-24 pb-6 ease-in-out duration-500 bg-Celo-AD-primary fixed left-0 top-0 z-10`}
+        className={` ${isMenuToggled ? "opacity-100" : "opacity-0 pointer-events-none"
+          }  h-screen w-[70%] md:w-[600px] transition-opacity transform flex flex-col justify-between pt-24 pb-6 ease-in-out duration-500 bg-Celo-AD-primary fixed left-0 top-0 z-10`}
       >
         <ul className="flex flex-col sm:mx-3 px-8 md:px-[65px] font-GT-Alpina">
           {navList.map((item, index) => (
-            <NavLinks key={index} item={item} onClick={handleCloseClick}/>
+            <NavLinks key={index} item={item} onClick={handleCloseClick} />
           ))}
         </ul>
 
@@ -113,17 +113,12 @@ const Header = () => {
             />
             <p className="text-base font-medium md:text-lg text-[#342828]">Let&apos;s Innovate together!</p>
           </div>
-
-          <Button 
-          className="rounded-[100px] bg-Celo-AD-yellow hover:bg-Celo-AD-yellow/75
-           text-[#090808] hover:bg-Celo-AD-yellow px-16 sm:px-28 w-fit my-2  
-           text-base sm:text-lg" onClick={handleJoin}>
-            Join us
-           <img src="./chevron-black.svg" className='ml-6' alt="left-icon" />
-           </Button>
+          <Button className="bg-Celo-AD-yellow text-[#090808] border p-1  w-fit mt-4 hover:bg-transparent text-xs  sm:text-base" onClick={handleJoin}> <span className='px-6'>Join us</span>
+            <span className='bg-[#090808] p-1 rounded-full ml-2'>
+              <MdChevronRight className='text-white' size={38} />
+            </span>
+          </Button>
         </div>
-
-        {/* </nav> */}
       </aside>
     </>
   );
