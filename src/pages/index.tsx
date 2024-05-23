@@ -33,9 +33,9 @@ export default function Home() {
         <CarouselSection/>
         <Explore/>
         <UpComingEvent/>
+        <DevelopmentSection/>
         <Incubation/>
         <Team/>
-        <DevelopmentSection/>
       </>
     </div>
   );
