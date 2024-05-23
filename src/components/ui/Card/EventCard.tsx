@@ -74,7 +74,6 @@ const EventCard: React.FC<EventCardProps> = ({ events }) => {
           
         <div className='text-[30px] mt-[20px] w-[35.94px] h-[29.69px] hidden md:block'><IoIosArrowRoundForward onClick={handleNextEvent} /></div>
 
-
       </span>
       </div>
     </div>
