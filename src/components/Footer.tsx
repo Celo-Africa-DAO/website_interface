@@ -94,9 +94,34 @@ const Footer = () => {
         </div>
       </div>
 
-        <div className=" flex flex-col items-center sm:flex-row mt-[2.5rem] justify-center sm:justify-between">
-          <div className="text-center sm:text-left">
-            <h1 className="">&copy; {currentYear} CELO AFRICA DAO.</h1>
+      <div className="flex flex-col gap-10  md:flex-row md:justify-between">
+        <div className="flex justify-center max-md:items-center mt-20">
+          <a
+            href="https://twitter.com/CeloAfricaDao"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="border-solid border-2 p-6 h-20">
+              <RiTwitterXLine />
+            </button>
+          </a>
+
+          
+          <a href="https://join.slack.com/t/celoafricadao/shared_invite/zt-2hns4uonl-VhtnWt3Q1d7sOYh20uCqBg" target="_blank" rel="noopener noreferrer">
+            <button className="border-solid border-2 p-6 h-20">
+              <FaSlack />
+            </button>
+          </a>
+
+          <a href="https://celoafricadao.hashnode.dev/" target="_blank" rel="noopener noreferrer">
+            <button className="border-solid border-2 p-6 h-20">
+              <FaHashnode />
+            </button>
+          </a>
+        </div>
+        <div className="flex xl:ml-36 mt-[7.5rem] justify-between w-full">
+          <div>
+            <h1 className="">&copy; {currentYear} CELOAFRICADAO.</h1>
           </div>
 
           <div className="flex gap-10">
