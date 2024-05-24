@@ -64,9 +64,9 @@ const ExploreCard: React.FC<ExploreCardProps> = ({ explore, onNext }) => (
       </span>
     </div>
     <div className="w-full flex justify-center items-center pb-10 pt-5">
-      <div className="flex justify-center items-center gap-2 font-bold">
+      <Link href={'/all-events'} className="flex justify-center items-center gap-2 font-bold">
         View all events <IoChevronForwardCircle />
-      </div>
+      </Link>
       </div>
   </div>
 );
