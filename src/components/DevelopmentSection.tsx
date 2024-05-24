@@ -4,6 +4,7 @@ import { FaSlack } from "react-icons/fa";
 import { FaHashnode } from "react-icons/fa6";
 
 const DevelopmentSection = () => {
+
   return (
     <div>
       <div className="flex flex-col gap-6 justify-center items-center">
