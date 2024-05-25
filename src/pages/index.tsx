@@ -10,6 +10,7 @@ import Together from "@/components/sections/Together";
 import DevelopmentSection from "@/components/DevelopmentSection";
 import { CarouselSection } from "@/components/ui/Cad/CarouselSection";
 import { HeroReport } from "@/components/ui/HeroReport";
+import PastEvent from "@/components/ui/Cad/PastEvent";
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
         <CarouselSection/>
         <Explore/>
         <UpComingEvent/>
+        {/* <PastEvent /> */}
         <DevelopmentSection/>
         <Incubation/>
         <Team/>

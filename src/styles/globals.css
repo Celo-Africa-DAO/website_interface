@@ -7,6 +7,10 @@ body{
   font-family: "Inter", "sans-serif" !important;
   background-color: #FCF6F1;
 }
+
+.shadow-white-icon {
+  box-shadow: 0 0 10px 2px white;
+}
 @font-face {
   font-family: "GT-Alpina-Thin-Italic";
   src: url("./fonts/GT-Alpina-Standard-Thin-Italic-Trial.otf");

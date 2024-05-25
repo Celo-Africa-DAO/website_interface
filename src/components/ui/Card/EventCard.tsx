@@ -78,7 +78,6 @@ const EventCard: React.FC<EventCardProps> = ({ events }) => {
       </div>
     </div>
 );
-
 };
 
 export default EventCard;
