@@ -1,6 +1,7 @@
 
 import Section from '@/components/layouts/Section'
 // import { AllUpcomingEvents } from '@/components/ui/Cad/AllUpcomingEvents'
+import { UpComingEvents } from '@/components/events/upcomingEvents'
 import React from 'react'
 
 const OtherEvents = () => {
@@ -23,7 +24,7 @@ const OtherEvents = () => {
                     <img src="Event-hero.svg" alt="Celo_Africa_DAO" className='cad' />
                 </div>
             </div>
-            {/* <AllUpcomingEvents/> */}
+            <UpComingEvents/>
         </div>
     </Section>
 </div>
