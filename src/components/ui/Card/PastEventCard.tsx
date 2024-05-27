@@ -27,9 +27,9 @@ const PastEventCard: React.FC<PastEventCardProps> = ({ pastevent, onNext }) => (
           {pastevent.date}
         </h3>
       </div>
-      <span className="flex md:justify-normal self-end md:self-auto h-[120px] lg:w-[300px] w-[250px] bg-[#e9ecef]">
+      <span className="flex md:justify-normal self-end md:self-auto h-[120px] lg:w-[300px] w-[22~~0px] bg-[#e9ecef]">
         <IoLogoYoutube
-          className="w-[50px] h-[50px] my-10 ml-32"
+          className="w-[50px] h-[50px] my-10 ml-24 lg:ml-32"
           color="red"
           onClick={onNext}
         />
@@ -47,9 +47,9 @@ const PastEventCard: React.FC<PastEventCardProps> = ({ pastevent, onNext }) => (
           {pastevent.date}
         </h3>
       </div>
-      <span className="flex md:justify-normal self-end md:self-auto h-[120px] lg:w-[300px] w-[250px] bg-[#e9ecef]">
+      <span className="flex md:justify-normal self-end md:self-auto h-[120px] w-[220px] lg:w-[300px] bg-[#e9ecef]">
         <IoLogoYoutube
-          className="w-[50px] h-[50px] my-10 ml-32"
+          className="w-[50px] h-[50px] my-10 ml-24 lg:ml-32"
           color="red"
           onClick={onNext}
         />
