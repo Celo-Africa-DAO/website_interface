@@ -58,84 +58,137 @@ export function UpComingEvent() {
   return (
     <div className="bg-celo-AD-olive-green">
       <Section>
+      <div className='mx-6 xl:mx-0'>
         <div className="flex flex-col items-start text-4xl text-black mb-10">
           <h1 className="italic font-gt-alpina font-light pl-2 md:pl-0">
             Explore Events
           </h1>
         </div>
-        <Carousel className="w-full">
+        <Carousel className="w-full  ">
           <CarouselContent className="ml-0">
             {events.map((element) => (
               <CarouselItem
                 key={element.id}
-                className="border border-black border-l-0   border-b-0 border-r-0 pl-4 lg:pl-8 basis-[100%] md:basis-[100%] lg:basis-[100%] h-56"
+                className="  border border-black border-l-0    border-b-0 border-r-0  lg:pl-8 basis-[100%] md:basis-[100%] lg:basis-[100%]h-72 md:h-56"
               >
-                <Card className="bg-transparent border-none flex justify-between items-center h-full">
-                  <CardContent className="w-1/4 h-full relative">
-                    <Image
-                      src={element.imageUrl}
-                      fill
-                      className="w-1/4 h-3/4"
-                      alt=""
-                    />
-                  </CardContent>
+               <Card className="bg-transparent border-none flex flex-col md:flex-row justify-between items-center h-full">
+  <CardContent className="w-full md:w-1/4 h-full flex flex-col md:flex-row gap-2 md:gap-0   ">
+    <CardDescription className="font-gt-alpina  p-4 justify-between items-center block md:hidden font-bold text-sm">UPCOMING</CardDescription>
+       
+    <Image
+      src={element.imageUrl}
+      
+      className=" w-full h-full  "
+      alt=""
+      width={0}
+      height={0}
+      sizes="100vw"
+     
+    />
+   <div className="flex md:hidden flex-row justify-between items-center w-full">
+  
+  
+ 
+    <div>
+    {element.name}
+    </div>
+    <div>
+    <CarouselNext className=" static mt-8 h-10 w-10 bg-transparent block md:hidden rounded-none border-none">
+    <MoveRight className="h-8 w-8" />
+  </CarouselNext>
+    </div>
 
-                  <CardHeader className="flex flex-col">
-                    <CardTitle className="text-[#656947] text-xl">
-                      UPCOMING
-                    </CardTitle>
-                    <h1 className="font-gt-alpina font-light text-xl">
-                      {element.name}
-                    </h1>
-                    <h1 className="font-gt-alpina font-bold text-sm">
-                      {element.location}
-                    </h1>
-                    <CardDescription>{element.date}</CardDescription>
-                  </CardHeader>
+ 
+</div>
+  
+ 
+   
+  </CardContent>
+  
 
-                  <CarouselNext className="static h-10 w-10 bg-transparent rounded-none border-none">
-                    <MoveRight className="h-8 w-8 hidden md:block" />
-                  </CarouselNext>
-                </Card>
+  <CardHeader className="flex-col hidden md:block">
+    <CardTitle className="text-[#656947] text-xl">
+      UPCOMING
+    </CardTitle>
+    <h1 className="font-gt-alpina block md:hidden font-light text-xl">
+      {element.name}
+    </h1>
+    <h1 className="font-gt-alpina font-bold text-sm">
+      {element.location}
+    </h1>
+    <CardDescription>{element.date}</CardDescription>
+  </CardHeader>
+
+  <CarouselNext className="static h-10 w-10 bg-transparent rounded-none border-none">
+    <MoveRight className="h-8 w-8 hidden md:block" />
+  </CarouselNext>
+</Card>
+
                 {/* <EventCard events={events} /> */}
               </CarouselItem>
             ))}
           </CarouselContent>
         </Carousel>
-        <Carousel className="w-full">
+        <Carousel className="w-full  ">
           <CarouselContent className="ml-0">
             {events.map((element) => (
               <CarouselItem
                 key={element.id}
-                className="border border-black border-l-0  border-r-0 pl-4 lg:pl-8 basis-[100%] md:basis-[100%] lg:basis-[100%] h-56"
+                className="  border border-black border-l-0     border-r-0  lg:pl-8 basis-[100%] md:basis-[100%] lg:basis-[100%]h-72 md:h-56"
               >
-                <Card className="bg-transparent border-none flex justify-between items-center h-full">
-                  <CardContent className="w-1/4 h-full relative">
-                    <Image
-                      src={element.imageUrl}
-                      fill
-                      className="w-1/4 h-3/4"
-                      alt=""
-                    />
-                  </CardContent>
+               <Card className="bg-transparent border-none flex flex-col md:flex-row justify-between items-center h-full">
+  <CardContent className="w-full md:w-1/4 h-full flex flex-col md:flex-row gap-2 md:gap-0   ">
+    <CardDescription className="font-gt-alpina  p-4 justify-between items-center block md:hidden  text-sm font-bold">PAST</CardDescription>
+       
+    <Image
+      src={element.imageUrl}
+      
+      className=" w-full h-full  "
+      alt=""
+      width={0}
+      height={0}
+      sizes="100vw"
+     
+    />
+   <div className="flex md:hidden flex-row justify-between items-center w-full">
+  
+  
+ 
+    <div>
+    {element.name}
+    </div>
+    <div>
+    <CarouselNext className=" static mt-8 h-10 w-10 bg-transparent block md:hidden rounded-none border-none">
+    <MoveRight className="h-8 w-8" />
+  </CarouselNext>
+    </div>
 
-                  <CardHeader className="flex flex-col">
-                    <CardTitle className="text-[#656947] text-xl">
-                      PAST
-                    </CardTitle>
-                    <h1 className="font-gt-alpina font-light text-xl">
-                      {element.name}
-                    </h1>
-                    <h1 className="font-gt-alpina font-bold text-sm">
-                      {element.location}
-                    </h1>
-                    <CardDescription>{element.date}</CardDescription>
-                  </CardHeader>
+ 
+</div>
+  
+ 
+   
+  </CardContent>
+  
 
-                  <CarouselNext className="static h-10 w-10 bg-transparent rounded-none border-none">
-                    <MoveRight className="h-8 w-8 hidden md:block" />
-                  </CarouselNext>
-                </Card>
+  <CardHeader className="flex-col hidden md:block">
+    <CardTitle className="text-[#656947] text-xl">
+      UPCOMING
+    </CardTitle>
+    <h1 className="font-gt-alpina block md:hidden font-light text-xl">
+      {element.name}
+    </h1>
+    <h1 className="font-gt-alpina font-bold text-sm">
+      {element.location}
+    </h1>
+    <CardDescription>{element.date}</CardDescription>
+  </CardHeader>
+
+  <CarouselNext className="static h-10 w-10 bg-transparent rounded-none border-none">
+    <MoveRight className="h-8 w-8 hidden md:block" />
+  </CarouselNext>
+</Card>
+
                 {/* <EventCard events={events} /> */}
               </CarouselItem>
             ))}
@@ -157,6 +210,7 @@ export function UpComingEvent() {
               />
             </Button>
           </div>
+        </div>
         </div>
       </Section>
     </div>
