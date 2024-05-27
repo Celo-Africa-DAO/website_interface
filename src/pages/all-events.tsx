@@ -2,7 +2,7 @@
 import Section from '@/components/layouts/Section'
 // import { AllUpcomingEvents } from '@/components/ui/Cad/AllUpcomingEvents'
 import { UpComingEvents } from '@/components/events/upcomingEvents'
-import React from 'react'
+import { Feature } from '@/components/events/feature'
 
 const OtherEvents = () => {
   return (
@@ -25,6 +25,7 @@ const OtherEvents = () => {
                 </div>
             </div>
             <UpComingEvents/>
+            <Feature />
         </div>
     </Section>
 </div>
