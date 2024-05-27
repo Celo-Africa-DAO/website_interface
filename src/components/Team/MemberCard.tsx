@@ -16,15 +16,15 @@ const MemberCard = ({ member, tab = null }: any) => {
         tab !== "partners"
           ? "hover:bg-transparent bg-[#FCFF52]"
           : "bg-transparent cursor-pointer"
-      } flex-col items-center `}
+      } flex-col items-center rounded-sm`}
     >
       <div className=" h-60 w-full overflow-hidden">
         <Image
           src={member.image}
           alt={member.name}
-          className="h-full w-full"
+          className="h-full w-full rounded-tr-sm rounded-tl-sm"
           width={254}
-          height={206}
+          height={246}
         />
       </div>
       {tab !== "partners" && (

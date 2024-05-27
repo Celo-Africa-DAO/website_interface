@@ -25,12 +25,12 @@ const Incubation = () => {
       }}
     >
       <Section>
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-10 mx-6 xl:mx-0">
           <h2 className="text-4xl md:text-5xl text-[#0C0C0C] font-[100] font-gt-alpina-trial">
-            <span className="italic">Incubator</span> Program
+            <span className="italic font-normal">Incubator</span> Program
           </h2>
           <div className="flex flex-col md:flex-row justify-between  md:items-center gap-4 sm:gap-20">
-            <div className="w-2/5 sm:w-2/4]">
+            <div className="w-full sm:w-2/4">
               <p className="mb-[20px] text-lg  text-[#4F4E4E] font-ligth">
                 Celo Africa DAO
                 <span className="font-semibold"> Incubator Program</span>, which
@@ -38,7 +38,7 @@ const Incubation = () => {
                 <span className="font-semibold">12-week duration, </span>
                 strategically crafted to empower and guide early-stage founders.
               </p>
-              <div className='flex flex-row sm:gap-4'>
+              <div className='flex flex-row gap-4'>
                 <Button onClick={handleJoin}
                   className=" rounded-[100px] bg-trasparent border border-[#090808] text-[#090808] hover:bg-Celo-AD-yellow px-6 sm:px-10  w-fit mt-4 text-xs  sm:text-base"
                 >
