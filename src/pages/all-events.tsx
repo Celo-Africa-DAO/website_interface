@@ -4,6 +4,8 @@ import { UpComingEvents } from '@/components/events/upcomingEvents'
 import React from 'react'
 
 const OtherEvents = () => {
+
+    
   return (
     <div id='home' className=" bg-Celo-AD-primary text-[#0C0C0C] pt-20">
     <Section>
