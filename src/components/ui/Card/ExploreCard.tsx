@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { IoMdArrowForward, IoMdArrowBack } from "react-icons/io";
+
+import { Explore } from "../Cad/";
 import { Explore } from "../Cad/Explore";
 import imaged from "../../../../public/celo.jpg";
 import { IoChevronForwardCircle } from "react-icons/io5";
@@ -64,9 +66,10 @@ const ExploreCard: React.FC<ExploreCardProps> = ({ explore, onNext }) => (
       </span>
     </div>
     <div className="w-full flex justify-center items-center pb-10 pt-5">
-      <div className="flex justify-center items-center gap-2 font-bold text-black ">
+      <Link href={'/all-events'} className="flex justify-center items-center gap-2 font-bold">
         View all events <IoChevronForwardCircle />
-      </div>
+      </Link>
+
       </div>
   </div>
 );
