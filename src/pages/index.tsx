@@ -32,9 +32,9 @@ export default function Home() {
         <BuilCelo/>
         <CarouselSection/>
         <UpComingEvent/>
-        <DevelopmentSection/>
-        <Incubation/>
         <Team/>
+        <Incubation/>
+        <DevelopmentSection/>
       </>
     </div>
   );
