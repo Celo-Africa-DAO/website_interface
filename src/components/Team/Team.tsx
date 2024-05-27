@@ -2,6 +2,7 @@ import React from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TeamCarousel } from "./TeamCarousel";
 import TeamGrid from "./TeamGrid";
+import Section from "../layouts/Section";
 
 const Team = () => {
   const multiSig = [
@@ -203,55 +204,55 @@ const Team = () => {
   ];
 
   return (
-    <div
-      id="team"
-      className="flex flex-col  gap-8 bg-Celo-AD-Primary px-5 sm:px-14 md:px-20 lg:px-24 pb-10 sm:pb-16  overflow-hidden "
-    >
-      <div>
-        <h2 className='font-gt-alpina-trial  text-[1.2rem] sm:text-6xl text-[#000000]'>
-          Our  <span className='font-[250]'><i>team</i></span> & <span className='font-[250]'><i>Partners</i></span>
-        </h2>
+    <Section>
+      <div
+        id="team"
+        className="flex flex-col  gap-8 bg-Celo-AD-Primary pb-10 sm:pb-16  overflow-hidden mx-6 xl:mx-0"
+      >
+        <div>
+          <h2 className='font-gt-alpina-trial  text-4xl md:text-5xl text-[#000000]'>
+            Our  <span className='font-[250]'><i>team</i></span> & <span className='font-[250]'><i>Partners</i></span>
+          </h2>
+        </div>
+        <Tabs defaultValue="multisig">
+          <TabsList className="bg-transparent mb-8">
+            <TabsTrigger
+              className=" flex flex-col text-base rounded-none px-4 md:px-8"
+              value="multisig"
+            >
+              Multisig Holders
+            </TabsTrigger>
+            <TabsTrigger
+              className=" flex flex-col text-base  rounded-none px-4 md:px-8"
+              value="contributor"
+            >
+              Core Contributors
+            </TabsTrigger>
+            <TabsTrigger
+              className=" flex flex-col text-base rounded-none px-4 md:px-8"
+              value="partners"
+            >
+              Ecosystem Partners
+            </TabsTrigger>
+          </TabsList>
+          <TabsContent value="multisig">
+            <div>
+              <TeamCarousel members={multiSig} />
+            </div>
+          </TabsContent>
+          <TabsContent value="contributor">
+            <div>
+              <TeamGrid members={coreContributors} />
+            </div>
+          </TabsContent>
+          <TabsContent value="partners">
+            <div>
+              <TeamCarousel tab={"partners"} members={partners} />
+            </div>
+          </TabsContent>
+        </Tabs>
       </div>
-      <Tabs defaultValue="multisig">
-        <TabsList className="bg-transparent mb-8">
-          <TabsTrigger
-            className=" flex flex-col text-base rounded-none px-4 md:px-8"
-            value="multisig"
-          >
-            Multisig Holders
-          </TabsTrigger>
-          <TabsTrigger
-            className=" flex flex-col text-base  rounded-none px-4 md:px-8"
-            value="contributor"
-          >
-            Core Contributors
-          </TabsTrigger>
-          <TabsTrigger
-            className=" flex flex-col text-base rounded-none px-4 md:px-8"
-            value="partners"
-          >
-            Ecosystem Partners
-          </TabsTrigger>
-        </TabsList>
-        <TabsContent value="multisig">
-          <div>
-            <TeamCarousel members={multiSig} />
-          </div>
-        </TabsContent>
-        <TabsContent value="contributor">
-          <div>
-            {/* <TeamCarousel members={coreContributors} /> */}
-            <TeamGrid members={coreContributors} />
-            
-          </div>
-        </TabsContent>
-        <TabsContent value="partners">
-          <div>
-            <TeamCarousel tab={"partners"} members={partners} />
-          </div>
-        </TabsContent>
-      </Tabs>
-    </div>
+    </Section>
   );
 };
 
