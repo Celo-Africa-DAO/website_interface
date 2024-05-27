@@ -125,8 +125,15 @@ body{
 }
 
 
-.background-image {
-  background-image: url('/HeroImage.png');
+
+.bg-custom {
+  background-image: url('/carousel.png');
   background-size: cover;
   background-position: center;
+}
+
+@media (min-width: 768px) {
+  .bg-custom {
+    background-image: url('/courser-bg.png');
+  }
 }

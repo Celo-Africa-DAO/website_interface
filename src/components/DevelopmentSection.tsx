@@ -4,11 +4,10 @@ import { FaSlack } from "react-icons/fa";
 import { FaHashnode } from "react-icons/fa6";
 
 const DevelopmentSection = () => {
+
   return (
     <div>
-      <div className="flex flex-col gap-6 justify-center items-center">
-
-
+      <div className="flex flex-col gap-6 justify-center items-center py-0 md:py-10">
         <h1 className="text-[32px] md:text-[64px] font-gt-alpina-trial font-[250]">
           Join our <span className="italic">development</span>
         </h1>
