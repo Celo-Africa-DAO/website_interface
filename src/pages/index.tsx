@@ -31,9 +31,7 @@ export default function Home() {
       </Head>
       <>
         <Hero/>
-        <HeroReport/>
         <CarouselSection/>
-       
         <UpComingEvent/>
         <DevelopmentSection/>
         <Incubation/>
