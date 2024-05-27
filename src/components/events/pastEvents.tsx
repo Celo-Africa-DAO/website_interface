@@ -60,7 +60,7 @@ export function PastEvents() {
       <Section>
         <div className="flex flex-col items-start text-4xl text-black mb-10">
           <h1 className="italic font-gt-alpina font-light pl-2 md:pl-0">
-            Explore Events
+            Past Event videos
           </h1>
         </div>
         <Carousel className="w-full">
@@ -68,9 +68,36 @@ export function PastEvents() {
             {events.map((element) => (
               <CarouselItem
                 key={element.id}
-                className="border border-black border-l-0   border-b-0 border-r-0 pl-4 lg:pl-8 basis-[100%] md:basis-[100%] lg:basis-[100%] h-56"
+                className="border border-black border-l-0   border-b border-r-0 pl-4 lg:pl-8 basis-[100%] md:basis-[100%] lg:basis-[100%] h-56"
               >
                 <Card className="bg-transparent border-none flex justify-between items-center h-full">
+                 
+
+                  <CardHeader className="flex flex-col font-gt-alpina ">
+                   
+                    <h1 className=" font-light text-xl">
+                      {element.name}
+                    </h1>
+                    <h1 className="font-bold text-sm">
+                      {element.location}
+                    </h1>
+                    <CardDescription>{element.date}</CardDescription>
+                   <h1 className="pt-8">
+                   <Button
+              className="bg-transparent flex gap-4 hover:bg-transparent border-none  font-bold"
+              
+              variant="outline"
+            >
+              More events
+              <Image
+                src={"img/black-arrow-icon.svg"}
+                width={21}
+                height={21}
+                alt="black arrow icon"
+              />
+            </Button>
+                   </h1>
+                  </CardHeader>
                   <CardContent className="w-1/4 h-full relative">
                     <Image
                       src={element.imageUrl}
@@ -80,22 +107,7 @@ export function PastEvents() {
                     />
                   </CardContent>
 
-                  <CardHeader className="flex flex-col">
-                    <CardTitle className="text-[#656947] text-xl">
-                      UPCOMING
-                    </CardTitle>
-                    <h1 className="font-gt-alpina font-light text-xl">
-                      {element.name}
-                    </h1>
-                    <h1 className="font-gt-alpina font-bold text-sm">
-                      {element.location}
-                    </h1>
-                    <CardDescription>{element.date}</CardDescription>
-                  </CardHeader>
-
-                  <CarouselNext className="static h-10 w-10 bg-transparent rounded-none border-none">
-                    <MoveRight className="h-8 w-8 hidden md:block" />
-                  </CarouselNext>
+                 
                 </Card>
                 {/* <EventCard events={events} /> */}
               </CarouselItem>
@@ -107,9 +119,36 @@ export function PastEvents() {
             {events.map((element) => (
               <CarouselItem
                 key={element.id}
-                className="border border-black border-l-0  border-r-0 pl-4 lg:pl-8 basis-[100%] md:basis-[100%] lg:basis-[100%] h-56"
+                className="border border-black border-l-0   border-b border-r-0 pl-4 lg:pl-8 basis-[100%] md:basis-[100%] lg:basis-[100%] h-56"
               >
                 <Card className="bg-transparent border-none flex justify-between items-center h-full">
+                 
+
+                  <CardHeader className="flex flex-col font-gt-alpina ">
+                   
+                    <h1 className=" font-light text-xl">
+                      {element.name}
+                    </h1>
+                    <h1 className="font-bold text-sm">
+                      {element.location}
+                    </h1>
+                    <CardDescription>{element.date}</CardDescription>
+                   <h1 className="pt-8">
+                   <Button
+              className="bg-transparent flex gap-4 hover:bg-transparent border-none  font-bold"
+              
+              variant="outline"
+            >
+              More events
+              <Image
+                src={"img/black-arrow-icon.svg"}
+                width={21}
+                height={21}
+                alt="black arrow icon"
+              />
+            </Button>
+                   </h1>
+                  </CardHeader>
                   <CardContent className="w-1/4 h-full relative">
                     <Image
                       src={element.imageUrl}
@@ -119,22 +158,7 @@ export function PastEvents() {
                     />
                   </CardContent>
 
-                  <CardHeader className="flex flex-col">
-                    <CardTitle className="text-[#656947] text-xl">
-                      PAST
-                    </CardTitle>
-                    <h1 className="font-gt-alpina font-light text-xl">
-                      {element.name}
-                    </h1>
-                    <h1 className="font-gt-alpina font-bold text-sm">
-                      {element.location}
-                    </h1>
-                    <CardDescription>{element.date}</CardDescription>
-                  </CardHeader>
-
-                  <CarouselNext className="static h-10 w-10 bg-transparent rounded-none border-none">
-                    <MoveRight className="h-8 w-8 hidden md:block" />
-                  </CarouselNext>
+                 
                 </Card>
                 {/* <EventCard events={events} /> */}
               </CarouselItem>
@@ -148,7 +172,7 @@ export function PastEvents() {
               onClick={handleMoreEvents}
               variant="outline"
             >
-              More events
+              More  videos
               <Image
                 src={"img/black-arrow-icon.svg"}
                 width={21}
