@@ -19,7 +19,7 @@ const Incubation = () => {
   return (
     <div
       id="incubation"
-      className=" bg-cover  md:bg-center bg-no-repeat px-3 md:px-32 py-36 "
+      className=" bg-cover md:bg-center bg-no-repeat px-3 md:px-32 py-36 "
       style={{
         backgroundImage: "url(./incubator-bg.png)",
       }}
