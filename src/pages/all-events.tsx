@@ -18,7 +18,7 @@ const OtherEvents = () => {
                     <p className='text-[#565656] font-Inter py-8 w-full max-md:text-center  md:w-4/6 font-sans text-base sm:text-lg'>A decentralized autonomous organization dedicated
                     Explore the various events we (co) organize in leading African countries and around major events
                     </p>
-                   
+                
                 </div>
                 <div className='w-2/5  order-first md:order-last mb-8 sm:mb-12 md:mb-0'>
                     <img src="Event-hero.svg" alt="Celo_Africa_DAO" className='cad' />
