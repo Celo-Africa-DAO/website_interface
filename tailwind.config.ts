@@ -42,6 +42,7 @@ const config = {
         "Celo-AD-slate-green": "#068012",
         "celo-AD-choclate":"#50473A",
         "celo-AD-olive-green":"#E7E3D4",
+        "celo-AD-cream":"#FAFAFA",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
