@@ -76,7 +76,7 @@ export function PastEvents() {
 
                   <CardHeader className="flex flex-col font-gt-alpina ">
                    
-                    <h1 className=" font-light text-xl">
+                    <h1 className="  font-light text-sm md:text-xl">
                       {element.name}
                     </h1>
                     <h1 className="font-bold text-sm">
@@ -86,7 +86,7 @@ export function PastEvents() {
 
 
                   </CardHeader>
-                  <CardContent className="w-1/4 h-full flex justify-center items-center ">
+                  <CardContent className="w-full md:w-1/4 h-full flex flex-col md:flex-row gap-2 md:gap-0 justify-center items-center ">
                   <div className="w-full h-3/4 flex justify-center rounded-sm bg-[#FFFFFF] items-center">
                     <Image
                       src={element.imageUrl}
@@ -117,7 +117,7 @@ export function PastEvents() {
 
                   <CardHeader className="flex flex-col font-gt-alpina ">
                    
-                    <h1 className=" font-light text-xl">
+                    <h1 className=" font-light text-sm md:text-xl">
                       {element.name}
                     </h1>
                     <h1 className="font-bold text-sm">
@@ -126,7 +126,7 @@ export function PastEvents() {
                     <CardDescription>{element.date}</CardDescription>
                    
                   </CardHeader>
-                  <CardContent className="w-1/4 h-full flex justify-center items-center ">
+                  <CardContent className="w-full md:w-1/4 h-full flex flex-col md:flex-row gap-2 md:gap-0 justify-center items-center ">
                   <div className="w-full h-3/4 flex justify-center rounded-sm bg-[#FFFFFF] items-center">
                     <Image
                       src={element.imageUrl}
