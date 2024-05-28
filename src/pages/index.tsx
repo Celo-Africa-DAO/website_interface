@@ -1,6 +1,5 @@
 
 import Incubation from "@/components/sections/Incubation";
-
 import { UpComingEvent } from "@/components/events/explore";
 import Hero from "@/components/sections/Hero";
 import Head from "next/head";
