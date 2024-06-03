@@ -24,28 +24,28 @@ export function PastEvents() {
       name: "Celo Campus Connect",
       location: "Kenya",
       date: "Sat, March 26th, 2024",
-      imageUrl: "/img/celokenya.svg",
+      imageUrl: "/img/youtube-icon.svg",
     },
     {
       id: 2,
       name: "Celo Code Jam",
       location: "Uganda",
       date: "Sat, March 26th, 2024",
-      imageUrl: "/img/celokenya.svg",
+      imageUrl: "/img/youtube-icon.svg",
     },
     {
       id: 3,
       name: "University OutReach",
       location: "Kenya",
       date: "Sat, March 1st, 2024",
-      imageUrl: "/img/celokenya.svg",
+      imageUrl: "/img/youtube-icon.svg",
     },
     {
       id: 4,
       name: "Celo Campus Connect",
       location: "Kenya",
       date: "Sat, March 30th, 2024",
-      imageUrl: "/img/celokenya.svg",
+      imageUrl: "/img/youtube-icon.svg",
     },
     // Add more event objects as needed
   ];
@@ -56,8 +56,9 @@ export function PastEvents() {
   };
 
   return (
-    <div className="bg-celo-AD-olive-green">
+    <div className="bg-celo-AD-cream">
       <Section>
+      <div className='mx-6 xl:mx-0'>
         <div className="flex flex-col items-start text-4xl text-black mb-10">
           <h1 className="italic font-gt-alpina font-light pl-2 md:pl-0">
             Past Event videos
@@ -75,36 +76,26 @@ export function PastEvents() {
 
                   <CardHeader className="flex flex-col font-gt-alpina ">
                    
-                    <h1 className=" font-light text-xl">
+                    <h1 className="  font-light text-sm md:text-xl">
                       {element.name}
                     </h1>
                     <h1 className="font-bold text-sm">
                       {element.location}
                     </h1>
                     <CardDescription>{element.date}</CardDescription>
-                   <h1 className="pt-8">
-                   <Button
-              className="bg-transparent flex gap-4 hover:bg-transparent border-none  font-bold"
-              
-              variant="outline"
-            >
-              More events
-              <Image
-                src={"img/black-arrow-icon.svg"}
-                width={21}
-                height={21}
-                alt="black arrow icon"
-              />
-            </Button>
-                   </h1>
+
+
                   </CardHeader>
-                  <CardContent className="w-1/4 h-full relative">
+                  <CardContent className="w-full md:w-1/4 h-full flex flex-col md:flex-row gap-2 md:gap-0 justify-center items-center ">
+                  <div className="w-full h-3/4 flex justify-center rounded-sm bg-[#FFFFFF] items-center">
                     <Image
                       src={element.imageUrl}
-                      fill
+                      width={20}
+                      height={10}
                       className="w-1/4 h-3/4"
                       alt=""
                     />
+                    </div>
                   </CardContent>
 
                  
@@ -126,36 +117,27 @@ export function PastEvents() {
 
                   <CardHeader className="flex flex-col font-gt-alpina ">
                    
-                    <h1 className=" font-light text-xl">
+                    <h1 className=" font-light text-sm md:text-xl">
                       {element.name}
                     </h1>
                     <h1 className="font-bold text-sm">
                       {element.location}
                     </h1>
                     <CardDescription>{element.date}</CardDescription>
-                   <h1 className="pt-8">
-                   <Button
-              className="bg-transparent flex gap-4 hover:bg-transparent border-none  font-bold"
-              
-              variant="outline"
-            >
-              More events
-              <Image
-                src={"img/black-arrow-icon.svg"}
-                width={21}
-                height={21}
-                alt="black arrow icon"
-              />
-            </Button>
-                   </h1>
+                   
                   </CardHeader>
-                  <CardContent className="w-1/4 h-full relative">
+                  <CardContent className="w-full md:w-1/4 h-full flex flex-col md:flex-row gap-2 md:gap-0 justify-center items-center ">
+                  <div className="w-full h-3/4 flex justify-center rounded-sm bg-[#FFFFFF] items-center">
                     <Image
                       src={element.imageUrl}
-                      fill
+                      width={20}
+                      height={10}
                       className="w-1/4 h-3/4"
                       alt=""
                     />
+
+                    </div>
+                   
                   </CardContent>
 
                  
@@ -168,19 +150,20 @@ export function PastEvents() {
         <div className="w-full flex justify-center items-center pb-10 pt-5 text-black">
           <div className="flex justify-center items-center gap-2 font-bold">
             <Button
-              className="bg-transparent flex gap-4 hover:bg-transparent"
+              className="bg-transparent  border-none flex gap-4 hover:bg-transparent"
               onClick={handleMoreEvents}
               variant="outline"
             >
               More  videos
               <Image
-                src={"img/black-arrow-icon.svg"}
+                src={"img/youtube-icon.svg"}
                 width={21}
                 height={21}
                 alt="black arrow icon"
               />
             </Button>
           </div>
+        </div>
         </div>
       </Section>
     </div>

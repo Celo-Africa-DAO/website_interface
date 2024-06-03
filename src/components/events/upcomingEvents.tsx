@@ -72,7 +72,7 @@ export function UpComingEvents() {
 
                   <CardHeader className="flex flex-col font-gt-alpina ">
                    
-                    <h1 className=" font-light text-xl">
+                    <h1 className=" font-light text-sm md:text-xl">
                       {element.name}
                     </h1>
                     <h1 className="font-bold text-sm">
@@ -95,13 +95,17 @@ export function UpComingEvents() {
             </Button>
                    </h1>
                   </CardHeader>
-                  <CardContent className="w-1/4 h-full relative">
+                  <CardContent className="w-full md:w-1/4 h-full flex flex-col md:flex-row gap-2 md:gap-0 justify-center items-center ">
+                  <div className="w-full h-3/4 flex justify-center  items-center">
                     <Image
                       src={element.imageUrl}
-                      fill
-                      className="w-1/4 h-3/4"
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      className="w-full h-3/4"
                       alt=""
                     />
+                    </div>
                   </CardContent>
 
                  
