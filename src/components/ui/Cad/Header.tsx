@@ -95,7 +95,7 @@ const Header = () => {
 
       <aside
         className={` ${isMenuToggled ? "opacity-100" : "opacity-0 pointer-events-none"
-          }  h-screen w-[70%] md:w-[600px] transition-opacity transform flex flex-col justify-between pt-24 pb-6 ease-in-out duration-500 bg-Celo-AD-primary fixed left-0 top-0 z-10`}
+          }  h-screen w-[70%] md:w-[600px] transition-opacity transform flex flex-col justify-between shadow-sm pt-24 pb-6 ease-in-out duration-500 bg-Celo-AD-primary fixed left-0 top-0 z-10`}
       >
         <ul className="flex flex-col sm:mx-3 px-8 md:px-[65px] font-GT-Alpina">
           {navList.map((item, index) => (
@@ -113,7 +113,7 @@ const Header = () => {
             />
             <p className="text-base font-medium md:text-lg text-[#342828]">Let&apos;s Innovate together!</p>
           </div>
-          <Button className="bg-Celo-AD-yellow text-[#090808] border p-1  w-fit mt-4 hover:bg-transparent text-xs  sm:text-base" onClick={handleJoin}> <span className='px-6'>Join us</span>
+          <Button className="bg-Celo-AD-yellow text-[#090808] border  w-fit mt-4 hover:bg-transparent text-xs  sm:text-base" onClick={handleJoin}> <span className='px-6'>Join us</span>
             <span className='bg-[#090808] p-1 rounded-full ml-2'>
               <MdChevronRight className='text-white' size={38} />
             </span>

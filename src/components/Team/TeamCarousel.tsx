@@ -29,7 +29,7 @@ export function TeamCarousel({members, tab}: MembersProps) {
     <Carousel className="w-full ">
       <CarouselContent className="">
         {members.map((member) => (
-          <CarouselItem key={member.id} className="basis-[100%] xsm:basis-[70%] sm:basis-[45%] md:basis-[30%] lg:basis-[25%]">
+          <CarouselItem key={member.id} className="basis-[100%] xsm:basis-[70%] sm:basis-[45%] md:basis-[30%] lg:basis-[25%] mb-4">
            <MemberCard tab={tab} member={member}/>
           </CarouselItem>
         ))}
