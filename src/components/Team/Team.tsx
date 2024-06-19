@@ -217,13 +217,13 @@ const Team = () => {
         <Tabs defaultValue="multisig">
           <TabsList className="bg-transparent mb-8">
             <TabsTrigger
-              className=" flex flex-col text-base rounded-none px-4 md:px-8"
+              className=" flex flex-col text-base rounded-none px-4 md:px-8  text-[#000000]"
               value="multisig"
             >
               Multisig Holders
             </TabsTrigger>
             <TabsTrigger
-              className=" flex flex-col text-base  rounded-none px-4 md:px-8"
+              className=" flex flex-col text-base  rounded-none px-4 md:px-8 "
               value="contributor"
             >
               Core Contributors
