@@ -16,7 +16,7 @@ const navList = [
   },
   {
     title: "Incubator Program",
-    path: "#incubation",
+    path: "/incubator",
     Image: "img/navlinks-hover-icon.svg",
   },
   { title: "Events", path: "#event", Image: "img/navlinks-hover-icon.svg" },
