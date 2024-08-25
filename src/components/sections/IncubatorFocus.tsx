@@ -1,16 +1,18 @@
 import Image from "next/image";
 import React from "react";
 
+
 const IncubatorFocus = () => {
   return (
     <div className="w-full h-full relative bg-white flex flex-col md:gap-[142px] gap-[70px] pt-[45px]">
+      
       <Image
         src="/inc-focus.svg"
         className="absolute z-0 w-full -top-32 md:-top-48 left-0 "
         height={1488}
         width={1742}
         alt="incubator focus bg"
-      />
+      /> 
 
       <div className="flex flex-col z-10 pl-[20px] md:pl-[300px] gap-[60px]">
         <h4 className="text-[32px] md:text-[52px] font-GT-Alpina font-light">
@@ -79,7 +81,7 @@ const IncubatorFocus = () => {
       </div>
 
       <div className="w-full flex items-center justify-center z-10 px-3">
-        <Image alt="" width={1000} height={1000} src="/incubatorSteps.png" />
+        <Image alt="" className="h-full" width={1000} height={1000} src="/incubSteps.svg" />
       </div>
     </div>
   );

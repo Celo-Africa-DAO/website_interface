@@ -18,7 +18,7 @@ const IncubatorHero = () => {
                 </p>{" "}
               </div>
 
-              <div className="md:hidden flex  my-12 sm:mb-12 md:mb-0 text-center justify-center ">
+              <div className="md:hidden flex my-12 sm:mb-12 md:mb-0 text-center justify-center ">
                 <img
                   src="./CeloAfrica Roadmap.png"
                   alt="Celo_Africa_DAO"
