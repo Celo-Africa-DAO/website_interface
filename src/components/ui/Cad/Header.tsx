@@ -19,6 +19,11 @@ const navList = [
     path: "#incubation",
     Image: "img/navlinks-hover-icon.svg",
   },
+  {
+    title: "Africa Gather",
+    path: "https://africagather.celoafricadao.xyz/",
+    Image: "img/navlinks-hover-icon.svg",
+  },
   { title: "Events", path: "#event", Image: "img/navlinks-hover-icon.svg" },
   {
     title: "Community",
