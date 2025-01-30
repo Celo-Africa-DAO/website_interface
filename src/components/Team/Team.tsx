@@ -17,7 +17,7 @@ const Team = () => {
     {
       id: 2,
       name: "Umar Sebyala",
-      position: "Local Event Lead",
+      position: "Business and Community growth Lead",
       image: "/img/UmarSe.png",
       twitter: "https://www.x.com/umar_sebyala",
       linkedIn: "https://www.linkedin.com/in/umarsebyalabukenya",
