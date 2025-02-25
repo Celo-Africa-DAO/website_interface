@@ -26,6 +26,11 @@ const navList = [
     Image: "img/navlinks-hover-icon.svg",
   },
   {
+    title: "Goodwill Message",
+    path: "/goodwill",
+    Image: "img/navlinks-hover-icon.svg",
+  },
+  {
     title: "Team and Partner",
     path: "#team",
     Image: "img/navlinks-hover-icon.svg",

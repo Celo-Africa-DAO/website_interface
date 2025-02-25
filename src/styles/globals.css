@@ -126,8 +126,16 @@ body{
 
 
 
+
+
 .bg-custom {
   background-image: url('/carousel.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-ach {
+  background-image: url('/Black-image-Dao.png');
   background-size: cover;
   background-position: center;
 }
