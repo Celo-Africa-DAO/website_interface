@@ -15,6 +15,13 @@ const ContributorMsg = () => {
       image: '/img/Mukunde.png', // Replace with your actual image path
       text: 'Lorem ipsum dolor sit amet consectetur. Cursus tellus facilisi facilisis ipsum aliquam morbi rhoncus scelerisque mauris. Justo cum semper elementum pharetra gravida ac consequat diam volutpat.'
     },
+    {
+      id: 2,
+      name: 'Jordan Muthemba',
+      role: 'Ecosystem Lead At CELO',
+      image: '/img/jordan.png', // Replace with your actual image path
+      text: 'Hello ipsum dolor sit amet consectetur. Cursus tellus facilisi facilisis ipsum aliquam morbi rhoncus scelerisque mauris. Justo cum semper elementum pharetra gravida ac consequat diam volutpat.'
+    },
     // You can add more testimonials here
   ];
 
@@ -33,9 +40,9 @@ const ContributorMsg = () => {
   };
 
   return (
-    <div className="w-full bg-[#FCF6F1] py-12">
+    <div className="w-full pt-[133px] bg-[#FCF6F1] py-12">
       <div className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl italic font-medium text-gray-800 mb-3">Goodwill message from core contributors</h2>
+        <h2 className="text-3xl italic font-gt-alpina font-medium mb-3">Goodwill message from core contributors</h2>
         
         <p className="text-sm text-gray-600 max-w-3xl mb-8">
           We are thrilled to present a series of groundbreaking projects that have recently graduated 
@@ -68,7 +75,7 @@ const ContributorMsg = () => {
         </div>
         
         {/* Navigation arrows */}
-        <div className="flex justify-center space-x-3 mt-8">
+        <div className="flex justify-end space-x-3 mt-8">
           <button 
             onClick={goToPrevious}
             className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition-colors"
@@ -86,11 +93,7 @@ const ContributorMsg = () => {
         </div>
       </div>
 
-      <div className="flex items-end">
-          <div className="h-28 w-24 bg-celo-AD-olive-green mr-24"></div>
-          <div className="h-10 w-full bg-celo-AD-olive-green"></div>
-          <div className="h-28 w-24 bg-celo-AD-olive-green mr-16"></div>
-        </div>
+    
     </div>
   );
 };

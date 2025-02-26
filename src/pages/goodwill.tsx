@@ -9,7 +9,7 @@ import DevelopmentSection from '@/components/DevelopmentSection';
 
 const goodwill = () => {
   return (
-    <div className='bg-Celo-AD-primary text-[#0C0C0C]'>
+    <div className='bg-[#FFFFFF] text-[#0C0C0C]'>
         <Thanks />
         <Achievement/>
         <PhotoMoment />

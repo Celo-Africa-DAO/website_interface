@@ -59,12 +59,12 @@ export function Achievement() {
   ];
 
   return (
-    <div className="pt-40 relative -top-64" style={{ backgroundImage: "url('/Black-image-Dao.png')" }}>
+    <div className="pt-40 z-0" style={{ backgroundImage: "url('/Black-image-Dao.png')" }}>
       <Section>
         <div className="mx-6 xl:mx-0">
           {/* Heading and Sub-heading */}
-          <h2 className="text-3xl font-bold text-white mb-4">Achievement</h2>
-          <p className="text-xl text-gray-300 mb-8">Discover the ongoing initiatives and impactful projects led by Celo Africa DAO.</p>
+          <h2 className="text-3xl font-gt-alpina-trial font-normal text-white mb-4">Aliu Musa’s achievement </h2>
+          <p className="text-sm text-gray-300 mb-8">Discover the ongoing initiatives and impactful projects led by Celo Africa DAO.</p>
 
           <Carousel className="w-full">
             <CarouselContent className="ml-0 flex space-x-0">
