@@ -16,7 +16,7 @@ const navList = [
   },
   {
     title: "Incubator Program",
-    path: "#incubation",
+    path: "/incubator",
     Image: "img/navlinks-hover-icon.svg",
   },
   {
@@ -28,6 +28,11 @@ const navList = [
   {
     title: "Community",
     path: "https://celoafricadao.slack.com/canvas/C051YRQ3F6Z",
+    Image: "img/navlinks-hover-icon.svg",
+  },
+  {
+    title: "Goodwill Message",
+    path: "/goodwill",
     Image: "img/navlinks-hover-icon.svg",
   },
   {
