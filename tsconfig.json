@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"], // Include necessary libraries for the target environment
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ], // Include necessary libraries for the target environment
     "allowJs": true, // Allow JavaScript files to be compiled
     "skipLibCheck": true, // Skip type checking of declaration files to speed up compilation
     "strict": true, // Enable strict mode to catch common errors and provide better type checking
@@ -13,9 +17,24 @@
     "jsx": "preserve", // Preserve JSX syntax for further processing by other tools
     "incremental": true, // Enable incremental compilation for faster builds
     "paths": { // Configure path mapping for module resolution
-      "@/*": ["./src/*"]
-    }
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Team/MemberCard.tsx"], // Specify files to include in compilation
-  "exclude": ["node_modules"] // Specify files to exclude from compilation
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/components/Team/MemberCard.tsx",
+    ".next/types/**/*.ts"
+  ], // Specify files to include in compilation
+  "exclude": [
+    "node_modules"
+  ] // Specify files to exclude from compilation
 }

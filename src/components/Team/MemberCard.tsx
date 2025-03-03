@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import React from "react";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
 
 const MemberCard = ({ member, tab = null }: any) => {
   const handlePartnersPage = () => {
@@ -12,47 +14,42 @@ const MemberCard = ({ member, tab = null }: any) => {
   return (
     <div
       onClick={handlePartnersPage}
-      className={`shadow-md w-full flex  ${
+      className={`shadow-md w-full flex ${
         tab !== "partners"
-          ? "hover:bg-transparent bg-[#DED7BF]"
+          ? "hover:bg-transparent bg-[#FCFF52]"
           : "bg-transparent cursor-pointer"
-      } flex-col items-center `}
+      } flex-col items-center rounded-sm`}
     >
       <div className=" h-60 w-full overflow-hidden">
         <Image
           src={member.image}
           alt={member.name}
-          className="h-full w-full"
+          className="h-full w-full rounded-tr-sm rounded-tl-sm"
           width={254}
-          height={206}
+          height={246}
         />
       </div>
       {tab !== "partners" && (
         <div className="w-full  p-4 ">
           <div>
-            <h4 className="max-xsm:text-[10px] xsm:text-[14px] font-gt-alpina-trial italic font-[500]">
+            <h4 className="max-xsm:text-[10px] xsm:text-[14px] font-bold text-base  text-[#000000]">
               {member.name}
             </h4>
+
           </div>
           <div>
-            <h5 className="max-2xsm:text-[7px] 2xsm:text-[10px] xsm:text-[12px] text-[#56544E]">
+            <h5 className="max-2xsm:text-[7px] font-medium text-sm  text-[#000000] hover:text-[#56544E]">
               {member.position}
             </h5>
           </div>
-          <div className="mt-2 flex gap-1 sm:gap-2">
+          <div className="mt-2 flex gap-1 sm:gap-2 ">
             <div>
               <a
                 href={`${member.linkedIn}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image
-                  src={"img/linkedIn-icon.svg"}
-                  className="w-[16px] sm:w-[21px]"
-                  alt="linkedIn Icon"
-                  height={21}
-                  width={21}
-                />
+                <FaLinkedinIn  size={24} className=" bg-[#000000] rounded-full p-1"/>
               </a>
             </div>
             <div>
@@ -61,13 +58,7 @@ const MemberCard = ({ member, tab = null }: any) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image
-                  src={"img/twitter-icon.svg"}
-                  alt="twitter Icon"
-                  className="w-[16px] sm:w-[21px]"
-                  height={21}
-                  width={21}
-                />
+                <FaXTwitter size={24} className=" bg-[#000000] rounded-full p-1" />
               </a>
             </div>
           </div>

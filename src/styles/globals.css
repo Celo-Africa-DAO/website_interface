@@ -7,6 +7,7 @@ body{
   font-family: "Inter", "sans-serif" !important;
   background-color: #FCF6F1;
 }
+
 @font-face {
   font-family: "GT-Alpina-Thin-Italic";
   src: url("./fonts/GT-Alpina-Standard-Thin-Italic-Trial.otf");
@@ -124,8 +125,30 @@ body{
 }
 
 
-.background-image {
-  background-image: url('/HeroImage.png');
+
+
+
+.bg-custom {
+  background-image: url('/carousel.png');
   background-size: cover;
   background-position: center;
+}
+
+.bg-ach {
+  background-image: url('/Black-image-Dao.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.shadow-bottom {
+  /* Adjust the color to your specific requirement */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+              0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+}
+
+
+@media (min-width: 768px) {
+  .bg-custom {
+    background-image: url('/courser-bg.png');
+  }
 }
