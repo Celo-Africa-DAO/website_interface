@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "../ui/button";
 import { MdChevronRight } from "react-icons/md";
+import Image from "next/image";
 import Section from "../layouts/Section";
 
 const IncubatorHero = () => {
@@ -19,7 +20,7 @@ const IncubatorHero = () => {
               </div>
 
               <div className="md:hidden flex  my-12 sm:mb-12 md:mb-0 text-center justify-center ">
-                <img
+                <Image
                   src="./CeloAfrica Roadmap.png"
                   alt="Celo_Africa_DAO"
                   className="w-100 h-80"
@@ -33,7 +34,7 @@ const IncubatorHero = () => {
               </p>
             </div>
             <div className="w-2/5 hidden md:block mb-8 sm:mb-12 md:mb-0">
-              <img
+              <Image
                 src="./CeloAfrica Roadmap.png"
                 alt="Celo_Africa_DAO"
                 className="cad"

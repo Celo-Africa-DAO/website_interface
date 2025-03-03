@@ -2,6 +2,7 @@ import Section from '@/components/layouts/Section'
 // import { AllUpcomingEvents } from '@/components/ui/Cad/AllUpcomingEvents'
 import { UpComingEvents } from '@/components/events/upcomingEvents'
 import React from 'react'
+import Image from 'next/image'
 
 const OtherEvents = () => {
 
@@ -24,7 +25,7 @@ const OtherEvents = () => {
                 
                 </div>
                 <div className='w-2/5  order-first md:order-last mb-8 sm:mb-12 md:mb-0'>
-                    <img src="Event-hero.svg" alt="Celo_Africa_DAO" className='cad' />
+                    <Image src="Event-hero.svg" alt="Celo_Africa_DAO" className='cad' />
                 </div>
             </div>
             <UpComingEvents/>

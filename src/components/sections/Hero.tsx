@@ -1,8 +1,10 @@
-import { Link } from "lucide-react";
+import { Link as LucideLink } from "lucide-react";
 import Section from "../layouts/Section";
 import StatsComponent from "../ui/Cad/StatsComponent";
 import { Button } from "../ui/button";
 import { MdChevronRight } from "react-icons/md";
+import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -25,7 +27,7 @@ const Hero = () => {
               </div>
 
               <div className="md:hidden flex  my-12 sm:mb-12 md:mb-0 text-center justify-center ">
-                <img
+                <Image
                   src="./CAD-hero.png"
                   alt="Celo_Africa_DAO"
                   className="w-100 h-80"
@@ -40,7 +42,7 @@ const Hero = () => {
                 <Button className=" rounded-[100px] bg-Celo-AD-yellow hover:bg-Celo-AD-yellow/75 text-[#090808] hover:bg-Celo-AD-yellow px-4 sm:px-10  w-fit mt-4 text-xs  sm:text-base">
                   Join our community
                 </Button>
-                <a href="/incubator">
+                <Link href="/incubator">
                   <Button className="bg-trasparent text-[#090808] border p-1  w-fit mt-4 hover:bg-transparent text-xs  sm:text-base">
                     {" "}
                     <span className="px-4">Incubator program</span>
@@ -48,11 +50,11 @@ const Hero = () => {
                       <MdChevronRight className="text-white" size={28} />
                     </span>
                   </Button>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="w-2/5 hidden md:block order-first md:order-last mb-8 sm:mb-12 md:mb-0">
-              <img src="./CAD-hero.png" alt="Celo_Africa_DAO" className="cad" />
+              <Image src="./CAD-hero.png" alt="Celo_Africa_DAO" className="cad" />
             </div>
           </div>
         </div>
