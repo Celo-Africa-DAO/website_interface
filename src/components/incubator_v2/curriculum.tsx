@@ -96,11 +96,11 @@ export default function Curriculum() {
                 Curriculum Overview
               </h1>
             
-              <div className="hidden md:flex flex-row justify-evenly items-center w-full">
+              <div className="hidden md:flex flex-row justify-evenly items-center w-5/6 ">
                 {events.map((_, index) => (
-                  <div key={index} className="flex flex-row justify-around items-center">
+                  <div key={index} className="flex flex-row justify-around  gap-2 items-center">
                     <Badge
-                      className={`flex w-20 text-center  justify-center rounded-full text-black border-celo-AD-slate-brown ${
+                      className={`flex w-16 text-center  justify-center rounded-full text-black border-celo-AD-slate-brown ${
                         trackindex === index ? "bg-Celo-AD-yellow text-black" : "bg-transparent"
                       }`}
                     >
