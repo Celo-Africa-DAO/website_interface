@@ -95,13 +95,13 @@ export default function Curriculum() {
               <h1 className="font-GT-Alpina text-3xl text-black font-bold">
                 Curriculum Overview
               </h1>
-              {/* Hide badges on small screens */}
+            
               <div className="hidden md:flex flex-row justify-evenly items-center w-full">
                 {events.map((_, index) => (
                   <div key={index} className="flex flex-row justify-around items-center">
                     <Badge
-                      className={`flex w-20 text-center justify-center rounded-full ${
-                        trackindex === index ? "bg-yellow-500 text-black" : "bg-gray-500"
+                      className={`flex w-20 text-center  justify-center rounded-full text-black border-celo-AD-slate-brown ${
+                        trackindex === index ? "bg-Celo-AD-yellow text-black" : "bg-transparent"
                       }`}
                     >
                       {index + 1}
