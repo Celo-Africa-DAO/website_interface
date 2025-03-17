@@ -19,6 +19,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import { MdChevronRight } from "react-icons/md";
 import { Button } from "../ui/button";
+import Curriculum from "./curriculum";
 
 export default  function Program() {
   const events = [
@@ -85,6 +86,7 @@ export default  function Program() {
               </CarouselNext>
             </div>
           </Carousel>
+          <Curriculum/>
         </div>
       </Section>
      

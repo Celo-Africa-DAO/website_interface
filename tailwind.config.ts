@@ -36,7 +36,7 @@ const config = {
       },
       colors: {
         "Celo-AD-primary": "#FCF6F1",
-        "Celo-AD-yellow": "#FCFF52",
+        "Celo-AD-yellow": "#FCFF52", 
         "Celo-AD-dark-green": "#476520",
         "Celo-AD-gray": "#DEE2D8",
         "Celo-AD-slate-green": "#068012",
