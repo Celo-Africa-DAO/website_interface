@@ -3,7 +3,7 @@ import Program from "../incubator_v2/program"
 
 const IncubatorProgram =()=>{
     return (
-        <div id='program' className="  bg-Celo-AD-olive-cream text-[#0C0C0C] pt-10">
+        <div id='program' className="  bg-Celo-AD-olive-cream text-[#0C0C0C] pt-0">
             <Section>               
                 
 <div className="mx-6 md:mx-14">

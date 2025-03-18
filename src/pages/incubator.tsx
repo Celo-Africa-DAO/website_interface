@@ -12,8 +12,7 @@ const IncubatorTwo = () => {
       <div className=" bg-Celo-AD-primary text-[#0C0C0C]">
          <IncubatorHeroCohort2 />
           <IncubatorWhyChoose />
-          <IncubatorPath />
-          <IncubatorRoadMap />
+         
          <IncubatorProgram/>
             <IncubationMentor />
             <SponsorPrev />
