@@ -44,6 +44,7 @@ const config = {
         "celo-AD-olive-green":"#E7E3D4",
         "celo-AD-cream":"#FAFAFA",
         "celo-AD-slate-brown":"#655947",
+        "celo-AD-white":"#FFFFFF",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

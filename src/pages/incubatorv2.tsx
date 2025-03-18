@@ -1,10 +1,12 @@
 import React from "react";
-import ProgramHighlights from "@/components/sections/incubatorProgram";
+import ProgramHighlights from "@/components/sections/IncubatorProgram";
+import  IncubatorPartner  from "@/components/sections/IncubatorPartner";
 
 const IncubatorPage = () => {
   return (
-    <div className=" bg-Celo-AD-cream text-[#0C0C0C]">
+    <div className=" text-[#0C0C0C]">
           <ProgramHighlights/>
+          <IncubatorPartner/>
     </div>
   );
 };
