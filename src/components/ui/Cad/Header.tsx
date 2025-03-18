@@ -19,6 +19,11 @@ const navList = [
     path: "/incubator",
     Image: "img/navlinks-hover-icon.svg",
   },
+  // {
+  //   title: "Incubator Cohort11",
+  //   path: "/incubatorTwo",
+  //   Image: "img/navlinks-hover-icon.svg",
+  // },
   { title: "Events", path: "#event", Image: "img/navlinks-hover-icon.svg" },
   {
     title: "Community",
