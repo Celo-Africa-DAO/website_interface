@@ -49,7 +49,7 @@ export default  function Program() {
 
   return (
     <div className="bg-Celo-AD-primary mt-10">
-      <Section >
+      
         <div className='mx-6 xl:mx-0 '>
           <Carousel className="w-full ">
             <CarouselContent className="ml-0 flex space-x-0">
@@ -88,7 +88,7 @@ export default  function Program() {
           </Carousel>
           <Curriculum/>
         </div>
-      </Section>
+      
      
     </div>
   );

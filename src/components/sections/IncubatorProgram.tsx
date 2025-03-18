@@ -1,16 +1,16 @@
 import Section from "../layouts/Section"
 import Program from "../incubator_v2/program"
 
-const ProgramHighlights =()=>{
+const IncubatorProgram =()=>{
     return (
         <div id='program' className="  bg-Celo-AD-olive-cream text-[#0C0C0C] pt-10">
             <Section>               
                 
 <div className="mx-6 md:mx-14">
 <div className="flex flex-col w-1/2 items-start justify-start h-20">
-<span className="text-sm text-Celo-AD-gray font-[400] ">
+<p className="text-xs sm:text-sm text-gray-600">
     Designed to support startup.
-    </span>
+    </p>
     <div className=" font-gt-alpina italic font-[250] text-4xl">
     <p className="text-black">
         Program
@@ -38,4 +38,4 @@ const ProgramHighlights =()=>{
         </div>)
 }
 
-export default ProgramHighlights
+export default IncubatorProgram
