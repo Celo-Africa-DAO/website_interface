@@ -30,11 +30,11 @@ const navList = [
     path: "https://celoafricadao.slack.com/canvas/C051YRQ3F6Z",
     Image: "img/navlinks-hover-icon.svg",
   },
-  {
-    title: "Goodwill Message",
-    path: "/goodwill",
-    Image: "img/navlinks-hover-icon.svg",
-  },
+  // {
+  //   title: "Goodwill Message",
+  //   path: "/goodwill",
+  //   Image: "img/navlinks-hover-icon.svg",
+  // },
   {
     title: "Team and Partner",
     path: "#team",
