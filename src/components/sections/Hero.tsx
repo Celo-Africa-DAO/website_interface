@@ -26,13 +26,15 @@ const Hero = () => {
                 </p>
               </div>
 
-              <div className="md:hidden flex  my-12 sm:mb-12 md:mb-0 text-center justify-center ">
+                <div className="md:hidden flex  my-12 sm:mb-12 md:mb-0 text-center justify-center ">
                 <Image
-                  src="./CAD-hero.png"
+                  src="/CAD-hero.png"
                   alt="Celo_Africa_DAO"
                   className="w-100 h-80"
+                  width={100}
+                  height={0}
                 />
-              </div>
+                </div>
               <p className="text-[#565656] font-Inter pb-8 md:py-8 w-full  sm:w-4/6 font-sans      text-base sm:text-lg">
                 A decentralized autonomous organization dedicated to fostering
                 the growth and adoption of the CELO blockchain across the
@@ -54,7 +56,7 @@ const Hero = () => {
               </div>
             </div>
             <div className="w-2/5 hidden md:block order-first md:order-last mb-8 sm:mb-12 md:mb-0">
-              <Image src="./CAD-hero.png" alt="Celo_Africa_DAO" className="cad" />
+              <Image src="/CAD-hero.png" alt="Celo_Africa_DAO" className="cad" width={100} height={80}/>
             </div>
           </div>
         </div>
