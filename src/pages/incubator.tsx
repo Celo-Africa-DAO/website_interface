@@ -1,18 +1,26 @@
-import React from "react";
-import IncubatorHeroCohort2  from "../components/sections/IncubatorHeroCohort2";   
+import IncubationMentor from "@/components/sections/IncubationMentor";
+import SponsorPrev from "@/components/sections/SponsorPrev";
+import IncubatorPartner from "@/components/sections/IncubatorPartner";
+import IncubatorProgram from "@/components/sections/IncubatorProgram";
+import IncubatorHeroCohort2 from "@/components/sections/IncubatorHeroCohort2";
 import IncubatorWhyChoose from "@/components/sections/IncubatorWhyChoose";
 import IncubatorPath from "@/components/sections/IncubatorPath";
 import IncubatorRoadMap from "@/components/sections/IncubatorRoadMap";
 
-const IncubatorPage = () => {
-  return (
-    <div className=" bg-Celo-AD-primary text-[#0C0C0C]">
-          <IncubatorHeroCohort2 />
+const IncubatorTwo = () => {
+    return (
+      <div className=" bg-Celo-AD-primary text-[#0C0C0C]">
+         <IncubatorHeroCohort2 />
           <IncubatorWhyChoose />
           <IncubatorPath />
           <IncubatorRoadMap />
-    </div>
-  );
-};
-
-export default IncubatorPage;
+         <IncubatorProgram/>
+            <IncubationMentor />
+            <SponsorPrev />
+           
+            <IncubatorPartner/>
+      </div>
+    );
+  };
+  
+  export default IncubatorTwo;

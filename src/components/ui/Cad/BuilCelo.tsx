@@ -15,7 +15,7 @@ const BuilCelo = () => {
                         </p>
                         <p className="italic -my-2 md:-my-8">with celo africa dao</p>
                     </div>
-                    <Image className="w-2/5 md:w-1/5 self-end" src="/skew-right.png" height={0} width={0} alt="" />
+                    <Image className="w-2/5 md:w-1/5 self-end" src="/skew-right.png" alt="" width={400} height={400} />
                 </div>
             </div>
         </Section>
