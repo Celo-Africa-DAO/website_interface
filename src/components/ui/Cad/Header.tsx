@@ -19,17 +19,22 @@ const navList = [
     path: "/incubator",
     Image: "img/navlinks-hover-icon.svg",
   },
+  // {
+  //   title: "Incubator Cohort11",
+  //   path: "/incubatorTwo",
+  //   Image: "img/navlinks-hover-icon.svg",
+  // },
   { title: "Events", path: "#event", Image: "img/navlinks-hover-icon.svg" },
   {
     title: "Community",
     path: "https://celoafricadao.slack.com/canvas/C051YRQ3F6Z",
     Image: "img/navlinks-hover-icon.svg",
   },
-  {
-    title: "Goodwill Message",
-    path: "/goodwill",
-    Image: "img/navlinks-hover-icon.svg",
-  },
+  // {
+  //   title: "Goodwill Message",
+  //   path: "/goodwill",
+  //   Image: "img/navlinks-hover-icon.svg",
+  // },
   {
     title: "Team and Partner",
     path: "#team",
