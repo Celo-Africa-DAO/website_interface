@@ -26,7 +26,7 @@ const IncubatorHero = () => {
                   className="w-100 h-80"
                 />
               </div>
-              <p className="text-[#565656] font-Inter pb-8 md:py-8 w-full  sm:w-5/6 font-sans      text-base sm:text-lg">
+              <p className="text-[#565656] font-Inter pb-8 md:py-8 w-full  sm:w-5/6 font-sans text-base sm:text-lg">
                 An early stage program  that seeks to support early stage
                 founders  building web 3 projects in Africa. The aim is to take
                 them to the next level of support where we can have them 
