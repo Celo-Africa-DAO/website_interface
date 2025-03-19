@@ -153,7 +153,7 @@ export default function Curriculum() {
                   ))}
                 </CarouselContent>
                 
-                <div className="flex gap-2 mt-8 md:mt-0 bg-Celo-AD-primary justify-end text-black">
+                <div className="flex gap-2 mt-4 md:mt-0 bg-Celo-AD-primary justify-end text-black">
                 <CarouselPrevious
                   className="static md:absolute h-12 w-12 bg-celo-AD-olive-green border-gray-400 hover:bg-gray-100"
                   

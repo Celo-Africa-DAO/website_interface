@@ -54,9 +54,7 @@ const IncubatorHeroCohort2 = () => {
           </div>
         </div>
       </Section>
-      <div className="flex justify-start items-start mt-auto">
-        <div className="h-32 w-32 bg-white"></div>
-      </div>
+     
     </div>
   );
 };
