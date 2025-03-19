@@ -11,7 +11,7 @@
     "prepare": "npx husky install && chmod +x .husky/* && chmod +x ./branch-name-check.sh"
   },
   "dependencies": {
-    "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-slot": "^1.1.2",
     "@radix-ui/react-tabs": "^1.0.4",
     "@svgr/webpack": "^8.1.0",
     "class-variance-authority": "^0.7.0",
