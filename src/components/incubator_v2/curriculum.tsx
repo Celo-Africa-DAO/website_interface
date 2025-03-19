@@ -103,11 +103,11 @@ export default function Curriculum() {
 
   return (
     <div className="bg-Celo-AD-primary">
-      <Section>
+      
         <div className="flex justify-center items-start mx-0 md:mx-32 xl:mx-0">
           <div className="flex flex-col bg-celo-AD-olive-green w-full">
             <div className="flex flex-col gap-4 items-center mt-10">
-              <h1 className="font-GT-Alpina text-3xl text-black font-bold">
+              <h1 className="font-GT-Alpina text-3xl text-black font-thin">
                 Curriculum Overview
               </h1>
             
@@ -152,7 +152,8 @@ export default function Curriculum() {
                     </CarouselItem>
                   ))}
                 </CarouselContent>
-                <div className="flex gap-2 mt-0 justify-end text-black">
+                
+                <div className="flex gap-2 mt-8 md:mt-0 bg-Celo-AD-primary justify-end text-black">
                 <CarouselPrevious
                   className="static md:absolute h-12 w-12 bg-celo-AD-olive-green border-gray-400 hover:bg-gray-100"
                   
@@ -171,7 +172,7 @@ export default function Curriculum() {
             </div>
           </div>
         </div>
-      </Section>
+     
     </div>
   );
 }

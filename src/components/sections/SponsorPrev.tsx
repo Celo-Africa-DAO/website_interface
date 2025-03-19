@@ -55,7 +55,7 @@ const SponsorPrev = () => {
         >
           <div className="bg-black bg-opacity-40 px-4 sm:px-8 md:px-16 lg:px-24 py-16 sm:py-24 md:py-32 text-white rounded-lg">
             <div className="max-w-lg">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif mb-2">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-GT-Alpina font-thin mb-2">
                 Sponsorship
                 <br />
                 <span className="italic pl-4 sm:pl-10 md:pl-14">Opportunities</span>
@@ -80,7 +80,7 @@ const SponsorPrev = () => {
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 sm:mb-12">
           <div>
             <p className="text-xs sm:text-sm text-gray-600">Top Three Project</p>
-            <h2 className="text-2xl sm:text-3xl font-GT-Alpina  font-serif">
+            <h2 className="text-2xl sm:text-3xl font-GT-Alpina  font-thin">
               Previous
               <br />
               <span className="italic pl-6 sm:pl-16">Cohort</span>

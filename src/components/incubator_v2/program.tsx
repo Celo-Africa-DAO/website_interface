@@ -69,7 +69,7 @@ export default  function Program() {
                              />
 
                     </div>
-                      <CardTitle className="font-gt-alpina-trial italic  font-extralight text-2xl">{element.name}</CardTitle>
+                      <CardTitle className="font-GT-Alpina italic  font-thin text-2xl">{element.name}</CardTitle>
                       <CardDescription className="leading-relaxed md:leading-normal text-base pb-20">{element.location}</CardDescription>
                     </CardHeader>
                     

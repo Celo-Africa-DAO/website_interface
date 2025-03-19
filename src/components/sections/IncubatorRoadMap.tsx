@@ -53,7 +53,7 @@ const IncubatorRoadMap = () => {
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex flex-col z-10 gap-5 md:gap-8 justify-center items-center">
           <div className="w-full md:pl-4 lg:pl-10 xl:pl-56">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl mb-2 md:mb-3 text-[#000000] leading-tight font-light font-GT-Alpina">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl mb-2 md:mb-3 text-[#000000] leading-tight font-thin font-GT-Alpina">
               Roadmap
             </h1>
             <p className="text-sm md:text-base mb-10 md:mb-16 lg:mb-20 font-normal text-[#56544E] max-w-3xl">
