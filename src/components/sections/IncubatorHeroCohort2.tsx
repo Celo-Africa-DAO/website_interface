@@ -14,13 +14,13 @@ const IncubatorHeroCohort2 = () => {
 
       <Section>
         <div className="relative z-10 flex flex-col justify-center w-full max-w-screen-lg mx-auto text-white px-8 sm:px-14 md:px-20 lg:px-28 mt-[-60px] sm:mt-[-80px] md:mt-[-100px] ml-6 sm:ml-8 md:ml-12">
-          <h1 className="font-GT-Alpina text-xl sm:text-3xl md:text-4xl lg:text-5xl font-extralight leading-tight">
+          <h1 className="font-GT-Alpina text-xl sm:text-3xl md:text-4xl lg:text-5xl font-thin leading-tight">
             Incubator
           </h1>
-          <h1 className="font-GT-Alpina ml-16 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-extralight leading-tight">
+          <h1 className="font-GT-Alpina ml-16 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-thin leading-tight">
              Program
           </h1>
-          <h2 className="font-GT-Alpina text-xl sm:text-3xl md:text-4xl lg:text-5xl font-extralight italic mt-1">
+          <h2 className="font-GT-Alpina text-xl sm:text-3xl md:text-4xl lg:text-5xl font-thin italic mt-1">
             - Cohort II
           </h2>
 

@@ -17,8 +17,8 @@ const IncubatorWhyChoose = () => {
 
       <div className="relative z-10 flex flex-col md:flex-row items-center md:items-start justify-between px-6 md:px-[80px] lg:px-[160px] gap-8">
         <div className="flex-1">
-          <div className="text-[20px] md:text-[32px] font-GT-Alpina">
-            <h4 className="font-light">Why Choose</h4>
+          <div className="text-[20px] md:text-[32px] font-GT-Alpina font-thin">
+            <h4 className=" ">Why Choose</h4>
             <span className="ml-20 italic">Our Incubator</span>
           </div>
 
@@ -32,14 +32,14 @@ const IncubatorWhyChoose = () => {
 
           <p className="text-[14px] md:text-[18px] font-semibold mt-6">
             Application Period:
-            <span className="text-gray-800 font-normal"> March 15th - March 31st</span>
+            <span className="text-gray-800 font-normal"> March 19th - April 9th</span>
           </p>
           <p className="text-[14px] md:text-[18px] font-semibold">
             Program Commencement:
             <span className="text-gray-800 font-normal"> 16th April 2025</span>
           </p>
 
-          <div className="mt-10">
+          <div className="mt-4">
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSdRgbeFNKulww_-8w-LsK7-3lAR72NUVCinvyr2MUHW9MfsIg/viewform"
               target="_blank"

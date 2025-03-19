@@ -12,8 +12,8 @@ const  IncubatorPartner=()=>{
 
             </div>
             <Section>
-                <div className="flex flex-col items-center bg-transparent justify-center gap-4 mx-40 text-black">
-                    <h1 className="text-3xl    font-GT-Alpina    font-[250] ">Incubation Partners</h1>
+                <div className="flex flex-col items-center bg-transparent justify-center gap-8 mx-40 text-black">
+                    <h1 className="text-3xl    font-GT-Alpina    font-thin ">Incubation Partners</h1>
                     <Partner/>
                 </div>
 

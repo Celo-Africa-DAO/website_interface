@@ -53,7 +53,7 @@ const IncubationMentor = () => {
           <div className="flex flex-col sm:flex-row justify-between items-center mb-8 md:mb-12">
             <div className="text-center sm:text-left mb-6 sm:mb-0">
               <p className="text-sm text-[#0C0C0C] mb-1">Uniquely selected</p>
-              <h2 className="text-2xl md:text-3xl font-GT-Alpina  font-serif text-[#0C0C0C]">
+              <h2 className="text-2xl md:text-3xl font-GT-Alpina  font-thin text-[#0C0C0C]">
                 Program
                 <br />
                 <span className="italic sm:pl-10">Mentors</span>
