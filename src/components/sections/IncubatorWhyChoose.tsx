@@ -4,25 +4,23 @@ import { Button } from "../ui/button";
 
 const IncubatorWhyChoose = () => {
   return (
-    <div className="w-full h-full relative bg-[#E7E3D4] flex flex-col gap-[40px] md:gap-[100px] pt-[90px]">
-      {/* Background Bleed-In Effect */}
-      <Image
-        src="/inc-whychoose.svg"
-        className="absolute z-0 w-full -top-20 sm:-top-28 md:-top-36 lg:-top-44 left-0"
-        height={1488}
-        width={1742}
-        alt="incubator why choose bg"
-      />
-      
+    <div className="w-full h-full relative bg-[#E7E3D4] flex flex-col gap-[40px] md:gap-[100px] pt-[90px] overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden">
+        <Image
+          src="/inc-whychoose.svg"
+          className="w-full max-w-full object-contain"
+          height={1488}
+          width={1742}
+          alt="incubator why choose bg"
+        />
+      </div>
+
       <div className="relative z-10 flex flex-col md:flex-row items-center md:items-start justify-between px-6 md:px-[80px] lg:px-[160px] gap-8">
         <div className="flex-1">
           <div className="text-[20px] md:text-[32px] font-GT-Alpina">
-          <h4 className=" font-light">
-            Why Choose
-          </h4>
-          <span className="ml-20 italic ">Our Incubator</span>
+            <h4 className="font-light">Why Choose</h4>
+            <span className="ml-20 italic">Our Incubator</span>
           </div>
-          
 
           <p className="font-Inter text-[12px] md:text-[16px] max-w-xl text-gray-800 mt-3">
             Our program is designed to nurture innovation and drive growth for startups across Africa.
