@@ -9,12 +9,12 @@ const IncubationMentor = () => {
   const mentors = [
     {
       name: "Duncan Muchangi",
-      role: "Head Of BLC Telkiks",
+      role: "Head Of BD, Fonbnk",
       image: "/Ducan.png",
     },
     {
       name: "Jovan Mwesigwa",
-      role: "Founder Cletrship",
+      role: "Founder Oneramp",
       image: "/Jovan.png",
     },
     {
@@ -24,12 +24,12 @@ const IncubationMentor = () => {
     },
     {
       name: "Eliash Ezron",
-      role: "Co-Founder Skafru",
+      role: "Co-Founder Shukuru",
       image: "/Eliza.png",
     },
     {
       name: "Joshua C. Tebepina",
-      role: "Co-Founder, Engineer",
+      role: "Co-Founder  Bingteller",
       image: "/Joshua.png",
     },
   ];
@@ -53,7 +53,7 @@ const IncubationMentor = () => {
           <div className="flex flex-col sm:flex-row justify-between items-center mb-8 md:mb-12">
             <div className="text-center sm:text-left mb-6 sm:mb-0">
               <p className="text-sm text-[#0C0C0C] mb-1">Uniquely selected</p>
-              <h2 className="text-2xl md:text-3xl font-serif text-[#0C0C0C]">
+              <h2 className="text-2xl md:text-3xl font-GT-Alpina  font-serif text-[#0C0C0C]">
                 Program
                 <br />
                 <span className="italic sm:pl-10">Mentors</span>

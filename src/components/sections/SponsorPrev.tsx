@@ -77,7 +77,7 @@ const SponsorPrev = () => {
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 sm:mb-12">
           <div>
             <p className="text-xs sm:text-sm text-gray-600">Top Three Project</p>
-            <h2 className="text-2xl sm:text-3xl font-serif">
+            <h2 className="text-2xl sm:text-3xl font-GT-Alpina  font-serif">
               Previous
               <br />
               <span className="italic pl-6 sm:pl-16">Cohort</span>

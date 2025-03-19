@@ -11,11 +11,11 @@ const IncubatorProgram =()=>{
 <p className="text-xs sm:text-sm text-gray-600">
     Designed to support startup.
     </p>
-    <div className=" font-gt-alpina italic font-[250] text-4xl">
+    <div className=" font-GT-Alpina  font-[250] text-4xl">
     <p className="text-black">
         Program
     </p>
-    <p className="text-black ml-4">
+    <p className="text-black italic ml-4">
         Highlight
     </p>
     </div>
