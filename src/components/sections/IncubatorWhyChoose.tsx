@@ -28,7 +28,7 @@ const IncubatorWhyChoose = () => {
             Our program is designed to nurture innovation and drive growth for startups across Africa.
             We are sector-agnostic, welcoming projects from DeFi to AI agents, with a particular
             interest in applications utilizing local stablecoins such as cGHS, cKES, and cUSD.
-            By participating, you'll join a vibrant community committed to revolutionizing the technological
+            By participating, you&apos;ll join a vibrant community committed to revolutionizing the technological
             landscape of Africa.
           </p>
 
