@@ -21,9 +21,12 @@ const IncubatorHero = () => {
 
               <div className="md:hidden flex  my-12 sm:mb-12 md:mb-0 text-center justify-center ">
                 <Image
-                  src="./CeloAfrica Roadmap.png"
+                  src="/CeloAfrica Roadmap.png"
                   alt="Celo_Africa_DAO"
                   className="w-100 h-80"
+                  width={300}
+                  height={100}
+                  
                 />
               </div>
               <p className="text-[#565656] font-Inter pb-8 md:py-8 w-full  sm:w-5/6 font-sans      text-base sm:text-lg">
@@ -35,8 +38,10 @@ const IncubatorHero = () => {
             </div>
             <div className="w-2/5 hidden md:block mb-8 sm:mb-12 md:mb-0">
               <Image
-                src="./CeloAfrica Roadmap.png"
+                src="/CeloAfrica Roadmap.png"
                 alt="Celo_Africa_DAO"
+                width={300}
+                height={100}
                 className="cad"
               />
             </div>
@@ -48,3 +53,4 @@ const IncubatorHero = () => {
 };
 
 export default IncubatorHero;
+
