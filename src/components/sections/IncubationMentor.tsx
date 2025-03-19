@@ -23,9 +23,9 @@ const IncubationMentor = () => {
       image: "/Kaika.png",
     },
     {
-      name: "Eliash Ezron",
-      role: "Co-Founder Shukuru",
-      image: "/Eliza.png",
+      name: "Derrick Bundi",
+      role: "Co-Founder Pretium ",
+      image: "/bundi.jpeg",
     },
     {
       name: "Joshua C. Tebepina",
