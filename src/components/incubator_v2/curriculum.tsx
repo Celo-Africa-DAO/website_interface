@@ -10,6 +10,7 @@ import {
   Card,
   CardContent,
   CardHeader,
+  CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
 import Section from "@/components/layouts/Section";
@@ -30,58 +31,72 @@ export default function Curriculum() {
   const events = [
     {
       id: 0,
-      name: "Comprehensive Funding",
-      location: "Up to $9k for the prize pool from the DAO and partners",
-      date: "Learn More",
+      name: "Finding product-market",
+      location: "Assit founders in honing their concepts to address genuine market needs.",
+      date: "fit",
       url: "/program-square-icon.svg",
     },
     {
       id: 1,
-      name: "Tokenomics and Liquidity Guidance",
-      location: "Strategic advice on token design, incentive structures, distribution mechanisms, and listing strategies to build sustainable token economies.",
-      date: "Learn More",
+      name: "Crypto Business",
+      location: "Guide startups in creating sustainable and scalable business frameworks.",
+      date: "Model",
       url: "/program-star-icon.svg",
     },
     {
       id: 2,
-      name: "Robust Mentor Network",
-      location: "A thriving network of distinguished mentors, including operators, entrepreneurs, and investors",
-      date: "Learn More",
+      name: "Build & integrate",
+      location: "How do you go about to deploy on Celo mainnet?",
+      date: "with Celo",
       url: "/program-zig-icon.svg",
     },
     {
       id: 3,
-      name: "Technical Workshops",
-      location: "Live and recorded workshops covering blockchain development, security, and best practices.",
-      date: "Learn More",
+      name: "Building on Minipay",
+      location: "Leveraging Opera's distribution channel to reach more users.",
+      date: "",
       url: "/program-tech-icon.svg",
     },
     {
       id: 4,
-      name: "Marketing & Growth Support",
-      location: "Assistance in growth hacking, community building, and outreach strategies.",
-      date: "Learn More",
+      name: "Creating a winning",
+      location: "Teach founders to present their business ideas compellingly.",
+      date: "Pitch Deck",
       url: "/program-marketing-icon.svg",
     },
     {
       id: 5,
-      name: "Legal & Compliance Guidance",
-      location: "Expert advice on regulatory compliance, legal structuring, and industry best practices.",
-      date: "Learn More",
+      name: "Scalling, BD & Fundraising",
+      location: "Expanding to new markets, partners and know when ready to receive investment.",
+      date: "readiness",
       url: "/program-legal-icon.svg",
     },
     {
       id: 6,
-      name: "Investment & Partnership Opportunities",
-      location: "Exclusive access to potential investors, partners, and industry leaders.",
-      date: "Learn More",
+      name: "Customer acquisition",
+      location: "Building a customer base and retention",
+      date: "",
       url: "/program-investment-icon.svg",
     },
     {
       id: 7,
-      name: "Product & UX Design Support",
-      location: "Expert guidance on user experience, interface design, and product iteration strategies.",
-      date: "Learn More",
+      name: "Legal and Regulatory",
+      location: "Understanding legal structures and regulatory requirements.",
+      date: "Framework",
+      url: "/program-ux-icon.svg",
+    },
+    {
+      id: 8,
+      name: "Tokenomics Advisory",
+      location: "Using ubestarter Token Launchpad to gain hands-on experience in deploying your token",
+      date: "Framework",
+      url: "/program-ux-icon.svg",
+    },
+    {
+      id: 9,
+      name: "Demo Day",
+      location: "Founders presenting compelling ideas to potential investors.",
+      date: "",
       url: "/program-ux-icon.svg",
     },
   ];
@@ -100,7 +115,7 @@ export default function Curriculum() {
                 {events.map((_, index) => (
                   <div key={index} className="flex flex-row justify-around  gap-2 items-center">
                     <Badge
-                      className={`flex w-16 text-center  justify-center rounded-full text-black border-celo-AD-slate-brown ${
+                      className={`flex w-12 text-center  justify-center rounded-full text-black border-celo-AD-slate-brown ${
                         trackindex === index ? "bg-Celo-AD-yellow text-black" : "bg-transparent"
                       }`}
                     >
@@ -111,7 +126,7 @@ export default function Curriculum() {
               </div>
             </div>
 
-            <div className="flex w-full justify-center items-center">
+            <div className="flex w-full justify-center items-center pt-4">
               <Carousel className="w-full max-w-xs">
                 <CarouselContent>
                   {events.map((element, index) => (
@@ -120,13 +135,17 @@ export default function Curriculum() {
                       className="flex flex-col justify-between basis-[100%]  p-0 m-0"
                     >
                       <div className="p-1">
-                        <Card className="bg-transparent ">
-                          <CardHeader className="text-center font-bold text-lg">
-                            {element.name}
-                          </CardHeader>
+                        <Card className="bg-transparent  ">
+                          <CardTitle className="text-center font-bold text-lg ">
+                            <div className="flex flex-col">
+                            <p> {element.name}</p>
+                            <p> {element.date}</p>
+                            </div>                          
+                           
+                          </CardTitle>
                           <CardContent className="flex flex-col items-center p-4">
                            
-                            <p className="text-center text-sm">{element.location}</p>
+                            <p className="text-center text-sm text-celo-AD-slate-brown">{element.location}</p>
                           </CardContent>
                         </Card>
                       </div>

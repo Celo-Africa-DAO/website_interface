@@ -4,6 +4,11 @@ import Program from "../incubator_v2/program"
 const IncubatorProgram =()=>{
     return (
         <div id='program' className="  bg-Celo-AD-olive-cream text-[#0C0C0C] pt-0">
+            <div className=" flex justify-end items-start">
+                <div className="h-20 md:w-1/2 bg-celo-AD-olive-green">
+
+                </div>
+                </div>
             <Section>               
                 
 <div className="mx-6 md:mx-14">

@@ -40,6 +40,9 @@ const SponsorPrev = () => {
   ];
 
   return (
+    <div>
+
+    
     <section className="max-w-6xl mx-auto py-8 sm:py-12 md:py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <div
@@ -157,6 +160,13 @@ const SponsorPrev = () => {
         </div>
       </div>
     </section>
+    <div className=" flex justify-start items-start">
+                <div className="h-32 w-32 bg-white">
+
+                </div>
+
+            </div>
+    </div>
   );
 };
 
