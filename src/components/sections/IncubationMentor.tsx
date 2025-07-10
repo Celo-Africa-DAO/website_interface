@@ -32,6 +32,11 @@ const IncubationMentor = () => {
       role: "Co-Founder  Bingteller",
       image: "/Joshua.png",
     },
+    {
+      name: "Naheem Oloyede",
+      role: "Celo Africa DAO Core-Contributor",
+      image: "/Naheem.jpg",
+    },
   ];
 
   const handleMentor = () => {
@@ -41,7 +46,7 @@ const IncubationMentor = () => {
   return (
     <div
       id="incubation"
-      className=" relative bg-center bg-no-repeat  px-4 sm:px-8 md:px-12 lg:pl-16 xl:pl-64 py-16 md:py-24 pt-32  lg:py-36 lg:pr-10 "
+      className=" relative bg-center bg-no-repeat  px-4 sm:px-8 md:px-12 lg:pl-16 xl:pl-64 py-16 md:py-24 pt-32  lg:pb-44 lg:pr-10 "
       style={{
         backgroundImage: "url(./IncubatorMentor-bg.png)",
         backgroundSize: "cover", 
