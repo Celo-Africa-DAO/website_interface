@@ -37,6 +37,11 @@ const IncubationMentor = () => {
       role: "Celo Africa DAO Core-Contributor",
       image: "/Naheem.jpg",
     },
+    {
+      name: "Muhido Galien",
+      role: "Senior Software Engineer",
+      image: "/img/MUhindo.png",
+    },
   ];
 
   const handleMentor = () => {
@@ -78,13 +83,13 @@ const IncubationMentor = () => {
             </div>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-2 lg:gap-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-2 lg:gap-2">
             {mentors.map((mentor, index) => (
               <div 
                 key={mentor.name} 
                 className="text-center flex flex-col items-center w-full"
               >
-                <div className="w-3/4 sm:w-full h-56 sm:h-48 md:h-52 lg:h-48 overflow-hidden mx-auto">
+                <div className="w-3/4 sm:w-full h-56 sm:h-48 md:h-52 lg:h-48 overflow-hidden mx-auto rounded-lg">
                   <Image
                     src={mentor.image}
                     alt={mentor.name}
@@ -94,7 +99,7 @@ const IncubationMentor = () => {
                     priority
                   />
                 </div>
-                <div className={`border-b sm:border-b-0 ${index !== mentors.length - 1 ? 'sm:border-r' : ''} border-black w-full`}>
+                <div className={`border-b sm:border-b-0 ${index !== mentors.length - 1 ? 'sm:border-r' : ''}`}>
                   <h3 className="font-medium text-sm w-full py-2">{mentor.name}</h3>
                   <p className="text-xs text-gray-600 w-full py-1 pb-4 sm:pb-2">{mentor.role}</p>
                 </div>

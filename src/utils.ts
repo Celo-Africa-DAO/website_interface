@@ -146,6 +146,7 @@ export const transformApiData = (data: any[]): Company[] => {
       item.email ||
       item.contact ||
       "",
+    logo: item.name ? item.name.charAt(0).toUpperCase() : "S",
   }));
 };
 

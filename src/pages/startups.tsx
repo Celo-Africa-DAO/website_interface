@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
-import { TailSpin } from "react-loader-spinner";
 import { Company, SelectedFilters, SortOption } from "../types";
 import {
   getActiveFilterCount,
@@ -13,6 +12,7 @@ import {
   getDefaultFilters,
   createGmailUrl,
 } from "../utils";
+import { FaLocationDot } from "react-icons/fa6";
 
 const StartupDirectory = () => {
   const [companies, setCompanies] = useState<Company[]>([]);
@@ -78,16 +78,7 @@ const StartupDirectory = () => {
     return (
       <div className="min-h-screen bg-Celo-AD-primary mt-20 flex items-center justify-center">
         <div className="text-center">
-          <TailSpin
-            height="80"
-            width="80"
-            color="#2563eb"
-            ariaLabel="tail-spin-loading"
-            radius="1"
-            wrapperStyle={{}}
-            wrapperClass="mx-auto mb-4"
-            visible={true}
-          />
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
           <p className="text-gray-600">Loading companies...</p>
         </div>
       </div>
@@ -275,17 +266,17 @@ const StartupDirectory = () => {
                       </span>
                     </div>
                     <div className="space-y-1.5 sm:space-y-2 ml-4 sm:ml-6">
-                      {uniqueCohorts.map((batch) => (
+                      {uniqueCohorts.map((cohort) => (
                         <div
-                          key={batch}
+                          key={cohort}
                           className="flex items-center justify-between"
                         >
                           <div className="flex items-center space-x-2 sm:space-x-3">
                             <input
                               type="checkbox"
-                              id={batch}
+                              id={cohort}
                               checked={selectedFilters.selectedCohorts.includes(
-                                batch
+                                cohort
                               )}
                               onChange={(e) => {
                                 if (e.target.checked) {
@@ -293,14 +284,14 @@ const StartupDirectory = () => {
                                     ...prev,
                                     selectedCohorts: [
                                       ...prev.selectedCohorts,
-                                      batch,
+                                      cohort,
                                     ],
                                     allCohorts: false,
                                   }));
                                 } else {
                                   const newSelectedCohorts =
                                     selectedFilters.selectedCohorts.filter(
-                                      (b) => b !== batch
+                                      (b) => b !== cohort
                                     );
                                   setSelectedFilters((prev) => ({
                                     ...prev,
@@ -312,10 +303,10 @@ const StartupDirectory = () => {
                               className="rounded border-gray-300 text-blue-600 focus:ring-blue-500 w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5"
                             />
                             <label
-                              htmlFor={batch}
+                              htmlFor={cohort}
                               className="text-xs sm:text-sm text-gray-700"
                             >
-                              {batch}
+                              Cohort: {cohort}
                             </label>
                           </div>
                         </div>
@@ -557,12 +548,15 @@ const StartupDirectory = () => {
                   <div className="flex-1 min-w-0 text-left">
                     <div className="flex flex-col space-y-2 sm:space-y-0 sm:flex-row sm:items-start sm:justify-between">
                       <div className="flex-1">
-                        <h3 className="text-sm sm:text-base md:text-lg font-semibold text-black mb-1">
-                          {company.name}
-                        </h3>
-                        <p className="text-xs sm:text-sm text-gray-600 mb-1 sm:mb-2 font-Inter">
-                          {company.location}
-                        </p>
+                        <div className="flex gap-1">
+                          <span className="text-sm sm:text-base md:text-lg font-semibold text-black mb-1">
+                            {company.name},
+                          </span>
+                          <span className="flex items-center gap-1 text-xs sm:text-sm text-gray-600 mb-1 sm:mb-2 font-Inter">
+                            <FaLocationDot className="w-4 h-4" />
+                            {company.location}
+                          </span>
+                        </div>
                         <p className="text-xs sm:text-sm text-gray-800 mb-2 sm:mb-3 font-Inter">
                           {company.description}
                         </p>
@@ -570,7 +564,7 @@ const StartupDirectory = () => {
                         {/* Tags */}
                         <div className="flex flex-wrap justify-start gap-1.5 sm:gap-2">
                           <span className="inline-flex items-center px-1.5 sm:px-2 md:px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
-                            {company.batch}
+                            Cohort: {company.batch}
                           </span>
                           {company.tags.map((tag, tagIndex) => (
                             <span

@@ -7,6 +7,8 @@ export interface Company {
   tags: string[];
   projectLink?: string;
   founderContact?: string;
+  logo?: string;
+  cohort?: string;
 }
 
 export interface SelectedFilters {
