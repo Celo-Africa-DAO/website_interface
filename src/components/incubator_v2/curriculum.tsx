@@ -1,178 +1,207 @@
 import * as React from "react";
 import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import {
   Card,
   CardContent,
-  CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import Image from "next/image";
-import Section from "@/components/layouts/Section";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { Badge } from "../ui/badge";
 
 export default function Curriculum() {
-  const [trackindex, setTrackIndex] = React.useState<number>(0);
+  const [pathAnimation, setPathAnimation] = React.useState(false);
+  const [hoveredNode, setHoveredNode] = React.useState<number | null>(null);
+  const [currentWeek, setCurrentWeek] = React.useState(0);
 
-  const handleNext = () => {
-    setTrackIndex((prev) => (prev < events.length - 1 ? prev + 1 : prev));
-  };
-
-  const handlePrev = () => {
-    setTrackIndex((prev) => (prev > 0 ? prev - 1 : prev));
-  };
+  React.useEffect(() => {
+    setPathAnimation(true);
+    // Set a fixed current week to avoid hydration issues
+    setCurrentWeek(0);
+  }, []);
 
   const events = [
-    {
-      id: 0,
-      name: "Finding product-market",
-      location: "Assit founders in honing their concepts to address genuine market needs.",
-      date: "fit",
-      url: "/program-square-icon.svg",
-    },
-    {
-      id: 1,
-      name: "Crypto Business",
-      location: "Guide startups in creating sustainable and scalable business frameworks.",
-      date: "Model",
-      url: "/program-star-icon.svg",
-    },
-    {
-      id: 2,
-      name: "Build & integrate",
-      location: "How do you go about to deploy on Celo mainnet?",
-      date: "with Celo",
-      url: "/program-zig-icon.svg",
-    },
-    {
-      id: 3,
-      name: "Building on Minipay",
-      location: "Leveraging Opera's distribution channel to reach more users.",
-      date: "",
-      url: "/program-tech-icon.svg",
-    },
-    {
-      id: 4,
-      name: "Creating a winning",
-      location: "Teach founders to present their business ideas compellingly.",
-      date: "Pitch Deck",
-      url: "/program-marketing-icon.svg",
-    },
-    {
-      id: 5,
-      name: "Scalling, BD & Fundraising",
-      location: "Expanding to new markets, partners and know when ready to receive investment.",
-      date: "readiness",
-      url: "/program-legal-icon.svg",
-    },
-    {
-      id: 6,
-      name: "Customer acquisition",
-      location: "Building a customer base and retention",
-      date: "",
-      url: "/program-investment-icon.svg",
-    },
-    {
-      id: 7,
-      name: "Legal and Regulatory",
-      location: "Understanding legal structures and regulatory requirements.",
-      date: "Framework",
-      url: "/program-ux-icon.svg",
-    },
-    {
-      id: 8,
-      name: "Tokenomics Advisory",
-      location: "Using ubestarter Token Launchpad to gain hands-on experience in deploying your token",
-      date: "Framework",
-      url: "/program-ux-icon.svg",
-    },
-    {
-      id: 9,
-      name: "Demo Day",
-      location: "Founders presenting compelling ideas to potential investors.",
-      date: "",
-      url: "/program-ux-icon.svg",
-    },
+    { id: 0, name: "Finding product-market fit", description: "Assist founders in honing their concepts to address genuine market needs." },
+    { id: 1, name: "Crypto Business Model", description: "Guide startups in creating sustainable and scalable business frameworks." },
+    { id: 2, name: "Build & integrate with Celo", description: "How do you go about to deploy on Celo mainnet?" },
+    { id: 3, name: "Building on Minipay", description: "Leveraging Opera's distribution channel to reach more users." },
+    { id: 4, name: "Creating a winning Pitch Deck", description: "Teach founders to present their business ideas compellingly." },
+    { id: 5, name: "Scaling, BD & Fundraising readiness", description: "Expanding to new markets, partners and know when ready to receive investment." },
+    { id: 6, name: "Customer acquisition", description: "Building a customer base and retention strategies." },
+    { id: 7, name: "Legal and Regulatory Framework", description: "Understanding legal structures and regulatory requirements." },
+    { id: 8, name: "Tokenomics Advisory Framework", description: "Using Ubestarter Token Launchpad to gain hands-on experience in deploying your token." },
+    { id: 9, name: "Demo Day", description: "Founders presenting compelling ideas to potential investors." },
   ];
 
-  return (
-    <div className="bg-Celo-AD-primary">
-      
-        <div className="flex justify-center items-start mx-0 md:mx-32 xl:mx-0">
-          <div className="flex flex-col bg-celo-AD-olive-green w-full">
-            <div className="flex flex-col gap-4 items-center mt-10">
-              <h1 className="font-GT-Alpina text-3xl text-black font-thin">
-                Curriculum Overview
-              </h1>
-            
-              <div className="hidden md:flex flex-row justify-evenly items-center w-5/6 ">
-                {events.map((_, index) => (
-                  <div key={index} className="flex flex-row justify-around  gap-2 items-center">
-                    <Badge
-                      className={`flex w-12 text-center  justify-center rounded-full text-black border-celo-AD-slate-brown ${
-                        trackindex === index ? "bg-Celo-AD-yellow text-black" : "bg-transparent"
-                      }`}
-                    >
-                      {index + 1}
-                    </Badge>
-                  </div>
-                ))}
-              </div>
-            </div>
+  const generatePathCoordinates = () => {
+    const coordinates = [];
+    const totalSteps = events.length;
+    const svgWidth = 900;
+    const svgHeight = 400;
+    const padding = 50;
 
-            <div className="flex w-full justify-center items-center pt-4">
-              <Carousel className="w-full max-w-xs">
-                <CarouselContent>
-                  {events.map((element, index) => (
-                    <CarouselItem
-                      key={index}
-                      className="flex flex-col justify-between basis-[100%]  p-0 m-0"
+    for (let i = 0; i < totalSteps; i++) {
+      const x = padding + (i / (totalSteps - 1)) * (svgWidth - 2 * padding);
+      let y;
+      if (i % 4 === 0) y = padding + svgHeight * 0.5;
+      else if (i % 4 === 1) y = padding + svgHeight * 0.2;
+      else if (i % 4 === 2) y = padding + svgHeight * 0.4;
+      else y = padding + svgHeight * 0.3;
+      coordinates.push({ x, y });
+    }
+    return coordinates;
+  };
+
+  const pathCoordinates = generatePathCoordinates();
+
+  const generatePathString = () => {
+    if (pathCoordinates.length < 2) return "";
+    let pathString = `M ${pathCoordinates[0].x} ${pathCoordinates[0].y}`;
+    for (let i = 1; i < pathCoordinates.length; i++) {
+      const current = pathCoordinates[i];
+      const prev = pathCoordinates[i - 1];
+      const controlPoint1X = prev.x + (current.x - prev.x) * 0.5;
+      const controlPoint1Y = prev.y;
+      const controlPoint2X = prev.x + (current.x - prev.x) * 0.5;
+      const controlPoint2Y = current.y;
+      pathString += ` C ${controlPoint1X} ${controlPoint1Y} ${controlPoint2X} ${controlPoint2Y} ${current.x} ${current.y}`;
+    }
+    return pathString;
+  };
+
+  return (
+    <div className="">
+      <div className="flex justify-center items-start mx-0 md:mx-32 xl:mx-0">
+        <div className="flex flex-col bg-celo-AD-olive-green w-full">
+          <div className="flex flex-col gap-4 items-center mt-10">
+            <h1 className="font-GT-Alpina text-3xl text-black font-thin">Curriculum Overview</h1>
+          </div>
+
+          <div className="relative w-full px-4">
+            <div className=" rounded-2xl overflow-x-auto">
+              <svg
+                width="900"
+                height="400"
+                viewBox="0 0 900 400"
+                className="w-full h-auto min-w-[600px]"
+                style={{ overflow: "visible" }}
+              >
+                <defs>
+                  <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+                    <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#f0f0f0" strokeWidth="0.5" opacity="0.3" />
+                  </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)" />
+
+                <path
+                  d={generatePathString()}
+                  fill="none"
+                  stroke="#9CA3AF"
+                  strokeWidth="3"
+                  strokeDasharray="10,5"
+                  strokeLinecap="round"
+                  className={`transition-all duration-2000 ${pathAnimation ? "opacity-100" : "opacity-0"}`}
+                />
+
+                {currentWeek > 0 && (
+                  <path
+                    d={generatePathString()}
+                    fill="none"
+                    stroke="#476520"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeDasharray={`${(currentWeek / (events.length - 1)) * 2000}, 2000`}
+                    className="transition-all duration-1000"
+                  />
+                )}
+
+                {pathCoordinates.map((coord, index) => {
+                  const isCompleted = index < currentWeek;
+                  const isCurrent = index === currentWeek;
+                  const isHovered = index === hoveredNode;
+
+                  return (
+                    <g key={index}>
+                      <circle
+                        cx={coord.x}
+                        cy={coord.y}
+                        r={isHovered ? "20" : "15"}
+                        fill={isCurrent ? "#476520" : isCompleted ? "#476520" : "#FCFF52"}
+                        stroke={isCurrent ? "#476520" : isCompleted ? "#476520" : "#9CA3AF"}
+                        strokeWidth="3"
+                        className="transition-all duration-300 cursor-pointer"
+                        style={{
+                          filter: isHovered ? "drop-shadow(0 4px 6px rgba(0,0,0,0.3))" : "",
+                          animation: isCurrent ? "pulse 2s infinite" : "",
+                        }}
+                        onMouseEnter={() => setHoveredNode(index)}
+                        onMouseLeave={() => setHoveredNode(null)}
+                      />
+
+                      <text x={coord.x} y={coord.y + 5} textAnchor="middle" className="font-bold fill-black pointer-events-none" fontSize="14">
+                        {index + 1}
+                      </text>
+
+                      <text x={coord.x} y={coord.y + 35} textAnchor="middle" className="font-semibold fill-gray-700" fontSize="12">
+                        Week {index + 1}
+                      </text>
+
+                      {isCurrent && (
+                        <circle cx={coord.x} cy={coord.y} r="25" fill="none" stroke="#476520" strokeWidth="2" strokeDasharray="5,5" className="animate-spin" style={{ animationDuration: "10s" }} />
+                      )}
+                    </g>
+                  );
+                })}
+
+                {/* Render the hovered tooltip last so it appears on top of nodes */}
+                {hoveredNode !== null && (() => {
+                  const coord = pathCoordinates[hoveredNode];
+                  if (!coord) return null;
+                  const x = hoveredNode === 0 ? coord.x + 10 : hoveredNode === events.length - 1 ? coord.x - 160 : coord.x - 100;
+                  const y = coord.y - 120;
+                  return (
+                    <foreignObject
+                      x={x}
+                      y={y}
+                      width="220"
+                      height="100"
+                      pointerEvents="none"
                     >
-                      <div className="p-1">
-                        <Card className="bg-transparent  ">
-                          <CardTitle className="text-center font-bold text-lg ">
-                            <div className="flex flex-col">
-                            <p> {element.name}</p>
-                            <p> {element.date}</p>
-                            </div>                          
-                           
-                          </CardTitle>
-                          <CardContent className="flex flex-col items-center p-4">
-                           
-                            <p className="text-center text-sm text-celo-AD-slate-brown">{element.location}</p>
-                          </CardContent>
-                        </Card>
+                      <div className="bg-white rounded-lg shadow-xl p-4 border border-gray-200 transform transition-all duration-200 ease-in-out">
+                        <p className="font-semibold text-sm text-gray-800 mb-2">{events[hoveredNode].name}</p>
+                        <p className="text-xs text-gray-600 leading-relaxed">{events[hoveredNode].description}</p>
                       </div>
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-                
-                <div className="flex gap-2 mt-4 md:mt-0 bg-Celo-AD-primary justify-end text-black">
-                <CarouselPrevious
-                  className="static md:absolute h-12 w-12 bg-celo-AD-olive-green border-gray-400 hover:bg-gray-100"
-                  
-                >
-                  <ChevronLeft onClick={handlePrev} size={28}  className="text-black" />
-                </CarouselPrevious>
-                <CarouselNext
-                  className="static md:absolute h-12 w-12 bg-celo-AD-olive-green border-gray-400 hover:bg-gray-100"
-                  
-                >
-                  <ChevronRight onClick={handleNext} size={28} className="text-black" />
-                </CarouselNext>
-                            </div>
-               
-              </Carousel>
+                    </foreignObject>
+                  );
+                })()}
+              </svg>
+
+              <style>{`
+                @keyframes pulse {
+                  0%, 100% { transform: scale(1); opacity: 1; }
+                  50% { transform: scale(1.1); opacity: 0.8; }
+                }
+                @keyframes spin {
+                  from { transform: rotate(0deg); }
+                  to { transform: rotate(360deg); }
+                }
+              `}</style>
+            </div>
+          </div>
+
+          <div className="flex w-full justify-center items-center pt-4 pb-8">
+            <div className="w-full max-w-md">
+              <Card className="bg-transparent border-0">
+                <CardTitle className="text-center font-bold text-lg">
+                  <div className="flex flex-col">
+                    <p>Week {currentWeek + 1}</p>
+                    <p>{events[currentWeek].name}</p>
+                  </div>
+                </CardTitle>
+                <CardContent className="flex flex-col items-center p-4">
+                  <p className="text-center text-sm text-celo-AD-slate-brown">{events[currentWeek].description}</p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
-     
+      </div>
     </div>
   );
 }
