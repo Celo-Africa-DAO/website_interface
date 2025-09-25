@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 
 import NavLinks from "./NavLinks";
-import { Button } from "../button";
+import { Button } from "../ui/button";
 import { MdChevronRight } from "react-icons/md";
 
 const navList = [
@@ -18,15 +18,19 @@ const navList = [
     path: "/incubator",
     Image: "img/navlinks-hover-icon.svg",
   },
+    {
+    title: "Events",
+    path: "/events",
+    Image: "img/navlinks-hover-icon.svg",
+  },
   // {
   //   title: "Incubator Cohort11",
   //   path: "/incubatorTwo",
   //   Image: "img/navlinks-hover-icon.svg",
   // },
-  { title: "Events", path: "#event", Image: "img/navlinks-hover-icon.svg" },
   {
     title: "Community",
-    path: "https://celoafricadao.slack.com/canvas/C051YRQ3F6Z",
+    path: "https://t.me/CeloAfrica",
     Image: "img/navlinks-hover-icon.svg",
   },
   // {

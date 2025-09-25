@@ -1,6 +1,6 @@
 import { Link as LucideLink } from "lucide-react";
 import Section from "../layouts/Section";
-import StatsComponent from "../ui/Cad/StatsComponent";
+import StatsComponent from "./StatsComponent";
 import { Button } from "../ui/button";
 import { MdChevronRight } from "react-icons/md";
 import Image from "next/image";

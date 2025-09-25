@@ -1,13 +1,12 @@
 
 import Incubation from "@/components/sections/Incubation";
-
-import { UpComingEvent } from "@/components/events/explore";
 import Hero from "@/components/sections/Hero";
 import Head from "next/head";
 import Team from "@/components/Team/Team";
 import DevelopmentSection from "@/components/DevelopmentSection";
 import { CarouselSection } from "@/components/CarouselSection";
-import BuilCelo from "@/components/ui/Cad/BuilCelo";
+import BuilCelo from "@/components/navigation/BuilCelo";
+import HomeEventsGrid from "@/components/events/HomeEventsGrid";
 
 export default function Home() {
   return (
@@ -31,7 +30,7 @@ export default function Home() {
         <Hero/>
         <BuilCelo/>
         <CarouselSection/>
-        <UpComingEvent/>
+        <HomeEventsGrid/>
         <Team/>
         <Incubation/>
         <DevelopmentSection/>
