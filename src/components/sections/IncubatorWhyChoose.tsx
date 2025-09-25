@@ -32,13 +32,18 @@ const IncubatorWhyChoose = () => {
 
           <p className=" font-bold mt-6 text-sm">
             Application Period:
-            <span className="text-gray-800 font-normal"> We review applications on a rolling basis</span>
+            <span className="text-gray-800 font-normal"> September 30th - October 7th </span>
+          </p>
+
+          <p className=" font-bold mt-2 text-sm">
+             Program Commencement:
+            <span className="text-gray-800 font-normal"> 10th December, 2025 </span>
           </p>
       
 
           <div className="mt-4">
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdRgbeFNKulww_-8w-LsK7-3lAR72NUVCinvyr2MUHW9MfsIg/viewform"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSffpxsP1KZnvd3mx41wQYNCoTQ9_Jphql3TwnZ3RluwXXnI2A/viewform"
               target="_blank"
               rel="noopener noreferrer"
             >

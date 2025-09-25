@@ -83,25 +83,31 @@ const IncubationMentor = () => {
             </div>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-2 lg:gap-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {mentors.map((mentor, index) => (
               <div 
                 key={mentor.name} 
-                className="text-center flex flex-col items-center w-full"
+                className="bg-Celo-AD-primary rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 text-center group hover:-translate-y-2"
               >
-                <div className="w-3/4 sm:w-full h-56 sm:h-48 md:h-52 lg:h-48 overflow-hidden mx-auto rounded-lg">
-                  <Image
-                    src={mentor.image}
-                    alt={mentor.name}
-                    width={200}
-                    height={200}
-                    className="object-cover w-full h-full object-center"
-                    priority
-                  />
+                <div className="relative mb-4">
+                  <div className="w-32 h-32 mx-auto rounded-full overflow-hidden ring-4 ring-gray-100 group-hover:ring-Celo-AD-yellow transition-all duration-300">
+                    <Image
+                      src={mentor.image}
+                      alt={mentor.name}
+                      width={128}
+                      height={128}
+                      className="w-full h-full object-cover"
+                      priority={index < 4}
+                    />
+                  </div>
                 </div>
-                <div className={`border-b sm:border-b-0 ${index !== mentors.length - 1 ? 'sm:border-r' : ''}`}>
-                  <h3 className="font-medium text-sm w-full py-2">{mentor.name}</h3>
-                  <p className="text-xs text-gray-600 w-full py-1 pb-4 sm:pb-2">{mentor.role}</p>
+                <div className="space-y-2">
+                  <h3 className="font-semibold text-lg text-gray-900 group-hover:text-celo-AD-choclate transition-colors duration-300">
+                    {mentor.name}
+                  </h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    {mentor.role}
+                  </p>
                 </div>
               </div>
             ))}
