@@ -36,19 +36,19 @@ const SponsorPrev = () => {
       twitter: "https://x.com/pretiumapp?s=11&t=GcgWBsAbcIe78S7wMmleBg",
     },
     {
-      name: "Meme Royale",
-      description: "Gaming platform for meme-based competitions",
-      logo: "/logos/pretium.png",
-      website: "https://memeroyale.com/",
-      twitter: "https://twitter.com/memeroyale",
+      name: "Carus Recycling",
+      description: "A decentralised recycling platform that rewards in cUSD",
+      logo: "/logos/Carus.png",
+      website: "https://www.waystrecycling.com/",
+      twitter: "https://x.com/recycleonwayst",
     },
-    {
-      name: "Zeebit",
-      description: "Blockchain infrastructure and development tools",
-      logo: "/logos/pretium.png",
-      website: "https://zeebit.com/",
-      twitter: "https://twitter.com/zeebit",
-    },
+    // {
+    //   name: "Zsales",
+    //   description: "A blockchain-powered solution integrated with MiniPay, enabling seamless purchase and secure gifting of digital gift cards",
+    //   logo: "/logos/pretium.png",
+    //   website: "https://zsales.xyz/",
+    //   twitter: "/",
+    // },
     
   ];
 
@@ -56,14 +56,14 @@ const SponsorPrev = () => {
     {
       name: "Strimz",
       description: "Strimz is a DeFi solution designed to automate crypto payroll and subscription payments",
-      logo: "/logos/strimz.png",
+      logo: "/logos/strim211.png",
       website: "https://www.strimz.xyz/",
       twitter: "https://x.com/Strimz_HQ",
     },
     {
       name: "3-Wheelers",
       description: "A community finance platform powering Africa's 3 wheeler economy.",
-      logo: "/logos/3wheel.png",
+      logo: "/logos/3wch.png",
       website: "https://3wb.club/",
       twitter: "https://x.com/3wbClub",
     },
@@ -84,7 +84,7 @@ const SponsorPrev = () => {
     {
       name: "Sovseas",
       description: " Decentralized platform on Celo where  communities support projects through campaigns powered by demographic voting ,and multi-token governace .",
-      logo: "/logos/sovsea.png",
+      logo: "/logos/sov.png",
       website: "https://sovseas.xyz/",
       twitter: "https://x.com/sovseas",
     },
@@ -139,12 +139,12 @@ const SponsorPrev = () => {
           </div>
 
           <div className="mt-4 sm:mt-0">
-            <Button className="rounded-full bg-transparent border border-gray-800 text-gray-800 hover:bg-gray-100 px-3 sm:px-4 md:px-6 py-1 sm:py-2 flex items-center text-xs sm:text-sm transition-all duration-300">
+            <button className="rounded-full bg-transparent border border-gray-800 text-gray-800 hover:bg-gray-100 px-3 sm:px-4 md:px-6 py-1 sm:py-2 flex items-center text-xs sm:text-sm transition-all duration-300">
               <KnowMore />
-              <span className="ml-2 w-3 h-3 sm:w-4 sm:h-4 bg-gray-800 rounded-full flex items-center justify-center">
+              {/* <span className="ml-2 w-3 h-3 sm:w-4 sm:h-4 bg-gray-800 rounded-full flex items-center justify-center">
                 <MdChevronRight className="text-white" size={12} />
-              </span>
-            </Button>
+              </span> */}
+            </button>
           </div>
         </div>
 
@@ -152,7 +152,7 @@ const SponsorPrev = () => {
         <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-12 xl:gap-16 items-center lg:justify-center">
           {/* Left Side - Incubator Alumni (Vertically Centered) */}
           <div className="lg:w-1/4 flex justify-center lg:justify-start lg:items-center lg:h-full lg:min-h-[250px]">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-2xl xl:text-3xl font-medium text-black text-center lg:text-left leading-tight">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-2xl xl:text-3xl font-medium text-black text-center lg:text-left leading-tight lg:whitespace-nowrap">
               Incubator Alumni
             </h2>
           </div>
@@ -185,8 +185,8 @@ const SponsorPrev = () => {
                     </p>
 
                     {/* Hover Card */}
-                    <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
-                      <div className="bg-white border border-gray-200 rounded-lg p-3 sm:p-4 shadow-xl min-w-[200px] sm:min-w-[250px] max-w-[280px] sm:max-w-[300px]">
+                    <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-0 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
+                      <div className="bg-white border border-gray-200 rounded-lg p-3 sm:p-4 shadow-xl min-w-[200px] sm:min-w-[250px] max-w-[280px] sm:max-w-[300px] hover:pointer-events-auto">
                         <h4 className="font-semibold text-gray-900 mb-2 text-sm sm:text-base">{alumni.name}</h4>
                         <p className="text-xs sm:text-sm text-gray-600 mb-3 leading-relaxed">{alumni.description}</p>
                         <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-3">
@@ -257,8 +257,8 @@ const SponsorPrev = () => {
                     </p>
 
                     {/* Hover Card */}
-                    <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
-                      <div className="bg-white border border-gray-200 rounded-lg p-3 sm:p-4 shadow-xl min-w-[200px] sm:min-w-[250px] max-w-[280px] sm:max-w-[300px]">
+                    <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
+                      <div className="bg-white border border-gray-200 rounded-lg p-3 sm:p-4 shadow-xl min-w-[200px] sm:min-w-[250px] max-w-[280px] sm:max-w-[300px] hover:pointer-events-auto">
                         <h4 className="font-semibold text-gray-900 mb-2 text-sm sm:text-base">{alumni.name}</h4>
                         <p className="text-xs sm:text-sm text-gray-600 mb-3 leading-relaxed">{alumni.description}</p>
                         <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-3">

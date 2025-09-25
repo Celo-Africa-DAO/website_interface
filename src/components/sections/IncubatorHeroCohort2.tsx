@@ -21,7 +21,7 @@ const IncubatorHeroCohort2 = () => {
              Program
           </h1>
           <h2 className="font-GT-Alpina text-xl sm:text-3xl md:text-4xl lg:text-5xl font-thin italic mt-1">
-            - Cohort II
+            - Cohort III
           </h2>
 
           <p className="text-sm sm:text-base md:text-lg max-w-lg mt-4 text-gray-200">
@@ -31,7 +31,7 @@ const IncubatorHeroCohort2 = () => {
 
           <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 mt-6">
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdRgbeFNKulww_-8w-LsK7-3lAR72NUVCinvyr2MUHW9MfsIg/viewform"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSffpxsP1KZnvd3mx41wQYNCoTQ9_Jphql3TwnZ3RluwXXnI2A/viewform"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto"

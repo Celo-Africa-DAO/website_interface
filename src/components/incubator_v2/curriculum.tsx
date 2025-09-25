@@ -8,26 +8,70 @@ import {
 export default function Curriculum() {
   const [pathAnimation, setPathAnimation] = React.useState(false);
   const [hoveredNode, setHoveredNode] = React.useState<number | null>(null);
-  const [currentWeek, setCurrentWeek] = React.useState(0);
+  const [currentWeek, setCurrentWeek] = React.useState<number>(0);
+
+  const programStartDate = new Date("2025-10-15");
 
   React.useEffect(() => {
     setPathAnimation(true);
-    // Set a fixed current week to avoid hydration issues
-    setCurrentWeek(0);
+    const today = new Date();
+    const start = new Date(programStartDate);
+    const msPerDay = 24 * 60 * 60 * 1000;
+    const utcToday = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
+    const utcStart = Date.UTC(start.getFullYear(), start.getMonth(), start.getDate());
+    const elapsedDays = Math.floor((utcToday - utcStart) / msPerDay);
+    if (elapsedDays < 0) {
+      setCurrentWeek(-1);
+      return;
+    }
+    const weekIndex = Math.floor(elapsedDays / 7);
+    setCurrentWeek(weekIndex);
   }, []);
 
   const events = [
-    { id: 0, name: "Finding product-market fit", description: "Assist founders in honing their concepts to address genuine market needs." },
-    { id: 1, name: "Crypto Business Model", description: "Guide startups in creating sustainable and scalable business frameworks." },
-    { id: 2, name: "Build & integrate with Celo", description: "How do you go about to deploy on Celo mainnet?" },
-    { id: 3, name: "Building on Minipay", description: "Leveraging Opera's distribution channel to reach more users." },
-    { id: 4, name: "Creating a winning Pitch Deck", description: "Teach founders to present their business ideas compellingly." },
-    { id: 5, name: "Scaling, BD & Fundraising readiness", description: "Expanding to new markets, partners and know when ready to receive investment." },
-    { id: 6, name: "Customer acquisition", description: "Building a customer base and retention strategies." },
-    { id: 7, name: "Legal and Regulatory Framework", description: "Understanding legal structures and regulatory requirements." },
-    { id: 8, name: "Tokenomics Advisory Framework", description: "Using Ubestarter Token Launchpad to gain hands-on experience in deploying your token." },
-    { id: 9, name: "Demo Day", description: "Founders presenting compelling ideas to potential investors." },
+    {
+       id: 0, name: "Welcome Week & Founder Onboarding",
+       description: "An introductory week to connect all founders in the cohort."
+    },
+    { 
+      id: 1, name: "Finding Product-Market Fit",
+       description: "A deep dive into identifying and validating a genuine need for the product." 
+    },
+    { 
+      id: 2, name: "Sustainable Business Models:", 
+      description: "Strategies for building business models that can thrive." 
+    },
+    { 
+      id: 3, name: "Building & Integrating on Celo",
+       description: "This session is designed to give founders a comprehensive understanding of the Celo blockchain as a platform for building decentralized applications." 
+    },
+    { 
+      id: 4, name: "Building on Minipay & Leveraging Distribution",
+       description: "A specialized session on utilizing Minipay's infrastructure and the broader Celo community to achieve rapid user acquisition and growth." 
+    },
+    { 
+      id: 5, name: "Scaling, BD & Fundraising readiness",
+       description: "Expanding to new markets, partners and know when ready to receive investment." 
+    },
+    { 
+      id: 6, name: "Customer acquisition", 
+      description: "Building a customer base and retention strategies." 
+    },
+    { 
+      id: 7, name: "Legal and Regulatory Framework",
+       description: "Understanding legal structures and regulatory requirements."
+     },
+    { 
+      id: 8, name: "Tokenomics Advisory Framework",
+       description: "Using Ubestarter Token Launchpad to gain hands-on experience in deploying your token." 
+    },
+    { 
+      id: 9, name: "Demo Day", 
+      description: "Founders presenting compelling ideas to potential investors." 
+    },
   ];
+
+  const programCompleted = currentWeek >= events.length;
 
   const generatePathCoordinates = () => {
     const coordinates = [];
@@ -99,21 +143,32 @@ export default function Curriculum() {
                   className={`transition-all duration-2000 ${pathAnimation ? "opacity-100" : "opacity-0"}`}
                 />
 
-                {currentWeek > 0 && (
+                {!programCompleted && currentWeek >= 0 && (
                   <path
                     d={generatePathString()}
                     fill="none"
                     stroke="#476520"
                     strokeWidth="3"
                     strokeLinecap="round"
-                    strokeDasharray={`${(currentWeek / (events.length - 1)) * 2000}, 2000`}
+                    strokeDasharray={`${(currentWeek / Math.max(1, events.length - 1)) * 2000}, 2000`}
+                    className="transition-all duration-1000"
+                  />
+                )}
+
+                {programCompleted && (
+                  <path
+                    d={generatePathString()}
+                    fill="none"
+                    stroke="#476520"
+                    strokeWidth="3"
+                    strokeLinecap="round"
                     className="transition-all duration-1000"
                   />
                 )}
 
                 {pathCoordinates.map((coord, index) => {
-                  const isCompleted = index < currentWeek;
-                  const isCurrent = index === currentWeek;
+                  const isCompleted = programCompleted ? true : index < currentWeek;
+                  const isCurrent = !programCompleted && index === currentWeek;
                   const isHovered = index === hoveredNode;
 
                   return (
@@ -149,7 +204,6 @@ export default function Curriculum() {
                   );
                 })}
 
-                {/* Render the hovered tooltip last so it appears on top of nodes */}
                 {hoveredNode !== null && (() => {
                   const coord = pathCoordinates[hoveredNode];
                   if (!coord) return null;
@@ -190,12 +244,32 @@ export default function Curriculum() {
               <Card className="bg-transparent border-0">
                 <CardTitle className="text-center font-bold text-lg">
                   <div className="flex flex-col">
-                    <p>Week {currentWeek + 1}</p>
-                    <p>{events[currentWeek].name}</p>
+                    {programCompleted ? (
+                      <>
+                        <p>Program completed</p>
+                        <p>{events[events.length - 1].name}</p>
+                      </>
+                    ) : currentWeek === -1 ? (
+                      <>
+                        <p>Program hasn't started</p>
+                        <p>Starts {new Date(programStartDate).toLocaleDateString()}</p>
+                      </>
+                    ) : (
+                      <>
+                        <p>Week {Math.min(currentWeek + 1, events.length)}</p>
+                        <p>{events[currentWeek]?.name}</p>
+                      </>
+                    )}
                   </div>
                 </CardTitle>
                 <CardContent className="flex flex-col items-center p-4">
-                  <p className="text-center text-sm text-celo-AD-slate-brown">{events[currentWeek].description}</p>
+                  {programCompleted ? (
+                    <p className="text-center text-sm text-celo-AD-slate-brown">Congratulations! The program has finished.</p>
+                  ) : currentWeek === -1 ? (
+                    <p className="text-center text-sm text-celo-AD-slate-brown">The program will start on {new Date(programStartDate).toLocaleDateString()}.</p>
+                  ) : (
+                    <p className="text-center text-sm text-celo-AD-slate-brown">{events[currentWeek]?.description}</p>
+                  )}
                 </CardContent>
               </Card>
             </div>
