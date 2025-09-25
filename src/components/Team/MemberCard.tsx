@@ -8,7 +8,6 @@ const MemberCard = ({ member, tab = null }: any) => {
   const handlePartnersPage = () => {
     if (tab !== "partners") return;
     window.open(member.url, "_blank");
-
   };
 
   return (
@@ -35,7 +34,6 @@ const MemberCard = ({ member, tab = null }: any) => {
             <h4 className="max-xsm:text-[10px] xsm:text-[14px] font-bold text-base  text-[#000000]">
               {member.name}
             </h4>
-
           </div>
           <div>
             <h5 className="max-2xsm:text-[7px] font-medium text-sm  text-[#000000] hover:text-[#56544E]">
@@ -49,7 +47,10 @@ const MemberCard = ({ member, tab = null }: any) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaLinkedinIn  size={24} className=" bg-[#000000] rounded-full p-1"/>
+                <FaLinkedinIn
+                  size={24}
+                  className=" bg-[#000000] rounded-full p-1"
+                />
               </a>
             </div>
             <div>
@@ -58,7 +59,10 @@ const MemberCard = ({ member, tab = null }: any) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaXTwitter size={24} className=" bg-[#000000] rounded-full p-1" />
+                <FaXTwitter
+                  size={24}
+                  className=" bg-[#000000] rounded-full p-1"
+                />
               </a>
             </div>
           </div>

@@ -1,53 +1,108 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
   font-family: "Inter", "sans-serif" !important;
-  background-color: #FCF6F1;
+  background-color: #fcf6f1;
 }
 
 @font-face {
-  font-family: "GT-Alpina-Thin-Italic";
-  src: url("./fonts/GT-Alpina-Standard-Thin-Italic-Trial.otf");
-  font-style: italic !important;
-}
-
-@font-face {
-  font-family: "GT-Alpina";
-  src: url("./fonts/GT-Alpina-Standard-Thin-Trial.otf");
+  font-family: "GT Alpina Trial";
+  src: url("/gt-alpina-trial-cufonfonts/GT-Alpina-Standard-Thin-Trial.otf")
+    format("opentype");
   font-weight: 100;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "GT-Alpina-Light-Italic";
-  src: url("./fonts/GT-Alpina-Standard-Light-Italic-Trial.otf");
-  font-weight: 100;
+  font-family: "GT Alpina Trial";
+  src: url("/gt-alpina-trial-cufonfonts/GT-Alpina-Standard-Light-Trial.otf")
+    format("opentype");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "GT-Alpina-Light";
-  src: url("./fonts/GT-Alpina-Standard-Light-Trial.otf");
-  font-weight: 100;
+  font-family: "GT Alpina Trial";
+  src: url("/gt-alpina-trial-cufonfonts/GT-Alpina-Standard-Regular-Trial.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: "GT Alpina Trial";
+  src: url("/gt-alpina-trial-cufonfonts/GT-Alpina-Standard-Medium-Trial.otf")
+    format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT Alpina Trial";
+  src: url("/gt-alpina-trial-cufonfonts/GT-Alpina-Standard-Bold-Trial.otf")
+    format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT Alpina Trial";
+  src: url("/gt-alpina-trial-cufonfonts/GT-Alpina-Standard-Thin-Italic-Trial.otf")
+    format("opentype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GT Alpina Trial";
+  src: url("/gt-alpina-trial-cufonfonts/GT-Alpina-Standard-Light-Italic-Trial.otf")
+    format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GT Alpina Trial";
+  src: url("/gt-alpina-trial-cufonfonts/GT-Alpina-Standard-Regular-Italic-Trial.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GT Alpina Trial";
+  src: url("/gt-alpina-trial-cufonfonts/GT-Alpina-Standard-Medium-Italic-Trial.otf")
+    format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GT Alpina Trial";
+  src: url("/gt-alpina-trial-cufonfonts/GT-Alpina-Standard-Bold-Italic-Trial.otf")
+    format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
 
 @font-face {
   font-family: "Gilroy-Regular";
-  src: url('./fonts/Gilroy-Regular.woff');
+  src: url("./fonts/Gilroy-Regular.woff");
   font-weight: 400;
 }
 
 @layer base {
   :root {
-    --Celo-AD-primary: #FCF6F1;
-    --Celo-AD-yellow: #FCFF52;
+    --Celo-AD-primary: #fcf6f1;
+    --Celo-AD-yellow: #fcff52;
 
     --Celo-AD-dark-green: #476520;
-    --Celo-AD-gray: #DEE2D8;
+    --Celo-AD-gray: #dee2d8;
     --Celo-AD-slate-green: #068012;
-    --celo-AD-choclate:#50473A;
+    --celo-AD-choclate: #50473a;
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
 
@@ -124,18 +179,14 @@ body{
   clip-path: polygon(51% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 
-
-
-
-
 .bg-custom {
-  background-image: url('/carousel.png');
+  background-image: url("/carousel.png");
   background-size: cover;
   background-position: center;
 }
 
 .bg-ach {
-  background-image: url('/Black-image-Dao.png');
+  background-image: url("/Black-image-Dao.png");
   background-size: cover;
   background-position: center;
 }
@@ -143,12 +194,11 @@ body{
 .shadow-bottom {
   /* Adjust the color to your specific requirement */
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-              0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+    0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
 }
-
 
 @media (min-width: 768px) {
   .bg-custom {
-    background-image: url('/courser-bg.png');
+    background-image: url("/courser-bg.png");
   }
 }

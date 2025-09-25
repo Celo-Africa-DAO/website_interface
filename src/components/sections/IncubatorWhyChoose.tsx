@@ -22,7 +22,7 @@ const IncubatorWhyChoose = () => {
             <span className="ml-20 italic">Our Incubator</span>
           </div>
 
-          <p className="font-Inter text-[12px] md:text-[16px] max-w-xl text-gray-800 mt-3">
+          <p className="font-Inter  max-w-xl text-gray-800 mt-3 text-sm">
             Our program is designed to nurture innovation and drive growth for startups across Africa.
             We are sector-agnostic, welcoming projects from DeFi to AI agents, with a particular
             interest in applications utilizing local stablecoins such as cGHS, cKES, and cUSD.
@@ -30,14 +30,11 @@ const IncubatorWhyChoose = () => {
             landscape of Africa.
           </p>
 
-          <p className="text-[14px] md:text-[18px] font-semibold mt-6">
+          <p className=" font-bold mt-6 text-sm">
             Application Period:
-            <span className="text-gray-800 font-normal"> March 19th - April 9th</span>
+            <span className="text-gray-800 font-normal"> We review applications on a rolling basis</span>
           </p>
-          <p className="text-[14px] md:text-[18px] font-semibold">
-            Program Commencement:
-            <span className="text-gray-800 font-normal"> 16th April 2025</span>
-          </p>
+      
 
           <div className="mt-4">
             <a
@@ -45,7 +42,7 @@ const IncubatorWhyChoose = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button className="bg-[#FCFF52] border-[#65594780] border-[1.5px] text-black px-8 py-2 font-medium rounded-full hover:bg-yellow-500 text-xs">
+              <Button className="mb-20 bg-[#FCFF52] border-[#65594780] border-[1.5px] text-black px-8 py-2 font-medium rounded-full hover:bg-yellow-500 text-xs">
                 Register Now
               </Button>
             </a>
