@@ -5,32 +5,33 @@ import { RiTwitterXLine } from "react-icons/ri";
 import { FaSlack } from "react-icons/fa";
 import { FaHashnode } from "react-icons/fa6";
 import CeloLogo from "../../public/img/celoLogo.svg";
+import { Button } from "./ui/button";
 
 const Footer = () => {
   const FooterLinK = [
     {
       title: "Home",
-      path: "#home"
+      path: "#home",
     },
     {
       title: "Incubation program",
-      path: "#incubation"
+      path: "#incubation",
     },
     {
       title: "Recent events",
-      path: "#event"
+      path: "#event",
     },
     {
       title: "Team",
-      path: "#team"
+      path: "#team",
     },
     {
       title: "Upcoming event",
-      path: "#up-coming-events"
+      path: "#up-coming-events",
     },
     {
       title: "Report",
-      path: "/"
+      path: "/",
     },
   ];
 
@@ -45,7 +46,7 @@ const Footer = () => {
       <div className="mx-6 xl:mx-0 ">
         <div className="mb-20 ">
           <div className="max-md:flex justify-center md:justify-start max-md:items-center md:flex-none mt-[10rem] ">
-            <CeloLogo className='max-w-200' />
+            <CeloLogo className="max-w-200" />
           </div>
         </div>
         <div className="flex justify-between  flex-col md:flex-row ">
@@ -67,11 +68,11 @@ const Footer = () => {
             </div>
             <div className="flex flex-wrap gap-2 ">
               {FooterLinK.map((linkItem, index) => (
-                <button key={index} className="border-2 p-2 px-5 rounded-full">
+                <Button key={index} className="border-2 p-2 px-5 rounded-full">
                   <Link href={linkItem.path} className="text-white ">
                     {linkItem.title}
                   </Link>
-                </button>
+                </Button>
               ))}
             </div>
           </div>
@@ -88,7 +89,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
     </div>
   );
 };

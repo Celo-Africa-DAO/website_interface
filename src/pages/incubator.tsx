@@ -8,18 +8,16 @@ import IncubatorPath from "@/components/sections/IncubatorPath";
 import IncubatorRoadMap from "@/components/sections/IncubatorRoadMap";
 
 const IncubatorTwo = () => {
-    return (
-      <div className=" bg-Celo-AD-primary text-[#0C0C0C]">
-         <IncubatorHeroCohort2 />
-          <IncubatorWhyChoose />
-         
-         <IncubatorProgram/>
-            <IncubationMentor />
-            <SponsorPrev />
-           
-            <IncubatorPartner/>
-      </div>
-    );
-  };
-  
-  export default IncubatorTwo;
+  return (
+    <div className=" bg-Celo-AD-primary text-[#0C0C0C]">
+      <IncubatorHeroCohort2 />
+      <IncubatorWhyChoose />
+      <IncubatorProgram />
+      <IncubationMentor />
+      <SponsorPrev />
+      <IncubatorPartner />
+    </div>
+  );
+};
+
+export default IncubatorTwo;

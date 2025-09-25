@@ -1,16 +1,15 @@
-"use client"; 
+"use client";
 
-import { useRouter } from 'next/navigation';
-import React from 'react';
+import { useRouter } from "next/navigation";
+import React from "react";
+import { Button } from "./ui/button";
 
 const KnowMore = () => {
-    const router = useRouter();
+  const router = useRouter();
 
-    return (
-        <button onClick={() => router.push('/prevIncubator')}>
-            Know More
-        </button>
-    );
-}
+  return (
+    <Button onClick={() => router.push("/prevIncubator")}>Know More</Button>
+  );
+};
 
 export default KnowMore;

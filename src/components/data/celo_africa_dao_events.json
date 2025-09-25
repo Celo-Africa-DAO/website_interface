@@ -1,0 +1,237 @@
+[
+  {
+    "id": 1,
+    "name": "Celo Campus Connect Nairobi",
+    "location": "Kenya",
+    "date": "2024-03-26",
+    "imageUrl": "/img/celokenya.svg",
+    "type": "IRL",
+    "category": "Mixers"
+  },
+  {
+    "id": 2,
+    "name": "Celo Kenya Hackathon",
+    "location": "Kenya",
+    "date": "2024-04-10",
+    "imageUrl": "/img/youtube-icon.svg",
+    "type": "Video",
+    "category": "Hackathon",
+    "videoUrl": "https://www.youtube.com/embed/kU8MpVcHX6g"
+  },
+  {
+    "id": 3,
+    "name": "Build with Celo Bootcamp",
+    "location": "Kenya",
+    "date": "2024-01-15",
+    "imageUrl": "/img/celokenya.svg",
+    "type": "IRL",
+    "category": "Bootcamp"
+  },
+  {
+    "id": 4,
+    "name": "Celo Dev Day Nairobi",
+    "location": "Kenya",
+    "date": "2024-05-05",
+    "imageUrl": "/img/x-icon.svg",
+    "type": "X Space",
+    "category": "Talks",
+    "videoUrl": "https://twitframe.com/show?url=https://x.com/CeloAfricaDao/status/1703856178213083173"
+  },
+  {
+    "id": 5,
+    "name": "University Blockchain Workshop",
+    "location": "Kenya",
+    "date": "2024-03-20",
+    "imageUrl": "/img/celokenya.svg",
+    "type": "IRL",
+    "category": "Workshop"
+  },
+  {
+    "id": 6,
+    "name": "Celo Code Jam Kampala",
+    "location": "Uganda",
+    "date": "2024-02-14",
+    "imageUrl": "/img/celokenya.svg",
+    "type": "IRL",
+    "category": "Code Jam"
+  },
+  {
+    "id": 7,
+    "name": "Blockchain Campus Mixer",
+    "location": "Uganda",
+    "date": "2024-01-19",
+    "imageUrl": "/img/celokenya.svg",
+    "type": "IRL",
+    "category": "Mixers"
+  },
+  {
+    "id": 8,
+    "name": "Celo Uganda Hackathon Recap",
+    "location": "Uganda",
+    "date": "2024-03-01",
+    "imageUrl": "/img/youtube-icon.svg",
+    "type": "Video",
+    "category": "Hackathon",
+    "videoUrl": "https://www.youtube.com/embed/example1"
+  },
+  {
+    "id": 9,
+    "name": "Celo X Space Uganda Builders",
+    "location": "Uganda",
+    "date": "2024-04-15",
+    "imageUrl": "/img/x-icon.svg",
+    "type": "X Space",
+    "category": "Talks",
+    "videoUrl": "https://twitframe.com/show?url=https://x.com/CeloAfricaDao/status/1702351464539138121"
+  },
+  {
+    "id": 10,
+    "name": "Smart Contracts Bootcamp",
+    "location": "Uganda",
+    "date": "2024-05-01",
+    "imageUrl": "/img/celokenya.svg",
+    "type": "IRL",
+    "category": "Bootcamp"
+  },
+  {
+    "id": 11,
+    "name": "Celo Campus Connect Cape Town",
+    "location": "South Africa",
+    "date": "2024-03-30",
+    "imageUrl": "/img/celokenya.svg",
+    "type": "IRL",
+    "category": "Mixers"
+  },
+  {
+    "id": 12,
+    "name": "Celo Dev Jam South Africa",
+    "location": "South Africa",
+    "date": "2024-02-20",
+    "imageUrl": "/img/celokenya.svg",
+    "type": "IRL",
+    "category": "Code Jam"
+  },
+  {
+    "id": 13,
+    "name": "Proof of Ship Showcase",
+    "location": "South Africa",
+    "date": "2024-06-01",
+    "imageUrl": "/img/youtube-icon.svg",
+    "type": "Video",
+    "category": "Hackathon",
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    "id": 14,
+    "name": "Founders Fireside Chat",
+    "location": "South Africa",
+    "date": "2024-05-28",
+    "imageUrl": "/img/x-icon.svg",
+    "type": "X Space",
+    "category": "Talks",
+    "videoUrl": "https://twitframe.com/show?url=https://x.com/CeloAfricaDao/status/1703856178213083173"
+  },
+  {
+    "id": 15,
+    "name": "DeFi Builders Workshop",
+    "location": "South Africa",
+    "date": "2024-04-07",
+    "imageUrl": "/img/celokenya.svg",
+    "type": "IRL",
+    "category": "Workshop"
+  },
+  {
+    "id": 16,
+    "name": "Celo Lagos Mixer",
+    "location": "Nigeria",
+    "date": "2024-03-12",
+    "imageUrl": "/img/celokenya.svg",
+    "type": "IRL",
+    "category": "Mixers"
+  },
+  {
+    "id": 17,
+    "name": "Nigeria DAO Hackathon",
+    "location": "Nigeria",
+    "date": "2024-03-27",
+    "imageUrl": "/img/youtube-icon.svg",
+    "type": "Video",
+    "category": "Hackathon",
+    "videoUrl": "https://www.youtube.com/embed/example2"
+  },
+  {
+    "id": 18,
+    "name": "Smart Africa Builders X Space",
+    "location": "Nigeria",
+    "date": "2024-04-12",
+    "imageUrl": "/img/x-icon.svg",
+    "type": "X Space",
+    "category": "Talks",
+    "videoUrl": "https://twitframe.com/show?url=https://x.com/CeloAfricaDao/status/1702351464539138121"
+  },
+  {
+    "id": 19,
+    "name": "Celo Nigeria Code Jam",
+    "location": "Nigeria",
+    "date": "2024-02-25",
+    "imageUrl": "/img/celokenya.svg",
+    "type": "IRL",
+    "category": "Code Jam"
+  },
+  {
+    "id": 20,
+    "name": "Web3 Bootcamp Abuja",
+    "location": "Nigeria",
+    "date": "2024-05-10",
+    "imageUrl": "/img/celokenya.svg",
+    "type": "IRL",
+    "category": "Bootcamp"
+  },
+  {
+    "id": 21,
+    "name": "Ghana Blockchain Workshop",
+    "location": "Ghana",
+    "date": "2024-02-18",
+    "imageUrl": "/img/celokenya.svg",
+    "type": "IRL",
+    "category": "Workshop"
+  },
+  {
+    "id": 22,
+    "name": "Ghana Code Jam",
+    "location": "Ghana",
+    "date": "2024-03-08",
+    "imageUrl": "/img/celokenya.svg",
+    "type": "IRL",
+    "category": "Code Jam"
+  },
+  {
+    "id": 23,
+    "name": "Celo Accra Hackathon Highlights",
+    "location": "Ghana",
+    "date": "2024-03-29",
+    "imageUrl": "/img/youtube-icon.svg",
+    "type": "Video",
+    "category": "Hackathon",
+    "videoUrl": "https://www.youtube.com/embed/example3"
+  },
+  {
+    "id": 24,
+    "name": "Ghana Community AMA",
+    "location": "Ghana",
+    "date": "2024-04-18",
+    "imageUrl": "/img/x-icon.svg",
+    "type": "X Space",
+    "category": "Talks",
+    "videoUrl": "https://twitframe.com/show?url=https://x.com/CeloAfricaDao/status/1702351464539138121"
+  },
+  {
+    "id": 25,
+    "name": "Ghana Builders Bootcamp",
+    "location": "Ghana",
+    "date": "2024-05-15",
+    "imageUrl": "/img/celokenya.svg",
+    "type": "IRL",
+    "category": "Bootcamp"
+  }
+]
