@@ -6,6 +6,7 @@ import IncubatorHeroCohort2 from "@/components/sections/IncubatorHeroCohort2";
 import IncubatorWhyChoose from "@/components/sections/IncubatorWhyChoose";
 import IncubatorPath from "@/components/sections/IncubatorPath";
 import IncubatorRoadMap from "@/components/sections/IncubatorRoadMap";
+import ImpactSection from "@/components/sections/ImpactSection";
 
 const IncubatorTwo = () => {
     return (
@@ -15,7 +16,9 @@ const IncubatorTwo = () => {
          
          <IncubatorProgram/>
             <IncubationMentor />
-            <SponsorPrev />
+            <SponsorPrev /> 
+
+            <ImpactSection/>
            
             <IncubatorPartner/>
       </div>
