@@ -41,13 +41,12 @@ const IncubatorHeroCohort2 = () => {
               </Button>
             </a>
             <a
-              href="https://docs.google.com/document/d/1siNoe31HdAb-zr5jKn2-cwDpWv3OQ9HjvOoGB4zJDHc/edit?tab=t.0#heading=h.5zn9g94k4v2c"
-              target="_blank"
+              href="/startups"
               rel="noopener noreferrer"
               className="w-full sm:w-auto"
             >
               <Button className="bg-[#E7E3D4] text-black px-4 py-2 font-medium rounded-full flex items-center justify-center space-x-2 hover:bg-gray-200 w-full sm:w-auto text-sm">
-                <span>Sponsorship</span>
+                <span>Startups</span>
                 <FiArrowRight className="text-black" />
               </Button>
             </a>
