@@ -9,6 +9,7 @@ import IncubatorComm from "@/components/sections/IncubatorComm";
 
 
 
+
 const IncubatorV2 = () => {
   const projectListRef = useRef<HTMLDivElement>(null);
   const [selectedCategory, setSelectedCategory] = useState('All Projects');
@@ -39,6 +40,7 @@ const IncubatorV2 = () => {
         <NextCohort />
       
       <IncubatorComm />
+
     </div>
   );
 };

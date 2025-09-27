@@ -122,15 +122,6 @@ const Team = () => {
       linkedIn: "https://www.linkedin.com/in/naheem-oloyede/",
     },
     {
-      id: 12,
-      name: "Soliu Ahmad",
-      position: "Nigeria Intermediate Amb.",
-      image: "/img/SoliuAh.png",
-      twitter: "https://twitter.com/Ahmadsoliu1",
-      linkedIn:
-        "https://www.linkedin.com/in/soliu-ahmad-31b049240?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    },
-    {
       id: 13,
       name: "Khadija Musa",
       position: "Nigeria Intermediate Amb.",
@@ -155,14 +146,6 @@ const Team = () => {
       linkedIn: "https://www.linkedin.com/in/ronex-ondimu/",
     },
     {
-      id: 16,
-      name: "Tajudeen Jimoh",
-      position: "Content Creator",
-      image: "/img/Jimoh-Tajudeen2.png",
-      twitter: "https://twitter.com/Jimohtj",
-      linkedIn: "https://ng.linkedin.com/in/jimoh-tajudeen-640060246",
-    },
-    {
       id: 17,
       name: "Godwin Bassey",
       position: "UI/UX Designer",
@@ -182,21 +165,18 @@ const Team = () => {
     },
     {
       id: 2,
-      // name: "Daniel Kimoto",
       position: "Ecosystem Partner ",
       image: "/img/HaloFi.svg",
       url: "https://www.halofi.me/",
     },
     {
       id: 3,
-      // name: "Chuta chime",
       position: "Ecosystem Partner ",
       image: "/img/fonbnk.webp",
       url: "https://fonbnk.com/",
     },
     {
       id: 4,
-      // name: "Umar Aliu",
       position: "Ecosystem Lead at CELO ",
       image: "/img/minipay-logo.webp",
       url: "https://www.opera.com/products/minipay",
