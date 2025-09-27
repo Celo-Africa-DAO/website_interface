@@ -110,7 +110,7 @@ const ProjectList = forwardRef<HTMLDivElement, ProjectListProps>(({ selectedCate
     }
   ];
 
-  const categories = ['All Projects', 'Payments', 'Marketplace', "Governance", " Collaterized lending", 'Gaming', 'Investment', 'ReFi'];
+  const categories = ['All Projects', 'Payments', 'Marketplace', "Governance", "lending", 'Gaming', 'Investment', 'ReFi'];
 
   // Top 5 projects as specified
   const top5ProjectNames = ['Strimz', '3 Wheeler Bike Club', 'QuestPanda', 'Syarpa', 'Sovseas'];
@@ -122,29 +122,28 @@ const ProjectList = forwardRef<HTMLDivElement, ProjectListProps>(({ selectedCate
     : projects.filter(project => project.category === sortCategory);
 
   return (
-    <div ref={ref} className="bg-Celo-AD-primary py-20">
+    <div ref={ref} className="bg-Celo-AD-primary py-8 sm:py-12 lg:py-20">
 
         <Section>
-        <div className="max-w-6xl mx-auto px-6">
-        <div className="flex flex-col items-center mb-40 gap-4">
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 bg-Celo-AD-gray rounded-lg flex items-center justify-center hidden">
-              <div className="w-8 h-8 bg-Celo-AD-slate-green rounded "></div>
-            </div>
-            <h2 className="font-gt-alpina-trial text-3xl md:text-4xl font-bold text-[#0C0C0C]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center mb-16 sm:mb-24 lg:mb-64 lg:mt-36 gap-4">
+          <div className="flex items-center gap-4 relative">
+            <Image src="/img/incubatorProjectsImage1.png" alt="Incubator Projects image" width={100} height={100} className="absolute -top-16 -left-16 sm:-top-32 sm:-left-32 md:-top-52 md:-left-52 h-[120px] w-[110px] sm:h-[200px] sm:w-[180px] md:h-[350px] md:w-[320px]" />
+            <Image src="/img/incubatorProjectsImage2.png" alt="Incubator Projects image" width={100} height={100} className="absolute -bottom-7 -right-16 sm:-bottom-20 sm:-right-20 md:-bottom-36 md:-right-48 h-[120px] w-[110px] sm:h-[200px] sm:w-[180px] md:h-[350px] md:w-[320px]" />
+            <h2 className="font-gt-alpina-trial text-2xl sm:text-3xl lg:text-6xl md:text-4xl font-thin text-[#0C0C0C] text-center lg:mb-16 mb-6">
               Incubator Projects
             </h2>
           </div>
           <div className="relative">
             <button 
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-              className="bg-transparent text-[#0C0C0C] border border-Celo-AD-gray px-6 py-3 rounded-3xl text-sm font-medium flex items-center gap-2 bg-white"
+              className="bg-transparent text-[#0C0C0C] border border-Celo-AD-gray px-4 sm:px-6 py-2 sm:py-3 rounded-3xl text-xs sm:text-sm font-medium flex items-center gap-2 bg-white"
             >
               Sort by Category
-              <MdKeyboardArrowDown size={16} />
+              <MdKeyboardArrowDown size={14} className="sm:w-4 sm:h-4" />
             </button>
             {isDropdownOpen && (
-              <div className="absolute top-full right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-Celo-AD-gray z-50">
+              <div className="absolute top-full left-1/2 transform -translate-x-1/2 sm:left-auto sm:transform-none sm:right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-Celo-AD-gray z-50">
                 <div className="py-2">
                   {categories.map((category) => (
                     <button
@@ -154,10 +153,20 @@ const ProjectList = forwardRef<HTMLDivElement, ProjectListProps>(({ selectedCate
                         onCategoryChange?.(category);
                         setIsDropdownOpen(false);
                       }}
-                      className={`w-full text-left px-4 py-3 text-[#0C0C0C] hover:bg-Celo-AD-gray/30 transition-colors font-medium ${
-                        sortCategory === category ? 'bg-Celo-AD-yellow text-[#090808]' : ''
-                      }`}
+                      className="w-full text-left px-4 py-3 text-[#0C0C0C] hover:bg-Celo-AD-gray/30 transition-colors font-medium text-sm flex items-center gap-3"
                     >
+                      <input
+                        type="radio"
+                        name="category"
+                        value={category}
+                        checked={sortCategory === category}
+                        onChange={() => {
+                          setSortCategory(category);
+                          onCategoryChange?.(category);
+                          setIsDropdownOpen(false);
+                        }}
+                        className="w-4 h-4 text-Celo-AD-primary focus:ring-Celo-AD-primary border-transparent accent-Celo-AD-primary rounded-none"
+                      />
                       {category}
                     </button>
                   ))}
@@ -171,7 +180,7 @@ const ProjectList = forwardRef<HTMLDivElement, ProjectListProps>(({ selectedCate
           {filteredProjects.map((project, index) => (
             <div 
               key={project.id} 
-              className={`flex items-center p-6 border-t border-b border-[#0C0C0C] border-opacity-20 transition-colors ${
+              className={`flex flex-col sm:flex-row items-center sm:items-center p-4 sm:p-6 border-t border-b border-[#0C0C0C] border-opacity-20 transition-colors ${
                 project.website 
                   ? 'hover:bg-Celo-AD-gray/10 cursor-pointer' 
                   : 'cursor-default'
@@ -182,7 +191,7 @@ const ProjectList = forwardRef<HTMLDivElement, ProjectListProps>(({ selectedCate
                 }
               }}
             >
-              <div className="w-12 h-12 mr-4 flex-shrink-0">
+              <div className="w-12 h-12 mr-0 sm:mr-4 flex-shrink-0 mb-3 sm:mb-0 flex items-center justify-center">
                 <Image 
                   src={project.logo} 
                   alt={project.name}
@@ -191,28 +200,28 @@ const ProjectList = forwardRef<HTMLDivElement, ProjectListProps>(({ selectedCate
                   className="w-full h-full object-contain"
                 />
               </div>
-              <div className="flex-1 px-20">
-                <h3 className="font-gt-alpina-trial text-thin font-light text-[#0C0C0C] mb-2">
+              <div className="flex-1 px-0 sm:px-4 lg:px-20 w-full text-left">
+                <h3 className="font-gt-alpina-trial text-lg sm:text-xl font-light text-[#0C0C0C] mb-2">
                   {project.name}
                 </h3>
-                <p className="text-[#565656] text-sm mb-3 w-1xl">
+                <p className="text-[#565656] text-sm sm:text-base mb-3 max-w-2xl">
                   {project.description}
                 </p>
                 <span className="inline-block bg-Celo-AD-gray text-[#0C0C0C] px-3 py-1 rounded-full text-xs font-medium">
                   {project.category}
                 </span>
               </div>
-              <div className="ml-4">
+              <div className="ml-0 sm:ml-4 mt-3 sm:mt-0 self-end sm:self-auto">
                 {project.website ? (
                   <Image 
                     src="/arrow.png" 
                     alt="Arrow" 
-                    width={20} 
-                    height={20} 
-                    className="opacity-60 hover:opacity-100 transition-opacity"
+                    width={16} 
+                    height={16} 
+                    className="opacity-60 hover:opacity-100 transition-opacity w-4 h-4 sm:w-5 sm:h-5"
                   />
                 ) : (
-                  <div className="w-5 h-5 opacity-30">
+                  <div className="w-4 h-4 sm:w-5 sm:h-5 opacity-30">
                     <svg viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M5 10a1 1 0 011.414 0L10 6.414l3.586 3.586a1 1 0 11-1.414 1.414L10 8.414l-3.586 3.586A1 1 0 015 10z" clipRule="evenodd" />
                     </svg>

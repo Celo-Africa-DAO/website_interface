@@ -38,8 +38,8 @@ export default function Curriculum() {
        description: "A deep dive into identifying and validating a genuine need for the product." 
     },
     { 
-      id: 2, name: "Sustainable Business Models:", 
-      description: "Strategies for building business models that can thrive." 
+      id: 2, name: "Fintech Founder Session", 
+      description: "Building Scalable Fintech Solutions in Emerging Markets" 
     },
     { 
       id: 3, name: "Building & Integrating on Celo",
@@ -51,24 +51,24 @@ export default function Curriculum() {
     },
     { 
       id: 5, name: "Scaling, BD & Fundraising readiness",
-       description: "Expanding to new markets, partners and know when ready to receive investment." 
+       description: "A comprehensive module on preparing for growth and key partnerships." 
     },
     { 
-      id: 6, name: "Customer acquisition", 
-      description: "Building a customer base and retention strategies." 
+      id: 6, name: "Legal & Regulatory Frameworks", 
+      description: "A session dedicated to navigating the complex legal." 
     },
     { 
-      id: 7, name: "Legal and Regulatory Framework",
-       description: "Understanding legal structures and regulatory requirements."
+      id: 7, name: "Creating a winning Pitch Deck",
+       description: "Teach founders to present their business ideas compellingly."
      },
     { 
-      id: 8, name: "Tokenomics Advisory Framework",
-       description: "Using Ubestarter Token Launchpad to gain hands-on experience in deploying your token." 
+      id: 8, name: "Demo Day",
+       description: "The culmination of the program, where teams will present their progress." 
     },
-    { 
-      id: 9, name: "Demo Day", 
-      description: "Founders presenting compelling ideas to potential investors." 
-    },
+    // { 
+    //   id: 9, name: "Demo Day", 
+    //   description: "Founders presenting compelling ideas to potential investors." 
+    // },
   ];
 
   const programCompleted = currentWeek >= events.length;
@@ -83,9 +83,8 @@ export default function Curriculum() {
     for (let i = 0; i < totalSteps; i++) {
       const x = padding + (i / (totalSteps - 1)) * (svgWidth - 2 * padding);
       let y;
-      if (i % 4 === 0) y = padding + svgHeight * 0.5;
-      else if (i % 4 === 1) y = padding + svgHeight * 0.2;
-      else if (i % 4 === 2) y = padding + svgHeight * 0.4;
+      if (i % 3 === 0) y = padding + svgHeight * 0.5;
+      else if (i % 3 === 1) y = padding + svgHeight * 0.2;
       else y = padding + svgHeight * 0.3;
       coordinates.push({ x, y });
     }
@@ -207,18 +206,18 @@ export default function Curriculum() {
                 {hoveredNode !== null && (() => {
                   const coord = pathCoordinates[hoveredNode];
                   if (!coord) return null;
-                  const x = hoveredNode === 0 ? coord.x + 10 : hoveredNode === events.length - 1 ? coord.x - 160 : coord.x - 100;
+                  const x = hoveredNode === 0 ? coord.x + 10 : hoveredNode === events.length - 1 ? coord.x - 220 : coord.x - 140;
                   const y = coord.y - 120;
                   return (
                     <foreignObject
                       x={x}
                       y={y}
-                      width="220"
-                      height="100"
+                      width="280"
+                      height="140"
                       pointerEvents="none"
                     >
                       <div className="bg-white rounded-lg shadow-xl p-4 border border-gray-200 transform transition-all duration-200 ease-in-out">
-                        <p className="font-semibold text-sm text-gray-800 mb-2">{events[hoveredNode].name}</p>
+                        <p className="font-semibold text-sm text-gray-800 mb-2 leading-tight">{events[hoveredNode].name}</p>
                         <p className="text-xs text-gray-600 leading-relaxed">{events[hoveredNode].description}</p>
                       </div>
                     </foreignObject>
@@ -251,7 +250,7 @@ export default function Curriculum() {
                       </>
                     ) : currentWeek === -1 ? (
                       <>
-                        <p>Program hasn't started</p>
+                        <p>Program hasn&apos;t started</p>
                         <p>Starts {new Date(programStartDate).toLocaleDateString()}</p>
                       </>
                     ) : (

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { Button } from "../ui/button";
 import { FiArrowRight } from "react-icons/fi";
 import Section from "../layouts/Section";
@@ -40,16 +41,15 @@ const IncubatorHeroCohort2 = () => {
                 Register Now
               </Button>
             </a>
-            <a
+            <Link
               href="/startups"
-              rel="noopener noreferrer"
               className="w-full sm:w-auto"
             >
               <Button className="bg-[#E7E3D4] text-black px-4 py-2 font-medium rounded-full flex items-center justify-center space-x-2 hover:bg-gray-200 w-full sm:w-auto text-sm">
                 <span>Startups</span>
                 <FiArrowRight className="text-black" />
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
       </Section>

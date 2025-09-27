@@ -129,7 +129,7 @@ const SponsorPrev = () => {
 
       {/* Previous Cohort Section */}
       <div className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+        <div className="flex flex-row justify-between items-center mb-6 sm:mb-8 md:mb-10 lg:mb-12">
           <div>
             <h2 className="text-xl sm:text-2xl md:text-3xl font-GT-Alpina font-thin leading-tight">
               Previous
@@ -138,8 +138,8 @@ const SponsorPrev = () => {
             </h2>
           </div>
 
-          <div className="mt-4 sm:mt-0">
-            <button className="rounded-full bg-transparent border border-gray-800 text-gray-800 hover:bg-gray-100 px-3 sm:px-4 md:px-6 py-1 sm:py-2 flex items-center text-xs sm:text-sm transition-all duration-300">
+          <div>
+            <button className="rounded-full bg-transparent border border-gray-800 text-gray-800 hover:bg-gray-100 px-3 sm:px-4 md:px-6 py-1 sm:py-2 flex items-center text-xs sm:text-sm transition-all duration-300 lg:mb-4 mb-14">
               <KnowMore />
               {/* <span className="ml-2 w-3 h-3 sm:w-4 sm:h-4 bg-gray-800 rounded-full flex items-center justify-center">
                 <MdChevronRight className="text-white" size={12} />
@@ -152,7 +152,7 @@ const SponsorPrev = () => {
         <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-12 xl:gap-16 items-center lg:justify-center">
           {/* Left Side - Incubator Alumni (Vertically Centered) */}
           <div className="lg:w-1/4 flex justify-center lg:justify-start lg:items-center lg:h-full lg:min-h-[250px]">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-2xl xl:text-3xl font-medium text-black text-center lg:text-left leading-tight lg:whitespace-nowrap">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-2xl xl:text-3xl font-GT-Alpina font-medium text-black text-center lg:text-left leading-tight lg:whitespace-nowrap">
               Incubator Alumni
             </h2>
           </div>

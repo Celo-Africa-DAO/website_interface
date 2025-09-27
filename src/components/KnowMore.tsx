@@ -43,7 +43,7 @@ const KnowMore = () => {
                     <div className="py-2 grid grid-cols-2 gap-3">
                         <button
                             onClick={() => handleCohortClick('Cohort 1')}
-                            className={` rounded-2xl text-left px-4 py-3 text-[#0C0C0C] hover:bg-Celo-AD-gray/30 transition-colors font-medium  ${
+                            className={` rounded-2xl text-left px-4 py-3 text-[#0C0C0C] hover:bg-Celo-AD-gray/30 transition-colors font-medium whitespace-nowrap ${
                                 activeCohort === 'Cohort 1' ? 'bg-Celo-AD-yellow text-[#090808]' : ''
                             }`}
                         >
@@ -51,7 +51,7 @@ const KnowMore = () => {
                         </button>
                         <button
                             onClick={() => handleCohortClick('Cohort 2')}
-                            className={` rounded-2xl text-left px-4 py-3 text-[#0C0C0C] hover:bg-Celo-AD-gray/30 transition-colors font-medium ${
+                            className={` rounded-2xl text-left px-4 py-3 text-[#0C0C0C] hover:bg-Celo-AD-gray/30 transition-colors font-medium whitespace-nowrap ${
                                 activeCohort === 'Cohort 2' ? 'bg-Celo-AD-yellow text-[#090808]' : ''
                             }`}
                         >
