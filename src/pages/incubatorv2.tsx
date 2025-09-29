@@ -9,6 +9,7 @@ import IncubatorComm from "@/components/sections/IncubatorComm";
 
 
 
+
 const IncubatorV2 = () => {
   const projectListRef = useRef<HTMLDivElement>(null);
   const [selectedCategory, setSelectedCategory] = useState('All Projects');
@@ -29,6 +30,7 @@ const IncubatorV2 = () => {
     });
   };
   return (
+
     <div className="bg-Celo-AD-primary text-[#0C0C0C]">
         <IncubatorHero2 
           onExploreProjects={scrollToProjects} 
