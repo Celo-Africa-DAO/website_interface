@@ -631,7 +631,7 @@ const StartupDirectory = () => {
                 No companies found
               </h3>
               <p className="text-xs sm:text-sm md:text-base text-gray-500 mb-3 sm:mb-4 font-Inter">
-                Try adjusting your search terms or filters to find what you're
+                Try adjusting your search terms or filters to find what you&apos;re
                 looking for.
               </p>
               <button
