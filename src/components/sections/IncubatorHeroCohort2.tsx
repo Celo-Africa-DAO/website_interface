@@ -42,11 +42,11 @@ const IncubatorHeroCohort2 = () => {
               </Button>
             </a>
             <Link
-              href="/startups"
+              href="/past-cohorts"
               className="w-full sm:w-auto"
             >
               <Button className="bg-[#E7E3D4] text-black px-4 py-2 font-medium rounded-full flex items-center justify-center space-x-2 hover:bg-gray-200 w-full sm:w-auto text-sm">
-                <span>Startups</span>
+                <span>Past Cohorts</span>
                 <FiArrowRight className="text-black" />
               </Button>
             </Link>

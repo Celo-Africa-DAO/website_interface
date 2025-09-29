@@ -13,7 +13,7 @@ const Incubation = () => {
     window.open("https://shorturl.at/ckopx", "_blank");
   };
   const handleJoin = () => {
-    window.open("https://forms.gle/jhXfS5zufJUdcYNf6", "_blank");
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSffpxsP1KZnvd3mx41wQYNCoTQ9_Jphql3TwnZ3RluwXXnI2A/viewform?usp=header", "_blank");
   };
 
   return (
