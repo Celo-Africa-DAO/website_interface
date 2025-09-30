@@ -28,12 +28,11 @@ const navList = [
   //   path: "/incubatorTwo",
   //   Image: "img/navlinks-hover-icon.svg",
   // },
-  {
-    title: "Startups",
-    path: "/startups",
-    Image: "img/navlinks-hover-icon.svg",
-  },
-  { title: "Events", path: "#event", Image: "img/navlinks-hover-icon.svg" },
+  // {
+  //   title: "Startups",
+  //   path: "/startups",
+  //   Image: "img/navlinks-hover-icon.svg",
+  // },
   {
     title: "Community",
     path: "https://t.me/CeloAfrica",

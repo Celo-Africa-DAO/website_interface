@@ -42,9 +42,11 @@ const Hero = () => {
                 Africa.
               </p>
               <div className="flex flex-row gap-4 justify-center md:justify-start">
+                <Link href="https://t.me/CeloAfrica">
                 <Button className=" rounded-[100px] bg-Celo-AD-yellow hover:bg-Celo-AD-yellow/75 text-[#090808] hover:bg-Celo-AD-yellow px-4 sm:px-10  w-fit mt-4 text-xs  sm:text-base">
                   Join our community
                 </Button>
+                </Link>
                 <Link href="/incubator">
                   <Button className="bg-trasparent text-[#090808] border p-1  w-fit mt-4 hover:bg-transparent text-xs  sm:text-base">
                     {" "}
