@@ -65,7 +65,7 @@ const Header = () => {
   };
 
   const handleJoin = () => {
-    window.open("https://celoafricadao.slack.com/canvas/C051YRQ3F6Z", "_blank");
+    window.open("https://t.me/CeloAfrica", "_blank");
   };
 
   return (
