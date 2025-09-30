@@ -23,7 +23,7 @@ const IncubatorHero = () => {
                 <Image
                   src="/CeloAfrica Roadmap.png"
                   alt="Celo_Africa_DAO"
-                  className="w-100 h-80"
+                  className="w-100 h-80 "
                   width={300}
                   height={100}
                   
