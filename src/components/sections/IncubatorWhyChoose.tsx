@@ -37,7 +37,7 @@ const IncubatorWhyChoose = () => {
 
           <p className=" font-bold mt-2 text-sm">
              Program Commencement:
-            <span className="text-gray-800 font-normal"> 10th December, 2025 </span>
+            <span className="text-gray-800 font-normal"> 15th October, 2025 </span>
           </p>
       
 
