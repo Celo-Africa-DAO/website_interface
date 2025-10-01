@@ -7,6 +7,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Hero = () => {
+
+  const handleJoinCommunity = () => {
+    window.open("https://t.me/CeloAfrica", "_blank");
+  };
+
   return (
     <div
       id="home"
@@ -42,7 +47,7 @@ const Hero = () => {
                 Africa.
               </p>
               <div className="flex flex-row gap-4 justify-center md:justify-start">
-                <Button className=" rounded-[100px] bg-Celo-AD-yellow hover:bg-Celo-AD-yellow/75 text-[#090808] hover:bg-Celo-AD-yellow px-4 sm:px-10  w-fit mt-4 text-xs  sm:text-base">
+                <Button onClick={handleJoinCommunity} className=" rounded-[100px] bg-Celo-AD-yellow hover:bg-Celo-AD-yellow/75 text-[#090808] hover:bg-Celo-AD-yellow px-4 sm:px-10  w-fit mt-4 text-xs  sm:text-base">
                   Join our community
                 </Button>
                 <Link href="/incubator">

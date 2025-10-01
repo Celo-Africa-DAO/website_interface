@@ -28,12 +28,11 @@ const navList = [
   //   path: "/incubatorTwo",
   //   Image: "img/navlinks-hover-icon.svg",
   // },
-  {
-    title: "Startups",
-    path: "/startups",
-    Image: "img/navlinks-hover-icon.svg",
-  },
-  { title: "Events", path: "#event", Image: "img/navlinks-hover-icon.svg" },
+  // {
+  //   title: "Startups",
+  //   path: "/startups",
+  //   Image: "img/navlinks-hover-icon.svg",
+  // },
   {
     title: "Community",
     path: "https://t.me/CeloAfrica",
@@ -66,7 +65,7 @@ const Header = () => {
   };
 
   const handleJoin = () => {
-    window.open("https://celoafricadao.slack.com/canvas/C051YRQ3F6Z", "_blank");
+    window.open("https://t.me/CeloAfrica", "_blank");
   };
 
   return (
