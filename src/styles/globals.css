@@ -202,3 +202,24 @@ body {
     background-image: url("/courser-bg.png");
   }
 }
+
+/* Hexagonal clip-path for team member images */
+.clip-path-hexagon {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+/* Fade in animation for team section */
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in;
+}

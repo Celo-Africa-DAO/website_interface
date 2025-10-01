@@ -7,6 +7,7 @@ import DevelopmentSection from "@/components/DevelopmentSection";
 import { CarouselSection } from "@/components/CarouselSection";
 import BuilCelo from "@/components/navigation/BuilCelo";
 import HomeEventsGrid from "@/components/events/HomeEventsGrid";
+import DevJourney from "@/components/sections/DevJourney";
 
 export default function Home() {
   return (
@@ -30,7 +31,10 @@ export default function Home() {
         <Hero/>
         <BuilCelo/>
         <CarouselSection/>
+       
         <HomeEventsGrid/>
+
+        <DevJourney/>
         <Team/>
         <Incubation/>
         <DevelopmentSection/>
