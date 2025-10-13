@@ -68,7 +68,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-wrap gap-2 ">
               {FooterLinK.map((linkItem, index) => (
-                <Button key={index} className="border-2 p-2 px-5 rounded-full">
+                <Button key={index} className="border-2 p-2 px-5 rounded-full bg-inherit">
                   <Link href={linkItem.path} className="text-white ">
                     {linkItem.title}
                   </Link>

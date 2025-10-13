@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Card, CardHeader, CardDescription, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import VideoThumbnail from "../ui/VideoThumbnail";
 
 export interface Event {
   id: number;
@@ -31,33 +32,36 @@ const EventGrid: React.FC<Props> = ({ events }) => {
   return (
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {sortedEvents.map((event) => (
-          <Card key={event.id} className="border border-gray-200 hover:shadow-md transition-all">
-            <CardHeader className="font-gt-alpina">
-              <h3 className="text-lg font-semibold">{event.name}</h3>
-              <p className="text-sm font-light">{event.location}</p>
-              <CardDescription className="text-xs">{event.date}</CardDescription>
-            </CardHeader>
-            <CardContent className="p-0">
-              {event.type === "video" && event.videoUrl ? (
-                <div className="aspect-video">
-                  <iframe
-                    src={event.videoUrl}
-                    className="w-full h-full"
-                    allowFullScreen
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          <div key={event.id}>
+            {event.type === "video" && event.videoUrl ? (
+              <VideoThumbnail
+                title={event.name}
+                location={event.location}
+                date={event.date}
+                onClick={() => {
+                  // Handle video click - could open modal or navigate to video page
+                  console.log('Video clicked:', event.videoUrl);
+                }}
+              />
+            ) : (
+              <Card className="border border-gray-200 hover:shadow-md transition-all bg-white">
+                <CardHeader className="font-gt-alpina pb-4">
+                  <h3 className="text-lg font-bold text-black mb-2">{event.name}</h3>
+                  <p className="text-sm text-gray-600 mb-1">{event.location}</p>
+                  <CardDescription className="text-sm text-gray-600">{event.date}</CardDescription>
+                </CardHeader>
+                <CardContent className="p-0 px-6 pb-6">
+                  <Image
+                    src={event.imageUrl}
+                    width={500}
+                    height={300}
+                    className="w-full h-48 object-cover rounded-lg bg-black"
+                    alt={event.name}
                   />
-                </div>
-              ) : (
-                <Image
-                  src={event.imageUrl}
-                  width={500}
-                  height={300}
-                  className="w-full h-48 object-cover"
-                  alt={event.name}
-                />
-              )}
-            </CardContent>
-          </Card>
+                </CardContent>
+              </Card>
+            )}
+          </div>
         ))}
       </div>
   );
