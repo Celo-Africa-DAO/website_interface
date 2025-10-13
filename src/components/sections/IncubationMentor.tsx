@@ -10,7 +10,7 @@ const IncubationMentor = () => {
     {
       name: "Duncan Muchangi",
       role: "Head Of BD, Fonbnk",
-      image: "/Ducan.png",
+      image: "/img/Duncan.jpg",
     },
     {
       name: "Jovan Mwesigwa",
@@ -18,9 +18,9 @@ const IncubationMentor = () => {
       image: "/Jovan.png",
     },
     {
-      name: "S. A. Kakai",
+      name: " Keega Gachutha",
       role: "Crypto Regulation Expert",
-      image: "/Kaika.png",
+      image: "/img/Keega.jpeg",
     },
     {
       name: "Derrick Bundi",
@@ -42,6 +42,21 @@ const IncubationMentor = () => {
       role: "Senior Software Engineer",
       image: "/img/MUhindo.png",
     },
+    {
+      name: "Daniel Kimotho",
+      role: "Celo Africa Ecosystem Lead",
+      image: "/img/Kimotho.png",
+    },
+    {
+      name: " Ronald Nzioki ",
+      role: "Incubator Program Manager",
+      image: "/img/ronald.png",
+    },
+    {
+      name: "Agbona Igwemoh",
+      role: "CEO finna protocol",
+      image: "/img/Agbona.jpeg",
+    },
   ];
 
   const handleMentor = () => {
@@ -54,7 +69,7 @@ const IncubationMentor = () => {
       className=" relative bg-center bg-no-repeat  px-4 sm:px-8 md:px-12 lg:pl-16 xl:pl-64 py-16 md:py-24 pt-32  lg:pb-44 lg:pr-10 "
       style={{
         backgroundImage: "url(./IncubatorMentor-bg.png)",
-        backgroundSize: "cover", 
+        backgroundSize: "150%", 
          backgroundPosition: "center",
       }}
     >
