@@ -25,6 +25,19 @@ const NavLinks = ({ item, onClick }: Props) => {
 
     const handleClick = () => {
         onClick()
+        
+        // Handle smooth scrolling for team section
+        if (item.path === "#team") {
+            setTimeout(() => {
+                const teamElement = document.getElementById('team');
+                if (teamElement) {
+                    teamElement.scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'start' 
+                    });
+                }
+            }, 100);
+        }
     }
 
   return (
