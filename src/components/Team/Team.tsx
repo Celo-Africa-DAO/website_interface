@@ -353,6 +353,7 @@ const Team = () => {
             {/* Verda Ventures */}
             <div className="flex items-center justify-center p-6 border border-gray-300 bg-white">
               <Image
+                // src="/celocamp.svg"
                 src="/celocamp.svg"
                 alt="Celo Camp"
                 width={120}
