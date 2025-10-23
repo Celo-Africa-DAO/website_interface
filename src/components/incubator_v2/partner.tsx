@@ -33,6 +33,16 @@ export function Partner() {
                     height={40}
                 />
             </div>
+
+            <div onClick={() => window.open("https://www.veryearly.xyz/", "_blank")} className="cursor-pointer">
+                <Image
+                    src="/veryearly.svg"
+                    alt="icon"
+                    className="w-40 md:w-48 lg:w-56 filter brightness-0"
+                    width={200}
+                    height={40}
+                />
+            </div>
         </div>
         </div>
     );

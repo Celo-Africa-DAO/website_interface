@@ -50,7 +50,8 @@ const IncubationMentor = () => {
     {
       name: " Ronald Nzioki ",
       role: "Incubator Program Manager",
-      image: "/img/ronald.png",
+      // image: "/img/ronald.png",
+      image: "/img/ronald.png"
     },
     {
       name: "Agbona Igwemoh",

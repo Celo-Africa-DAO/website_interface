@@ -167,7 +167,7 @@ const Path = () => {
   return (
     <Section className="bg-[#E7E3D4] lg:pl-[312px]">
       <div
-        id="team"
+        id="path"
         className="flex flex-col gap-8 bg-Celo-AD-Primary pb-10 sm:pb-16 overflow-hidden mx-6 xl:mx-0"
       >
         <div>
