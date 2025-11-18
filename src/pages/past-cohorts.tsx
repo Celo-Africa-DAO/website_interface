@@ -2,13 +2,35 @@
 
 import React, { useState, useMemo } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { MdChevronRight, MdFilterList } from 'react-icons/md';
 import Section from '../components/layouts/Section';
 
+type CohortStatus = "current" | "past";
+
+type Project = {
+  id: number;
+  name: string;
+  description: string;
+  category: string;
+  logo: string;
+  website?: string;
+  twitter?: string;
+  pitchDeck?: string;
+};
+
+type Cohort = {
+  cohort: string;
+  year: string;
+  projects: Project[];
+  becomesPastDate?: string;
+};
+
+type CohortWithStatus = Cohort & { status: CohortStatus };
+type StatusFilter = CohortStatus | "all";
+
 const PastCohorts = () => {
   // Merged projects data organized by cohorts
-  const cohortsData = [
+  const cohortsData: Cohort[] = [
     {
       cohort: "Cohort 1",
       year: "2024",
@@ -17,7 +39,7 @@ const PastCohorts = () => {
           id: 1,
           name: "PeerPesa",
           description: "Connecting Africa Through P2P Trading using cUSD.",
-          category: "Payments",
+          category: "Payment",
           logo: "/logos/PeerPesa.png",
           website: "https://peerpesa.co/",
           twitter: "https://x.com/peer_pesa"
@@ -43,7 +65,7 @@ const PastCohorts = () => {
           id: 4,
           name: "NexusPay",
           description: "A blockchain-based financial platform that simplifies and stabilizes money transactions in Africa using mobile numbers and stablecoins.",
-          category: "Payments",
+          category: "Payment",
           logo: "/img/nexuspayimage.svg",
           website: "http://app.nexuspayapp.xyz/"
         },
@@ -76,7 +98,7 @@ const PastCohorts = () => {
           id: 8,
           name: "Pretium Finance",
           description: "Revolutionizing African cross-border payments and integrating cryptocurrencies into the economic value chain.",
-          category: "Payments",
+          category: "Payment",
           logo: "/logos/pretium1.png",
           website: "https://pretium.africa/",
           twitter: "https://x.com/pretiumapp?s=11&t=GcgWBsAbcIe78S7wMmleBg"
@@ -133,7 +155,7 @@ const PastCohorts = () => {
           id: 4,
           name: "Syarpa",
           description: "Financial platform that bridges crypto and fiat for seamless cross-border payments.",
-          category: "Payments",
+          category: "Payment",
           logo: "/logos/sapyra.png",
           website: "https://www.syarpa.com/",
           twitter: "https://x.com/getsyarpa?s=21"
@@ -158,7 +180,7 @@ const PastCohorts = () => {
           id: 7,
           name: "Strimz",
           description: "DeFi solution designed to automate crypto payroll and subscription payments.",
-          category: "Payments",
+          category: "Payment",
           logo: "/logos/strim211.png",
           website: "https://www.strimz.xyz/",
           twitter: "https://x.com/Strimz_HQ"
@@ -167,7 +189,7 @@ const PastCohorts = () => {
           id: 8,
           name: "Zella Africa",
           description: "Easy and secure platform for converting digital assets into fiat instantly.",
-          category: "Payments",
+          category: "Payment",
           logo: "/logos/zella.png",
           website: "https://zella.africa/"
         },
@@ -175,7 +197,7 @@ const PastCohorts = () => {
           id: 9,
           name: "Exion",
           description: "Buy, send and spend your stablecoins on day-to-day utilities and transactions.",
-          category: "Payments",
+          category: "Payment",
           logo: "/logos/Exion.png",
           website: "https://www.exion.finance/"
         },
@@ -183,7 +205,7 @@ const PastCohorts = () => {
           id: 10,
           name: "cKash",
           description: "App that simplifies global transactions with secure, user-friendly crypto and fiat payments.",
-          category: "Payments",
+          category: "Payment",
           logo: "/logos/ckash.png",
           website: "https://ckash.app/"
         },
@@ -197,18 +219,139 @@ const PastCohorts = () => {
           twitter: "https://x.com/3wbClub"
         }
       ]
-    }
+    },
+    {
+      cohort: "Cohort 3",
+      year: "2025",
+      becomesPastDate: "2025-12-11", // This cohort becomes past on December 11, 2025
+      projects: [
+        {
+          id: 1,
+          name: "Nedapay",
+          description: "Infrastructure for local stablecoins to enables SMEs to transact globally.",
+          category: "payment",
+          logo: "/logos/nedapay.svg",
+          website: "https://nedapay.xyz/",
+          pitchDeck: "" // Add pitch deck URL here
+        },
+        {
+          id: 2,
+          name: "WellatRift",
+          description: "Send and receive money across borders and grow your wealth by investing in real yieald generating businesses.",
+          category: "Payment",
+          logo: "/logos/walletRift.svg",
+          website: "https://wallet.riftfi.xyz/auth",
+          pitchDeck: "https://www.canva.com/design/DAGyY5tal1k/ZZzwiLAwco-YyRnOh1vKkA/view?utm_content=DAGyY5tal1k&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hab2a7c38a8" // Add pitch deck URL here
+        },
+        {
+          id: 3,
+          name: "Global-chains",
+          description: "borderless finance for contractors and businesses allowing for receivables, payables and payroll acrossa.",
+          category: "Invoicing",
+          logo: "/logos/",
+          website: "https://global.chains-erp.com/",
+          pitchDeck: "https://docs.google.com/presentation/d/1snDgIkuIu3eXtqyXrAtsH_O85mpN75cMTQVoPnuABBg/edit?usp=sharing" // Add pitch deck URL here
+        },
+        {
+          id: 4,
+          name: "Expendi",
+          description: "A crypto-native financial management platform designed to bring clarity, control, and automation to digital asset budgeting..",
+          category: "Budgeting ",
+          logo: "/logos/expendi.svg",
+          website: "https://www.expendi.app/onboarding",
+          pitchDeck: "https://www.figma.com/slides/DVoTtDMB7UwH4h6ExUg2J0/Expendi-Pitch-Deck?node-id=22-1555&t=NdOSw0rEb3Ys9J7F-1" // Add pitch deck URL here
+        },
+        {
+          id: 5,
+          name: "FX Remit",
+          description: "FX-Remit enables seamless cross-border payments powered by Mento stablecoins on the Celo blockchain.",
+          category: "Payment",
+          logo: "/logos/fx remit.svg",
+          website: "https://fx-remit.xyz/",
+          pitchDeck: "https://fx-remit-decentralized-r-qeqblns.gamma.site/" // Add pitch deck URL here
+        },
+        {
+          id: 6,
+          name: "Stableflow",
+          description: "Accept stablecoin payments as a business while staying compliant.",
+          category: "Payment",
+          logo: "/logos/stableflow.svg",
+          website: "https://stable-flow.xyz/",
+          pitchDeck: "https://pitch.com/v/crypto-payments-for-your-business-simplified-8e4dg5" // Add pitch deck URL here
+        },
+        {
+          id: 7,
+          name: "FaucetDrops",
+          description: "Faucet Drops is building an automated on-chain engagement and reward infrastructure that powers user onboarding, loyalty, and growth for Web3 communities and DeFi protocols.",
+          category: "DeFi",
+          logo: "/logos/faucetdrops.svg",
+          website: "https://faucetdrops.io/",
+          pitchDeck: "https://eu.docworkspace.com/d/sIO7M39CBAv_LrcgG?sa=601.1074" // Add pitch deck URL here
+        },
+        {
+          id: 8,
+          name: "numo",
+          description: "Protect your business from currency risk with the most competitive FX forward rates.",
+          category: "Payment",
+          logo: "/logos/numo.svg",
+          website: "https://www.numofx.com/",
+          pitchDeck: "https://docs.google.com/presentation/d/1FnjA3pCONKP7ilzo-PzcyMOf6Buakm5WBdBdk0bKoV0/edit?usp=sharing" // Add pitch deck URL here
+        },
+        {
+          id: 9,
+          name: "Shwary",
+          description: "Simple, secure, and instant money transfer for everyone in Congo and East Africa.",
+          category: "Payment",
+          logo: "/logos/shwary.svg",
+          website: "https://shwary.com/en",
+          pitchDeck: "https://pitch.com/v/trustiffypitchdeck-6ce6c3" // Add pitch deck URL here
+        },
+        {
+          id: 10,
+          name: "chainpal",
+          description: "ChainPal is the payment infrastructure allowing African businesses to accept global stablecoin payments and get instant automated payout to local banks.",
+          category: "Payment",
+          logo: "/logos/chainpal.svg",
+          website: "https://chainpal.org/",
+          pitchDeck: "https://pitch.com/v/chainpal-a3s3mm" // Add pitch deck URL here
+        },
+        {
+          id: 11,
+          name: "planbok",
+          description: "A programmable wallet infrastructure enabling businesses integrate blockchain-based treasury, payroll and payment.",
+          category: "DeFi",
+          logo: "/logos/planbok.svg",
+          website: "https://planbok.io/",
+          pitchDeck: "https://drive.google.com/file/d/1ip3sU89v9zyygqLarcTN0hj8aWu1YduE/view?usp=drivesdk" // Add pitch deck URL here
+        }
+      ]
+    },
+    
   ];
 
   // State for filters
-  const [selectedYear, setSelectedYear] = useState("all");
-  const [selectedCohort, setSelectedCohort] = useState("all");
-  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [selectedYear, setSelectedYear] = useState<string>("all");
+  const [selectedCohort, setSelectedCohort] = useState<string>("all");
+  const [selectedCategory, setSelectedCategory] = useState<string>("all");
+  const [selectedStatus, setSelectedStatus] = useState<StatusFilter>("all"); // Current/Past filter
   const [searchTerm, setSearchTerm] = useState("");
+
+  // Function to determine if a cohort is current or past
+  const getCohortStatus = (cohort: Cohort): CohortStatus => {
+    if (cohort.becomesPastDate) {
+      const today = new Date();
+      today.setHours(0, 0, 0, 0); // Reset time to compare dates only
+      const pastDate = new Date(cohort.becomesPastDate);
+      pastDate.setHours(0, 0, 0, 0);
+      return today >= pastDate ? "past" : "current";
+    }
+    // If no becomesPastDate field, it's a past cohort
+    return "past";
+  };
 
   // Extract unique categories from all projects
   const categories = useMemo(() => {
-    const allCategories = new Set<string>();
+    const allCategories = new Set<string>(["Invoicing"]);
     cohortsData.forEach(cohort => {
       cohort.projects.forEach(project => {
         allCategories.add(project.category);
@@ -218,15 +361,20 @@ const PastCohorts = () => {
   }, []);
 
   // Filter projects based on selected filters
-  const filteredProjects = useMemo(() => {
+  const filteredProjects = useMemo<CohortWithStatus[]>(() => {
     return cohortsData
       .filter(cohort => {
         if (selectedYear !== "all" && cohort.year !== selectedYear) return false;
         if (selectedCohort !== "all" && cohort.cohort !== selectedCohort) return false;
+        if (selectedStatus !== "all") {
+          const status = getCohortStatus(cohort);
+          if (selectedStatus !== status) return false;
+        }
         return true;
       })
-      .map(cohort => ({
+      .map((cohort): CohortWithStatus => ({
         ...cohort,
+        status: getCohortStatus(cohort),
         projects: cohort.projects.filter(project => {
           const matchesCategory = selectedCategory === "all" || project.category === selectedCategory;
           const matchesSearch = searchTerm === "" || 
@@ -237,7 +385,22 @@ const PastCohorts = () => {
         })
       }))
       .filter(cohort => cohort.projects.length > 0);
-  }, [selectedYear, selectedCohort, selectedCategory, searchTerm]);
+  }, [selectedYear, selectedCohort, selectedCategory, selectedStatus, searchTerm]);
+
+  // Calculate stats for current and past cohorts
+  const stats = useMemo(() => {
+    const currentCohorts = cohortsData.filter(c => getCohortStatus(c) === "current");
+    const pastCohorts = cohortsData.filter(c => getCohortStatus(c) === "past");
+    
+    return {
+      currentCohorts: currentCohorts.length,
+      pastCohorts: pastCohorts.length,
+      totalCohorts: cohortsData.length,
+      currentProjects: currentCohorts.reduce((sum, c) => sum + c.projects.length, 0),
+      pastProjects: pastCohorts.reduce((sum, c) => sum + c.projects.length, 0),
+      totalProjects: cohortsData.reduce((sum, c) => sum + c.projects.length, 0)
+    };
+  }, []);
 
   // Count total filtered projects
   const totalProjects = useMemo(() => {
@@ -274,24 +437,30 @@ const PastCohorts = () => {
                 </p>
                 
                 {/* Stats */}
-                <div className="grid grid-cols-3 gap-8 mt-8 max-w-2xl mx-auto">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mt-8 max-w-4xl mx-auto">
                   <div className="text-center">
-                    <div className="text-3xl lg:text-4xl font-bold text-[#0C0C0C]">
-                      {cohortsData.length}
+                    <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0C0C0C]">
+                      {stats.currentCohorts}
                     </div>
-                    <div className="text-sm text-[#565656] mt-2">Cohorts</div>
+                    <div className="text-xs md:text-sm text-[#565656] mt-2">Current Cohorts</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl lg:text-4xl font-bold text-[#0C0C0C]">
-                      {cohortsData.reduce((sum, c) => sum + c.projects.length, 0)}
+                    <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0C0C0C]">
+                      {stats.pastCohorts}
                     </div>
-                    <div className="text-sm text-[#565656] mt-2">Projects</div>
+                    <div className="text-xs md:text-sm text-[#565656] mt-2">Past Cohorts</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl lg:text-4xl font-bold text-[#0C0C0C]">
-                      {categories.length}
+                    <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0C0C0C]">
+                      {stats.currentProjects}
                     </div>
-                    <div className="text-sm text-[#565656] mt-2">Categories</div>
+                    <div className="text-xs md:text-sm text-[#565656] mt-2">Current Projects</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0C0C0C]">
+                      {stats.pastProjects}
+                    </div>
+                    <div className="text-xs md:text-sm text-[#565656] mt-2">Past Projects</div>
                   </div>
                 </div>
               </div>
@@ -349,6 +518,18 @@ const PastCohorts = () => {
                 <option value="all">All Cohorts</option>
                 <option value="Cohort 1">Cohort 1</option>
                 <option value="Cohort 2">Cohort 2</option>
+                <option value="Cohort 3">Cohort 3</option>
+              </select>
+              
+              {/* Status Filter */}
+              <select
+                value={selectedStatus}
+                onChange={(e) => setSelectedStatus(e.target.value as StatusFilter)}
+                className="px-4 py-2 border border-Celo-AD-gray rounded-lg bg-white text-celo-AD-choclate focus:outline-none focus:ring-2 focus:ring-Celo-AD-dark-green"
+              >
+                <option value="all">All Status</option>
+                <option value="current">Current</option>
+                <option value="past">Past</option>
               </select>
               
               {/* Category Filter */}
@@ -384,6 +565,7 @@ const PastCohorts = () => {
                 setSelectedYear("all");
                 setSelectedCohort("all");
                 setSelectedCategory("all");
+                setSelectedStatus("all");
                 setSearchTerm("");
               }}
               className="mt-4 text-Celo-AD-dark-green hover:text-Celo-AD-slate-green transition-colors"
@@ -395,13 +577,22 @@ const PastCohorts = () => {
           filteredProjects.map((cohortData) => (
             <div key={cohortData.cohort} className="mb-12">
               {/* Cohort Header */}
-              <div className="flex items-center gap-4 mb-6">
+              <div className="flex items-center gap-4 mb-6 flex-wrap">
                 <h2 className="text-2xl font-GT-Alpina font-thin text-celo-AD-choclate">
                   {cohortData.cohort}
                 </h2>
                 <span className="px-3 py-1 bg-Celo-AD-yellow text-celo-AD-choclate rounded-full text-sm font-semibold">
                   {cohortData.year}
                 </span>
+                {cohortData.status === "current" ? (
+                  <span className="px-3 py-1 bg-Celo-AD-dark-green text-white rounded-full text-sm font-semibold">
+                    Current
+                  </span>
+                ) : (
+                  <span className="px-3 py-1 bg-celo-AD-slate-brown text-white rounded-full text-sm font-semibold">
+                    Past
+                  </span>
+                )}
                 <span className="text-celo-AD-slate-brown">
                   ({cohortData.projects.length} projects)
                 </span>
@@ -449,7 +640,7 @@ const PastCohorts = () => {
                       </p>
                       
                       {/* Links */}
-                      <div className="flex gap-3 pt-4 border-t border-Celo-AD-gray">
+                      <div className="flex gap-3 pt-4 border-t border-Celo-AD-gray flex-wrap">
                         {project.website && (
                           <a
                             href={project.website}
@@ -473,6 +664,23 @@ const PastCohorts = () => {
                           >
                             <Image src="/Vector.svg" alt="Twitter" width={14} height={14} />
                             Twitter
+                          </a>
+                        )}
+                        {cohortData.status === "current" && project.pitchDeck?.trim() && (
+                          <a
+                            href={project.pitchDeck}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-1 text-xs text-celo-AD-dark-green hover:text-Celo-AD-slate-green transition-colors"
+                          >
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                              <polyline points="14 2 14 8 20 8"/>
+                              <line x1="16" y1="13" x2="8" y2="13"/>
+                              <line x1="16" y1="17" x2="8" y2="17"/>
+                              <polyline points="10 9 9 9 8 9"/>
+                            </svg>
+                            Pitch Deck
                           </a>
                         )}
                       </div>
