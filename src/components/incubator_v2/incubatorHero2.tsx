@@ -16,7 +16,7 @@ const IncubatorHero2: React.FC<IncubatorHero2Props> = ({ onExploreProjects, onVi
         <div className="w-full max-w-4xl text-start text-[#0C0C0C] px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="">
           <h1 className="font-GT-Alpina font-thin text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl text-start leading-tight">
-            Meet the Innovators of the Celo Incubator Program- Cohort II
+            Meet the Innovators of the Celo Incubator Program-  II
           </h1>
           <p className="text-[#565656] text-sm sm:text-lg md:text-xl max-w-3xl mb-8 text-start mt-4">
             Discover 13 groundbreaking projects from across Africa solving real-world problems using blockchain. Powered by Celo Africa DAO.

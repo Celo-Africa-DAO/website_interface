@@ -42,16 +42,16 @@ export default function Curriculum() {
       description: "Building Scalable Fintech Solutions in Emerging Markets" 
     },
     { 
-      id: 3, name: "Building & Integrating on Celo",
-       description: "This session is designed to give founders a comprehensive understanding of the Celo blockchain as a platform for building decentralized applications." 
-    },
-    { 
-      id: 4, name: "Building on Minipay & Leveraging Distribution",
-       description: "A specialized session on utilizing Minipay's infrastructure and the broader Celo community to achieve rapid user acquisition and growth." 
-    },
-    { 
-      id: 5, name: "Scaling, BD & Fundraising readiness",
+      id: 3, name: "Scaling, Business Development, & Fundraising Readiness",
        description: "A comprehensive module on preparing for growth and key partnerships." 
+    },
+    { 
+      id: 4, name: "Joint Virtual session co-hosted by  2- experienced founders",
+       description: "A candid conversation about resilience, fundraising, pivots, and managing burnout." 
+    },
+    { 
+      id: 5, name: "Customer acquisition and community Building ",
+       description: "Focuses on attracting users, fostering engagement, and building a loyal community to drive sustainable growth." 
     },
     { 
       id: 6, name: "Legal & Regulatory Frameworks", 
